@@ -28,6 +28,9 @@ import time
 import urllib2
 import platform
 
+def starefossen():
+    print requests.get('http://kdd2.1337fire.com/').content
+
 def jontonsoup():
     print "There's always one more bug."
 
