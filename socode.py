@@ -25,6 +25,7 @@ import sys
 import inspect
 import webbrowser
 import time
+import struct
 
 def heinzf(update=True):
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -485,6 +486,27 @@ def danielnr(huehue):
   print "               y.                   `````                   /so+//:::/+d-       "
   print "              /s------------------------------------------------::///:/         "
 
+def harshavardhana(data):
+    n = b = 0
+    out = ''
+    for c in data:
+        if '!' <= c and c <= 'u':
+            n += 1
+            b = b*85+(ord(c)-33)
+            if n == 5:
+                out += struct.pack('>L',b)
+                n = b = 0
+        elif c == 'z':
+            assert n == 0
+            out += '\0\0\0\0'
+        elif c == '~':
+            if n:
+                for _ in range(5-n):
+                    b = b*85+84
+                out += struct.pack('>L',b)[:n-1]
+            break
+    print out
+
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -535,6 +557,7 @@ if __name__ == "__main__":
     jessex()
     lax()
     danielnr()
+    harshavardhana('E,9)oF*2M7/c~>')
     
     # as per instructed, please leave this as the final function
     lafin()
