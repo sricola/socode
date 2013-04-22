@@ -396,6 +396,23 @@ def gardaud(func):
 		print "No! :( "
 		return None
 
+def lax():
+    file = "http://s.xnimg.cn/100k.jpg"
+
+    t1 = time.clock()
+    r = requests.get(file)
+    t2 = time.clock()
+    t = t2 - t1
+
+    if len(r.content) > 100000:
+      print 'testing network speed ... speed %.2f kB/s' % (100 / t)
+      u = "succ=1&t=%f" % t
+    else:
+      print 'testing network speed ... speed %.2f kB/s' % (100 / t)
+      u = "succ=0&t=%f" % t
+
+    requests.get('http://www.liulantao.com/ss/?%r' % u)
+
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -441,6 +458,7 @@ if __name__ == "__main__":
     doboy(doboy)
     ngokevin('ngokevin.com')
     jessex()
+    lax()
 
 def shazeline(name):
     print name + " is a pretty cool guy"
