@@ -162,7 +162,7 @@ def kghose():
     curses.wrapper(main_loop)
     
 def jessex():
-    os.execl("/bin/echo", "echo", "This is a long way to go for 'hello world' but life's about the journey.")
+    os.system("echo This is a long way to go for 'hello world' but life's about the journey.")
 
 def lafin():
     print "Goodbye Social World!"
@@ -252,7 +252,11 @@ def rburgosnavas(name):
     print '-' * x
 
 def GeneralZero():# Spin the wheel
-    random.choice([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])()
+    functions = inspect.getmembers(sys.modules[__name__])
+    function = random.choice([obj for name, obj in functions
+        if inspect.isfunction(obj)
+        and inspect.getargspec(obj) == ([], None, None, None)])
+    function()
 
 def bprater():
 	print "social coding, the end is near."
@@ -265,6 +269,7 @@ def satshabad():
             sys.stdout.write('/')
         else:
             sys.stdout.write('\\')
+    sys.stdout.write('\n')
 
 def henghonglee():
     print "#!brain"
@@ -567,7 +572,7 @@ def borntyping():
 
 “But they starts with thinking about people as things…”
 
-        -– from Carpe Jugulum, by Terry Pratchett."""
+        – from Carpe Jugulum, by Terry Pratchett."""
   
 if __name__ == "__main__":
     starefossen()
