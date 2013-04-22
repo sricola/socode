@@ -47,7 +47,10 @@ def kisom():
     geoip = json.loads(requests.get('http://freegeoip.net/json/').content)
     print 'there once was a coder from', geoip['country_name']
     zgohr(geoip['city'])
-    
+
+def daniel_dressler(): # really daniel-dressler
+    return 42
+
 def evinugur():
     print 'there is a ', (random.random()*100), "% chance that something cool will come from this..."
 
