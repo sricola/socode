@@ -11,18 +11,18 @@
 #       - lefin() should be the last executing function, always
 
 # Lets see if we can make something meaningful out of this.
-
+import sys
 import json
 import requests
 import random
 def sricola():
     print "Welcome to soCode!!"
-    
+ 
 def kisom():
     ip = requests.get('http://ifconfig.me/ip').content
     geoip = json.loads(requests.get('http://freegeoip.net/json/').content)['country_name']
     print 'there once was a coder from', geoip
-    
+
 def evinugur():
     print 'there is a ', (random.random()*100), "% chance that something cool will come from this..."
     
@@ -60,7 +60,21 @@ def shuhaowu(): # Call me last! :D
     
 def agoebel():
     print "America!"
-    
+
+def ZackMullaly():
+    f = open("temporary.txt", "w")
+    stdout = sys.stdout
+    sys.stdout = f
+    for stuff in globals():
+        if stuff.startswith("__") and stuff.endswith("__"):
+            continue
+        globals()[stuff]
+    f.close()
+    sys.stdout = stdout
+    output = open("temporary.txt").read().split("\n")
+    longest = sorted(output, lambda a, b: 1 if len(a) < len(b) else -1)[0]
+    print "The longest thing anyone's said seems to be " + longest
+
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
@@ -68,4 +82,5 @@ if __name__ == "__main__":
     kisom()
     prezjordan()
     agoebel()
+    ZackMullaly()
     lafin()
