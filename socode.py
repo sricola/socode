@@ -227,14 +227,16 @@ def ondrae(): # Random compliment. If anyone has a better source, add it in.
             compliments.append(m.group(1))
     print getpass.getuser() +', ' + compliments[random.randint(1,len(compliments))].lower()
 
-    
+def djrausch():
+    print "DAE #HOLO? #NEXUS #HOLOYOLO"
+
 def chewxy():
     # because there is nothing better to do after the world has ended.
     pass
-    
+
 def hazirguo():
     print "Mourning for the dead in Sichuan earthquake!\n"
-    
+ 
 if __name__ == "__main__":
     jpadilla()
     heinzf()
@@ -250,6 +252,7 @@ if __name__ == "__main__":
     jhgaylor()
     henghonglee()
     taylorlapeyre()
+    djrausch()
     jeffjose()
     agoebel()
     cyclo()
