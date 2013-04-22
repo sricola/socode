@@ -170,22 +170,7 @@ def rburgosnavas(name):
     print '-' * (len(name) + 6)
 
 def GeneralZero():# Spin the wheel
-    random.choice([ evinugur,
-                    JesseAldridge,
-                    sricola,
-                    kisom,
-                    ncammarata,
-                    prezjordan,
-                    tcr,
-                    agoebel,
-                    cyclo,
-                    binary132,
-                    doctorpangloss,
-                    chrisgw,
-                    lafin,
-                    fmazon3,
-                    mmay])()
-
+    random.choice([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])()
 
 def bprater():
 
