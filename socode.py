@@ -108,6 +108,25 @@ def cyclo():
     
 def chrisgw():
     print "meh"
+    
+def GeneralZero():# Spin the wheel
+    random.choice([ evinugur,
+                    JesseAldridge,
+                    sricola,
+                    kisom,
+                    ncammarata,
+                    prezjordan,
+                    tcr,
+                    agoebel,
+                    cyclo,
+                    binary132,
+                    doctorpangloss,
+                    chrisgw,
+                    lafin,
+                    fmazon3])()
+    
+    
+    
 
 if __name__ == "__main__":
     evinugur()
