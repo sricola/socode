@@ -232,6 +232,9 @@ def chewxy():
     # because there is nothing better to do after the world has ended.
     pass
     
+def hazirguo():
+    print "Mourning for the dead in Sichuan earthquake!\n"
+    
 if __name__ == "__main__":
     jpadilla()
     heinzf()
@@ -262,6 +265,7 @@ if __name__ == "__main__":
     rburgosnavas('CTHULHU LIVES!')
     satshabad()
     ondrae()
+    hazirguo()
 
     # as per instructed, please leave this as the final function
     lafin()
