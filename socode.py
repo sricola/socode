@@ -15,6 +15,8 @@
 import json
 import requests
 import random
+import getpass
+    
 def sricola():
     print "Welcome to soCode!!"
     
@@ -60,6 +62,9 @@ def shuhaowu(): # Call me last! :D
     
 def agoebel():
     print "America!"
+
+def tcr():
+    print "You know we love you, ", getpass.getuser(), "."
     
 if __name__ == "__main__":
     evinugur()
@@ -67,5 +72,6 @@ if __name__ == "__main__":
     sricola()
     kisom()
     prezjordan()
+    tcr()
     agoebel()
     lafin()
