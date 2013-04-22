@@ -6,7 +6,7 @@
 #       - Your function can do anything and everything, as long as it
 #         finishes in a reasonable amount of time (no infinite loops please)
 #       - Once your function is written, you can call it from anywhere else in the
-#         already existing exectution chain.
+#         already existing exectution chain.k
 #       - Never entirely delete anyone else's function, edit it if needed.
 #       - lefin() should be the last executing function, always
 
@@ -505,7 +505,7 @@ def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
   
   
-def keikun(question):
+def keikun17(question):
   answer_prime = 24
   return answer_prime
  
