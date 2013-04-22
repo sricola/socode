@@ -269,6 +269,7 @@ if __name__ == "__main__":
     rburgosnavas('CTHULHU LIVES!')
     satshabad()
     ondrae()
+    djrausch()
 
     # as per instructed, please leave this as the final function
     lafin()
