@@ -553,6 +553,11 @@ def dpayne():
         print 'There was an error'
     
     return False
+    
+def davinov():
+    print "Read that on HN. Love the idea. Curious about the result !"
+    print "Turns out most of functions only print short messages from their writers, so this moght be like a comment zone or a guestbook."
+    print " -- davinov"
   
 if __name__ == "__main__":
     starefossen()
@@ -611,6 +616,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
+    davinov()
     
     # as per instructed, please leave this as the final function
     lafin()
