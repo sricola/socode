@@ -128,9 +128,9 @@ def bencooling():
 def quarterto(m,n):
     if m == 0:
         return n+1
-    else if m > 0 and n == 0:
+    elif m > 0 and n == 0:
         return quarterto(m-1,1)
-    else if m > 0 and n > 0:
+    elif m > 0 and n > 0:
         return quarterto(m-1,quarterto(m,n-1))
     else:
         return 0
@@ -716,6 +716,9 @@ def dpayne():
         print 'There was an error'
     
     return False
+
+def codesuela(board):
+    print json.load(urllib2.urlopen('https://api.4chan.org/%s/0.json' % (board,)))['threads'][0]['posts'][0]['com']
 
 def aturcino():
     pass
