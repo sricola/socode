@@ -485,6 +485,12 @@ def danielnr(huehue):
   print "               y.                   `````                   /so+//:::/+d-       "
   print "              /s------------------------------------------------::///:/         "
 
+def dagrevis():
+    """I'm sorry -- I'm not quite adult yet..."""
+    if random.randint(0, 1):
+        global True, False
+        True, False = False, True
+
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -535,6 +541,7 @@ if __name__ == "__main__":
     jessex()
     lax()
     danielnr()
-    
+    dagrevis()
+
     # as per instructed, please leave this as the final function
     lafin()
