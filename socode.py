@@ -742,6 +742,10 @@ def markembling(talkative=True):
         print "Your randomly created colour is: #%x%x%x" % colour
     return colour
 
+def joshryandavis():
+    for i in range(0, 72):
+        print 'Around the world, around the world'
+ 
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -802,6 +806,7 @@ if __name__ == "__main__":
     umurgdk()
     jontonsoup()
     prezjordan()
+    joshryandavis()
     shuhaowu()
     chewxy()
     theabrad()
