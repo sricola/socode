@@ -43,6 +43,9 @@ def heinzf():
             print 'I update myself, when I think about you, lalalala'
         f.close()
 
+def zachlatta():
+    import antigravity
+
 def doctorpangloss():
     raw = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
     # not sure what is being achieved here - @sricola
@@ -64,6 +67,7 @@ def sricola():
 
 def bencooling():
     print "I don't know Python; I don't belong here"
+    zachlatta()
     
 def kisom():
     def zgohr(city):
@@ -146,6 +150,8 @@ def kghose():
     
     curses.wrapper(main_loop)
     
+def jessex():
+    os.execl("/bin/echo", "echo", "This is a long way to go for 'hello world' but life's about the journey.")
 
 def lafin():
     print "Goodbye Social World!"
@@ -427,6 +433,7 @@ if __name__ == "__main__":
     chris911()
     doboy(doboy)
     ngokevin('ngokevin.com')
+    jessex()
 
 def shazeline(name):
     print name + " is a pretty cool guy"
