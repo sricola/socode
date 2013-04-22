@@ -217,7 +217,10 @@ def julio():
     print 111111111 * 111111111;
 
 
-
+def eddotman():
+    a = range(5)
+    for x in a:
+        print x
 
 
 
@@ -257,6 +260,7 @@ if __name__ == "__main__":
     chewxy()
     rburgosnavas('CTHULHU LIVES!')
     satshabad()
+    eddotman()
 
     # as per instructed, please leave this as the final function
     lafin()
