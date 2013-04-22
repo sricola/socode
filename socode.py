@@ -620,6 +620,7 @@ if __name__ == "__main__":
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
     drewcrawford()
+    snipplets()
     dmercer(42)
     ryanseys()
     jpadilla()
