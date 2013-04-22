@@ -206,6 +206,7 @@ if __name__ == "__main__":
     fmazon3()
     bprater()
     rburgosnavas('CTHULHU LIVES!')
+    satshabad()
 
     # as per instructed, please leave this as the final function
     lafin()
