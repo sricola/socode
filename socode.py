@@ -17,10 +17,7 @@ import requests
 import random
 import getpass
 import re
-<<<<<<< HEAD
 import time
-    
-=======
 import hashlib
 import os
 import string
