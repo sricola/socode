@@ -158,6 +158,12 @@ def maxmackie(crypt_me):
     crypt = "mplnkoijbqazdsxcwerfgvhutyQASXZWDVFCERGTBHNYKMJLUPIO4567382901"
     print crypt_me.translate(string.maketrans(abc, crypt))
 
+def uiri():
+    with open(os.path.realpath(__file__),'r') as f:
+        for line in f.readlines():
+            if line.strip()[:5] == "print":
+                print line.strip()
+
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     try:
@@ -244,8 +250,9 @@ def sfrnld():
     print "From Indonesia with love!"
  
 if __name__ == "__main__":
+    heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
+    uiri() # Can I go first unless you're going to modify the file?
     jpadilla()
-    #heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
     mmay()
     evinugur()
     JesseAldridge()
