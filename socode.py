@@ -20,7 +20,7 @@ def sricola():
     
 def kisom():
     ip = requests.get('http://ifconfig.me/ip').content
-    geoip = json.loads(requests.get('http://freegeoip.net/json/' + ip).content)['country']
+    geoip = json.loads(requests.get('http://freegeoip.net/json/').content)['country_name']
     print 'there once was a coder from', geoip
     
 def lafin(): # Please speak proper french :)
@@ -29,7 +29,7 @@ def lafin(): # Please speak proper french :)
 def JesseAldridge():
     def wrap(f):
       def new_f():
-        for i in range(3):
+        for i in range(1):
           f()
       return new_f
 
