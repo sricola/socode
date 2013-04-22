@@ -28,4 +28,5 @@ def lafin(): # Please speak proper french :)
     
 if __name__ == "__main__":
     sricola()
+    kisom()
     lafin()
