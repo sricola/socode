@@ -29,6 +29,35 @@ import urllib2
 import platform
 import time
 
+def rjwebb(n):
+    """Tries to print the username, real name and location of the first n users in this file. Fails silently."""
+
+    def get_user_page(username):
+        gh_url = "https://github.com/"+username+".json"
+        return urllib2.urlopen(gh_url).read()
+    def dict_get(dict, key):
+        try:
+            return dict[key]
+        except KeyError:
+            return ""
+
+    with open(os.path.realpath(__file__),'r+') as f:
+        local_file = f.read()
+    user_name_pattern = "[a-zA-Z][a-zA-Z\-]*"
+    fun_start_pattern = "\ndef ("+user_name_pattern+")"
+    users = re.findall(fun_start_pattern, local_file)
+    
+    for user in users[:n]:
+        r = get_user_page(user)
+        j = json.loads(r)
+
+        if j != []:
+            try:
+                attrs = dict((k,v.encode("utf-8")) for k,v in j[0]["actor_attributes"].items())
+                print user+":\n\t"+dict_get(attrs,"name")+"\n\t"+dict_get(attrs,"location")
+            except KeyError:
+                pass
+
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
 
@@ -624,6 +653,7 @@ def bheesham():
 	print "Hello world! - Bheesham"
 
 if __name__ == "__main__":
+    rjwebb(5)
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
