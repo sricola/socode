@@ -359,7 +359,7 @@ def chris911():
 def PiersonBro():
     print "My bane was not capability it was randomness."
  
-def dogukantufekci():in
+def dogukantufekci():
     print "This is the connected world."
     webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
     
