@@ -225,6 +225,7 @@ if __name__ == "__main__":
     jhgaylor()
     henghonglee()
     taylorlapeyre()
+    jeffjose()
     agoebel()
     cyclo()
     binary132()
