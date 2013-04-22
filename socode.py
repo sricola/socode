@@ -27,6 +27,7 @@ import webbrowser
 import time
 import urllib2
 import platform
+import time
 
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
@@ -67,6 +68,9 @@ def ankushsachdeva():
 	
 def adelevie():
     pass
+    
+def thisishugo():
+    time.sleep(1)
 
 def piperchester():
     print "I love this idea. Hailing from Rochester, NY!"
@@ -657,6 +661,7 @@ if __name__ == "__main__":
     ngokevin('ngokevin.com')
     jessex()
     lax()
+    thisishugo()
     danielnr()
     spratt()
     windspy()
