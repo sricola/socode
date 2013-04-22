@@ -26,6 +26,9 @@ import inspect
 import webbrowser
 import time
 
+def mattwritescode():
+	raise NotImpletemtedException('')
+
 def jontonsoup():
     print "There's always one more bug."
 
@@ -560,6 +563,6 @@ if __name__ == "__main__":
     danielnr()
     spratt()
     windspy()
-    
+    mattwritescode()
     # as per instructed, please leave this as the final function
     lafin()
