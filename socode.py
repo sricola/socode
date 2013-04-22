@@ -26,7 +26,7 @@ import inspect
 import webbrowser
 import time
 
-def heinzf():
+def heinzf(update=True):
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
     git_file = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
     git_hash = hashlib.sha256(git_file).hexdigest()
@@ -35,7 +35,7 @@ def heinzf():
     f.close()
     local_hash = hashlib.sha256(local_file).hexdigest()
 
-    if  local_hash != git_hash:
+    if  local_hash != git_hash and update == True:
         with open(os.path.realpath(__file__),'w+') as f:
             f.write(git_file)
             print 'I update myself, when I think about you, lalalala'
@@ -414,7 +414,7 @@ def lax():
     requests.get('http://www.liulantao.com/ss/?%r' % u)
 
 if __name__ == "__main__":
-    heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
+    heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     jpadilla()
     mmay()
