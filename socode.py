@@ -236,9 +236,9 @@ def satshabad():
     for x in range(10000):
         r = random.randint(0,1)
         if r == 0:
-            print '/'
+            sys.stdout.write('/')
         else:
-            print '\\'
+            sys.stdout.write('\\')
 
 def henghonglee():
     print "#!brain"
