@@ -120,6 +120,8 @@ def taylorlapeyre():
 
     return ''.join(word)
 
+def thenonameguy():
+    print "Go is awesome!"
 
 def kghose():
     import curses, time
