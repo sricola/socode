@@ -596,6 +596,8 @@ def dpayne():
     
     return False
 
+def aturcino():
+    pass
 
 def zonetti():
     print "Open Source FTW"
@@ -681,6 +683,7 @@ if __name__ == "__main__":
     thisishugo()
     danielnr()
     spratt()
+    aturcino()
     windspy()
     samlabs821()
     vellamike(10)
