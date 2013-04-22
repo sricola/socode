@@ -608,7 +608,9 @@ def reksy():
 
 def bheesham():
 	print "Hello world! - Bheesham"
-
+	
+def fuhrmann():
+    print "This is pretty cool."
 
 if __name__ == "__main__":
     starefossen()
@@ -674,6 +676,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
+    fuhrmann()
 
     
     # If you add a call to your function here you will
