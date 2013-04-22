@@ -27,6 +27,7 @@ import webbrowser
 import time
 import urllib2
 import platform
+import pyttsx
 
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
@@ -556,7 +557,14 @@ def dpayne():
         print 'There was an error'
     
     return False
-  
+
+def lyndonarmitage():
+	engine = pyttsx.init()
+	print "\a"
+	s = "Beep Boop!"
+	engine.say(s)
+	engine.runAndWait()
+
 if __name__ == "__main__":
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
@@ -615,6 +623,7 @@ if __name__ == "__main__":
     windspy()
     samlabs821()
     alisnic(random.randint(1, 1024))
+    lyndonarmitage()
     
     # as per instructed, please leave this as the final function
     lafin()
