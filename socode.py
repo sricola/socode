@@ -140,7 +140,6 @@ def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     print 'Forked {} times'.format(repo['forks_count'])
 
-<<<<<<< HEAD
 def rburgosnavas(name):
     print '-' * (len(name) + 6)
     print "|  " + ' ' * (len(name)) + "  |"
