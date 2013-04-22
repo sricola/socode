@@ -128,14 +128,7 @@ def cyclo():
     print "!dnalgnE morf olleH"[::-1]
 
 def chrisgw():
-    print "meh"
-    
-<<<<<<< HEAD
-def maxmackie(crypt_me):
-    """Just try and crack this cipher."""
-    abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-    crypt = "mplnkoijbqazdsxcwerfgvhutyQASXZWDVFCERGTBHNYKMJLUPIO4567382901"
-    print crypt_me.translate(string.maketrans(abc, crypt))
+	print "meh"
 
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
@@ -146,11 +139,7 @@ def maxmackie(crypt_me):
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     print 'Forked {} times'.format(repo['forks_count'])
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 9046bbd212abdece3f6d172f54286a52cdeb1b1a
 def rburgosnavas(name):
     print '-' * (len(name) + 6)
     print "|  " + ' ' * (len(name)) + "  |"
@@ -172,41 +161,34 @@ def GeneralZero():# Spin the wheel
                     doctorpangloss,
                     chrisgw,
                     lafin,
-<<<<<<< HEAD
-                    fmazon3])()
-    
-    
-=======
                     fmazon3,
                     mmay])()
 
 
->>>>>>> 9046bbd212abdece3f6d172f54286a52cdeb1b1a
 def bprater():
 
 	print "social coding, the end is near."
 
-<<<<<<< HEAD
-
 
 def henghonglee():
     print "#!brain"
-=======
+
 def jhgaylor():
     print "Signing in from Starkville, Mississippi."
 
->>>>>>> b5cf150ada455df6bee399349b2adf0de829299d
-=======
+
+
 def mmay():
     url = "http://placekitten.com/%d/%d" %(random.randint(500, 1000), random.randint(500, 1000))
     print "Get your daily dose of kitten at: " + url
 
 
->>>>>>> 9046bbd212abdece3f6d172f54286a52cdeb1b1a
+
 
 if __name__ == "__main__":
     jpadilla()
     heinzf()
+    mmay()
     evinugur()
     JesseAldridge()
     sricola()
@@ -224,10 +206,6 @@ if __name__ == "__main__":
     fmazon3()
     bprater()
     rburgosnavas('CTHULHU LIVES!')
-<<<<<<< HEAD
-=======
-    mmay()
->>>>>>> 9046bbd212abdece3f6d172f54286a52cdeb1b1a
 
     # as per instructed, please leave this as the final function
     lafin()
