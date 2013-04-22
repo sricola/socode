@@ -383,6 +383,17 @@ def ngokevin(shamelessadvertising):
     print '<script>alert("HAHAHA");</script>'
     import antigravity
 
+def Cheezmeister(standingOnShouldersOfGiants):
+    print "Hello there, " + getpass.getuser()
+    print "You're looking attractive. What would you like to do today?"
+    for i, f in enumerate(standingOnShouldersOfGiants):
+    	print " " + i + ". " + f + "\n"
+    	
+    input x
+    
+    standingOnShouldersOfGiants[x]()
+    
+	
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -428,6 +439,8 @@ if __name__ == "__main__":
     doboy(doboy)
     ngokevin('ngokevin.com')
     jessex()
+
+    Cheezmeister(heinzf, uiri, jpadilla, mmay, evinugur, JesseAldridge, bencooling, sricola, kisom, ncamarata, eddotman, julio, prezjordan, GeneralZero, tcr,jhgaylor, henghonglee, taylorlapeyre, djrausch, jeffjose, agoebel, cyclo, binary132,    sfrnld, kghose, doctorpangloss, chrisgw, dogukantufekci, fmazon3, bprater, eternalmatt, PiersonBro, aniketpant, prezjordan, shuhaowu, chewxy, rburgosnavas, satshabad, ondrae, hazirguo, chris911, doboy ngokevin, jessex)
 
 def shazeline(name):
     print name + " is a pretty cool guy"
