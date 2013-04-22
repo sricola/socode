@@ -69,6 +69,7 @@ if __name__ == "__main__":
     JesseAldridge()
     sricola()
     kisom()
-    lafin()
     prezjordan()
     agoebel()
+    binary132()
+    lafin()
