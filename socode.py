@@ -17,6 +17,9 @@ import requests
 import random
 def sricola():
     print "Welcome to soCode!!"
+
+def bencooling():
+  print "I don't know Python; I don't belong here"
     
 def kisom():
     ip = requests.get('http://ifconfig.me/ip').content
