@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 # Welcome to soCode, the social coding experiment.
-# Here are the rules! 
+# Here are the rules!
 #       - Add a funtion with your github name as its name.
 #       - Your function can do anything and everything, as long as it
 #         finishes in a reasonable amount of time (no infinite loops please)
-#       - Once your function is written, you can call it from anywhere else in the 
+#       - Once your function is written, you can call it from anywhere else in the
 #         already existing exectution chain.
 #       - Never entirely delete anyone else's function, edit it if needed.
 #       - lefin() should be the last executing function, always
@@ -34,7 +34,7 @@ def heinzf():
             f.write(git_file)
             print 'I update myself, when I think about you, lalalala'
         f.close()
-    
+
 def doctorpangloss():
     raw = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
     # not sure what is being achieved here - @sricola
@@ -49,7 +49,7 @@ def sricola():
 
 def bencooling():
   print "I don't know Python; I don't belong here"
-    
+
 def kisom():
     def zgohr(city): # JesseAldridge breaks top level funcs with parms
         weather = json.loads(requests.
@@ -75,7 +75,7 @@ def ncammarata():
     tweets = json.loads(requests.get("https://search.twitter.com/search.json?q=a").content)
     tweet = tweets['results'][0]['text']
     print "Random Tweet:", tweet
-    
+
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
     print "\nStarted with <3 in Brooklyn, NY\n"
@@ -87,7 +87,7 @@ def prezjordan():
         i,k=0,0
         while(abs(k)<2*(i<15)):k,i=k**2+complex(q%40*.075-2,q/40*-.1+1),i+1
         s+=h[i/3]*2
-    
+
 def JesseAldridge():
     def wrap(f):
       def new_f(*args, **kwargs):
@@ -99,7 +99,7 @@ def JesseAldridge():
     for k, v in g.iteritems():
       if callable(v) and k != 'JesseAldridge':
         g[k] = wrap(v)
-    
+
 def shuhaowu(): # Call me last! :D
     l = locals()
     for f in l.keys():
@@ -107,7 +107,7 @@ def shuhaowu(): # Call me last! :D
             del l[f] # ^_^
 
     print "Goodbye, cruel world"
-    
+
 def agoebel():
     print "America!"
 
@@ -116,17 +116,23 @@ def tcr():
 
 def fmazon3():
     print "%d" % 0xDEADC0DE
-    
+
 def peterwallhead():
     print '\n'.join('Fizz'*(not i%3) + 'Buzz'*(not i%5) or str(i) for i in range(1, 101))
-    
+
 def cyclo():
     print "!dnalgnE morf olleH"[::-1]
-    
+
 def chrisgw():
     print "meh"
 
+def jpadilla():
+    repo = requests.get('https://api.github.com/repos/sricola/socode').json()
+    print 'Forked {} times'.format(repo['forks_count'])
+
+
 if __name__ == "__main__":
+    jpadilla()
     heinzf()
     evinugur()
     JesseAldridge()
@@ -141,6 +147,6 @@ if __name__ == "__main__":
     doctorpangloss()
     chrisgw()
     fmazon3()
-    
+
     # special
     lafin()
