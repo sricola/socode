@@ -27,4 +27,5 @@ def lefin():
     
 if __name__ == "__main__":
     sricola()
+    quaz3l()
     lefin()
