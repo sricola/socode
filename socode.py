@@ -669,7 +669,7 @@ def bheesham():
 	print "Hello world! - Bheesham"
 
 if __name__ == "__main__":
-    seripap("deleting ",3,"......")
+    seripap("deleting ",1,"......")
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
