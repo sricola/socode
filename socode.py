@@ -19,6 +19,7 @@ import getpass
 import re
 import hashlib
 import os
+import string
 
 def heinzf():
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -125,6 +126,12 @@ def cyclo():
 
 def chrisgw():
     print "meh"
+    
+def maxmackie(crypt_me):
+    """Just try and crack this cipher."""
+    abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    crypt = "mplnkoijbqazdsxcwerfgvhutyQASXZWDVFCERGTBHNYKMJLUPIO4567382901"
+    print crypt_me.translate(string.maketrans(abc, crypt))
 
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
