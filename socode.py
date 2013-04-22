@@ -85,7 +85,7 @@ def evinugur():
 def ncammarata():
     tweets = json.loads(requests.get("https://search.twitter.com/search.json?q=a").content)
     tweet = tweets['results'][0]['text']
-    print "Random Tweet:", tweet
+    print "Random Tweet:", tweet.encode('utf-8') 
 
 # Generate a random nonsense word with a vowel:consolant ratio of 1:5
 def taylorlapeyre():
