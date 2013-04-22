@@ -49,6 +49,11 @@ def kisom():
     
 def evinugur():
     print 'there is a ', (random.random()*100), "% chance that something cool will come from this..."
+
+def ncammarata():
+    tweets = json.loads(requests.get("https://search.twitter.com/search.json?q=a").content)
+    tweet = tweets['results'][0]['text']
+    print "Random Tweet:", tweet
     
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
@@ -99,6 +104,7 @@ if __name__ == "__main__":
     JesseAldridge()
     sricola()
     kisom()
+    ncammarata()
     prezjordan()
     tcr()
     agoebel()
