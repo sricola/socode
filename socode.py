@@ -23,6 +23,7 @@ import string
 import math
 import sys    
 import inspect
+import webbrowser
 
 def heinzf():
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -58,8 +59,8 @@ def sricola():
     print "Welcome to soCode!!"
 
 def bencooling():
-  print "I don't know Python; I don't belong here"
-
+    print "I don't know Python; I don't belong here"
+    
 def kisom():
     def zgohr(city): # JesseAldridge breaks top level funcs with parms
         weather = json.loads(requests.
@@ -315,6 +316,10 @@ def chris911():
 def PiersonBro():
     print "My bane was not capability it was randomness."
  
+def dogukantufekci():
+    print "This is the connected world."
+    webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
+    
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -322,6 +327,7 @@ if __name__ == "__main__":
     mmay()
     evinugur()
     JesseAldridge()
+    bencooling()
     sricola()
     kisom()
     ncammarata()
@@ -340,6 +346,7 @@ if __name__ == "__main__":
     sfrnld()
     doctorpangloss()
     chrisgw()
+    dogukantufekci()
     fmazon3()
     bprater()
     eternalmatt()
