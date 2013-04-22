@@ -26,6 +26,9 @@ import inspect
 import webbrowser
 import time
 
+def jontonsoup():
+    print "There's always one more bug."
+
 def heinzf(update=True):
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
     git_file = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
@@ -49,7 +52,10 @@ def doctorpangloss():
     # not sure what is being achieved here - @sricola
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
-
+def ankushsachdeva():
+	contents =open(__file__).read()
+	print re.findall('def .* :',contents)
+	
 def adelevie():
     pass
 
@@ -68,7 +74,7 @@ def bencooling():
     zachlatta()
     
 def kisom():
-    def zgohr(city): # JesseAldridge breaks top level funcs with parms
+    def zgohr(city):
         weather = json.loads(requests.
                              get('http://api.openweathermap.org'
                                  '/data/2.1/find/name?q=%s' % city).content)
@@ -166,8 +172,12 @@ def prezjordan():
 def JesseAldridge():
     def wrap(f):
       def new_f(*args, **kwargs):
-        # changing this back to one, it really slows things down with the requests - @sricola
-        return f(*args, **kwargs)
+        start_time = time.time()
+        for i in range(random.randrange(1, 3)):
+            ret_val = f(*args, **kwargs)
+            if time.time() - start_time > .1:
+                break
+        return ret_val
       return new_f
 
     g = globals()
@@ -417,9 +427,86 @@ def shazeline(name):
 def matiasinsaurralde():
     print "hello, this is skynet"
 
+def drewcrawford():
+    print "Let's see that again..."
+    functions = filter(lambda l: hasattr(l,'__call__') and l.func_code.co_argcount==0,globals().values())
+    from random import choice
+    f = choice(functions)
+    try:
+        f()
+    except Exception as e:
+        print "didn't work.",e
+
+def dmercer(number, start=2):
+    """
+       Sift the Two's and Sift the Three's,
+       The Sieve of Eratosthenes.
+       When the multiples sublime,
+       The numbers that remain are Prime!
+    """
+    sieve = []
+    for n in xrange(start, number+1):
+        is_prime = True
+        for p in sieve:
+            if n % p == 0:
+                is_prime = False
+                break
+            if p * p > n:
+                break
+        if is_prime:
+            sieve.append(n)
+    return sieve
+    
+def ryanseys():
+    try:
+        ryanseys()
+    except:
+        pass
+
+def danielnr(huehue):
+  print "                                                                                "
+  print "                                                                                "
+  print "                             SIGNING IN FROM ALASKA                             "
+  print "                                                                                "
+  print "                                                                                "
+  print "                                                                                "
+  print "                                           ``-:/:::.                            "
+  print "                          `.::::::-.``-:////:-.```.://:::--`                    "
+  print "                      .:///-.````.-://///:.          `....-://:.                "
+  print "                   -//-..-:::--`    .hNNNs:+                 ``:/-              "
+  print "                 -/-`  //-....-+:   oMMMMm`o: ``                `-+.            "
+  print "                //`   `y      `o-   -ydmdo:s+//////:.       `://+/-+:           "
+  print "             `-/:      o:   .:/.     ``.../o.     `.:/.    -+./mNNm+o:          "
+  print "        ```-//-`       `+///-`           -s```       `//   :+`yMMMMd`/:.        "
+  print "     `////:-`            ``              y/./.    .`   o:   .:ohmdy/  .:/:-     "
+  print "     .s        `.                       `h-.`     ::.` +/      ...`      `-/-   "
+  print "      ://:::::/::/-                      //.       `.:oo`                   -/- "
+  print "        `....`   `////:-         `.`      `:/::---:://-`                 ..`  -+"
+  print "                    ```s-        +/+-    `.```.....``                   o/://. +"
+  print "                      /+         -s.+-.-//::///--..``                   .o. `s.+"
+  print "                     `y`          :/-://-```  `.--::/:                   .+-.o-+"
+  print "                     .y            `-:::::////--.````:/.`````              --. +"
+  print "                     +o                      `.-::://:-/+++++                  +"
+  print "                    `d++                             .:://::`                  +"
+  print "                    :d +:                                                      +"
+  print "                    os  //`                                                    +"
+  print "                  `+++/- `:/.       DANIELNR                            .//:::-o"
+  print "                 `o-   -/:``:/-`                                      `:h. `...:"
+  print "                 o:      .//.`HTTPS://DANIELNR.COM/                 `//.h+      "
+  print "                +/         `-///--////-.                         `.//. `d:      "
+  print "               :o              `-/////+sy-                   -////-`   oy       "
+  print "               y.                   `````                   /so+//:::/+d-       "
+  print "              /s------------------------------------------------::///:/         "
+
+def windspy():
+  print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
+  
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
+    drewcrawford()
+    dmercer(42)
+    ryanseys()
     jpadilla()
     mmay()
     evinugur()
@@ -450,7 +537,9 @@ if __name__ == "__main__":
     bprater()
     eternalmatt()
     PiersonBro()
+    ankushsachdeva()
     aniketpant()
+    jontonsoup()
     prezjordan()
     shuhaowu()
     chewxy()
@@ -463,6 +552,8 @@ if __name__ == "__main__":
     ngokevin('ngokevin.com')
     jessex()
     lax()
+    danielnr()
+    windspy()
     
     # as per instructed, please leave this as the final function
     lafin()
