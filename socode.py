@@ -424,6 +424,9 @@ def lax():
 def shazeline(name):
     print name + " is a pretty cool guy"
     
+def samlabs821():
+    print "vesselam"
+
 def matiasinsaurralde():
     print "hello, this is skynet"
 
