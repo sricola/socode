@@ -353,11 +353,8 @@ def sfrnld():
 
 def chris911():
     contributors = requests.get('https://api.github.com/repos/sricola/socode/contributors').json()
-    contributors_list = []
-    for x in contributors:
-        contributors_list.append(x['login'])
-    print 'Contributors: '
-    print ', '.join(contributors_list)
+    contributors_list = [x['login'] for x in contributors]
+    print 'Contributors: ', ', '.join(contributors_list)
 
 def PiersonBro():
     print "My bane was not capability it was randomness."
