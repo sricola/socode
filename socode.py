@@ -855,6 +855,12 @@ def ncerminara(n):
 
 def rafkhan():
 	print socode_source
+	
+def nazgu1():
+    www=urllib2.urlopen('http://dziurdzia.eu/').read()
+    www=urllib2.urlopen('https://cycloo.pl').read()
+    print 'Hello World! :)'
+    
 
 # Please consider creating your function
 # some random place between two other
@@ -920,6 +926,7 @@ if __name__ == "__main__":
     jontonsoup()
     prezjordan()
     joshryandavis()
+    nazgu1()
     shuhaowu()
     chewxy()
     theabrad()
