@@ -506,8 +506,8 @@ def windspy():
   
   
 def keikun17(question):
-  answer_prime = 24
-  return answer_prime
+    answer_prime = 24
+    return answer_prime
  
   
 if __name__ == "__main__":
