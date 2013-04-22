@@ -556,6 +556,9 @@ def dpayne():
         print 'There was an error'
     
     return False
+
+def zonetti():
+    print "Open Source FTW"
   
 if __name__ == "__main__":
     starefossen()
@@ -615,6 +618,7 @@ if __name__ == "__main__":
     windspy()
     samlabs821()
     alisnic(random.randint(1, 1024))
+    zonetti()
     
     # as per instructed, please leave this as the final function
     lafin()
