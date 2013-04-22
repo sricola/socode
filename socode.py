@@ -44,6 +44,7 @@ def alisnic(number):
 
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
+    codesuela('b')
 
 def jontonsoup():
     print "There's always one more bug."
@@ -776,7 +777,6 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
-    codesuela('b')
 
     
     # If you add a call to your function here you will
