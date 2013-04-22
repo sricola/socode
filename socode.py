@@ -140,6 +140,7 @@ def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     print 'Forked {} times'.format(repo['forks_count'])
 
+<<<<<<< HEAD
 def rburgosnavas(name):
     print '-' * (len(name) + 6)
     print "|  " + ' ' * (len(name)) + "  |"
@@ -183,6 +184,15 @@ def mmay():
     print "Get your daily dose of kitten at: " + url
 
 
+def julio():
+    print 111111111 * 111111111;
+
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
@@ -194,6 +204,7 @@ if __name__ == "__main__":
     sricola()
     kisom()
     ncammarata()
+    julio()
     prezjordan()
     tcr()
     jhgaylor()
