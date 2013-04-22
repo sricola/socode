@@ -10,5 +10,6 @@ Here are the rules!
         already existing execution chain.
       - Never entirely delete anyone else's function. Edit it if needed.
       - lafin() should be the last executing function, always
+      - a call to lafin() must remain in __main__().
 
 Let's see if we can make something meaningful out of this.
