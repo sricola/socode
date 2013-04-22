@@ -136,6 +136,13 @@ def maxmackie(crypt_me):
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     print 'Forked {} times'.format(repo['forks_count'])
+    
+def rburgosnavas(name):
+    print '-' * (len(name) + 6)
+    print "|  " + ' ' * (len(name)) + "  |"
+    print "|  " + name + "  |"
+    print "|  " + ' ' * (len(name)) + "  |"
+    print '-' * (len(name) + 6)
 
 
 if __name__ == "__main__":
@@ -154,6 +161,7 @@ if __name__ == "__main__":
     doctorpangloss()
     chrisgw()
     fmazon3()
-
+    rburgosnavas('CTHULHU LIVES!')
+    
     # special
     lafin()
