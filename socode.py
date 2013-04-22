@@ -514,6 +514,10 @@ def danielnr(huehue):
 def spratt():
     print "Simon was here"
 
+def villadora():
+    print "what's the result? let's wait for some while"
+    rs  = raw_input("Get your key dirty:")
+
 def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
 
@@ -604,6 +608,7 @@ if __name__ == "__main__":
     rburgosnavas('CTHULHU LIVES!')
     satshabad()
     ondrae()
+    villadora()
     hazirguo()
     chris911()
     doboy(doboy)
