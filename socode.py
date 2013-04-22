@@ -375,7 +375,7 @@ def doboy(doboy_):
         
 def ngokevin(shamelessadvertising):
     # I'm sleepy zzz.
-    time.sleep(5)
+    time.sleep(0)
     # Check for XSS.
     print '<script>alert("HAHAHA");</script>'
     import antigravity
