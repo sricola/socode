@@ -41,7 +41,7 @@ def prezjordan():
 def JesseAldridge():
     def wrap(f):
       def new_f():
-        for i in range(1):
+        for i in range(random.randrange(1, 5)):
           f()
       return new_f
 
