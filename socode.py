@@ -34,6 +34,11 @@ def alisnic(number):
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
 
+def ozdemircili():
+    print "Probably we can do some  admin staff too!."
+    print map(lambda x: "This project is going to Rock! " + ("Don`t you think?"),range(1))
+
+
 def jontonsoup():
     print "There's always one more bug."
 
