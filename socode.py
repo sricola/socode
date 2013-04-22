@@ -27,6 +27,7 @@ import webbrowser
 import time
 import urllib2
 import platform
+import urllib3
 
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
@@ -222,6 +223,65 @@ def cyclo():
 
 def chrisgw():
     print "meh"
+
+def snipplets():
+    '''
+    Code for pulling random images from specified boards on 4chan and pushing them to a Apple TV 2 Device
+    '''
+
+    #Specify boards
+    boards = ['b','g','v','wg','fa','trv','an','ck']
+
+    #Specify Transitions and airplay device IP
+    transitions = ['None', 'SlideLeft', 'SlideRight', 'Dissolve']
+    airpush_ip = '192.168.1.100'
+    airpush_port = '7000'
+    airpush_target = "/photo"
+
+    #Uses one connection. Urllib2 closes and reopens connections, this is a bad time. Don't have a bad time.
+    http_pool = urllib3.HTTPConnectionPool(airpush_ip+':'+airpush_port)
+
+    #Track seen images so we dont get dubs
+    seen = set()
+
+    #For the purpose of 'social coding' this infinate loop has been replaced to looping 10x
+    #while True:
+    for i in range(10):
+        try:
+            chosen_one = random.choice(boards)
+            #load thread json
+            url = 'http://api.4chan.org/'+chosen_one+'/'+str(random.choice(range(10)))+'.json'
+            urllib2.Request(url)
+            html = urllib2.urlopen(req)
+            data = json.loads(html.read())
+
+            #get random thread
+            thread = random.choice(data['threads'])
+            url = 'http://api.4chan.org/'+chosen_one+'/res/'+str(thread['posts'][0]['no'])+'.json'
+            data = getJson(url)
+
+            #Get random image from thread
+            images = []
+            for post in data['posts']:
+                if 'tim' in post.keys():
+                    if 'ext' != '.gif':
+                        if str(post['tim'])+post['ext'] not in seen:
+                            seen.add(str(post['tim'])+post['ext'])
+                            images.append(str(post['tim'])+post['ext'])
+            if len(images) > 0:
+                image = random.choice(images)
+
+                img = urllib2.urlopen("http://images.4chan.org/"+chosen_one+"/src/"+image)
+                
+                #Make request to airplay device
+                r = http_pool.urlopen('PUT',airpush_target,body=img.read(),headers={'X-Apple-Transition': random.choice(transitions)})
+
+                #display it on screen for 2secs
+                time.sleep(2)
+
+        except urllib2.HTTPError:
+            print "404lol"
+            print url
 
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
@@ -560,6 +620,7 @@ if __name__ == "__main__":
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
     drewcrawford()
+    snipplets()
     dmercer(42)
     ryanseys()
     jpadilla()
