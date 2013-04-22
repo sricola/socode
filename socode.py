@@ -21,6 +21,21 @@ import hashlib
 import os
 import string
 
+def baisong():
+	print "\nwho said what?\n"
+	git_file = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
+	func_lines = git_file.split('if __name__ == "__main__":')[1]
+	lines = [line.strip() for line in func_lines.split('\n') if line.strip()]
+	for line in lines:
+		if not line.startswith('#'):
+			if not ' ' in line and '()' in line:
+				func = line
+				print func
+				try:
+				  eval(line)
+				except:
+				  pass
+				  
 def heinzf():
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
     git_file = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
@@ -227,14 +242,19 @@ def ondrae(): # Random compliment. If anyone has a better source, add it in.
             compliments.append(m.group(1))
     print getpass.getuser() +', ' + compliments[random.randint(1,len(compliments))].lower()
 
-    
+def djrausch():
+    print "DAE #HOLO? #NEXUS #HOLOYOLO"
+
 def chewxy():
     # because there is nothing better to do after the world has ended.
     pass
-    
+
 def hazirguo():
     print "Mourning for the dead in Sichuan earthquake!\n"
-    
+ 
+def sfrnld():
+    print "From Indonesia with love!"
+ 
 if __name__ == "__main__":
     jpadilla()
     heinzf()
@@ -250,10 +270,12 @@ if __name__ == "__main__":
     jhgaylor()
     henghonglee()
     taylorlapeyre()
+    djrausch()
     jeffjose()
     agoebel()
     cyclo()
     binary132()
+    sfrnld()
     doctorpangloss()
     chrisgw()
     fmazon3()
@@ -266,6 +288,7 @@ if __name__ == "__main__":
     satshabad()
     ondrae()
     hazirguo()
+    baisong()
 
     # as per instructed, please leave this as the final function
     lafin()
