@@ -19,6 +19,8 @@ import getpass
 import re
 import hashlib
 import os
+import curses
+import time
 import string
 import math
 import sys
@@ -104,7 +106,6 @@ def taylorlapeyre():
 
 
 def kghose():
-    import curses, time
     
     def main_loop(window):
         window.clear()
