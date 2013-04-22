@@ -38,22 +38,17 @@ def kisom():
             if fahrenheit < 50 else 'and the temperature outside is tolerable'
 
     ip = requests.get('http://ifconfig.me/ip').content
-<<<<<<< HEAD
     geoip = json.loads(requests.get('http://freegeoip.net/json/').content)
     print 'there once was a coder from', geoip['country_name']
     zgohr(geoip['city'])
     
 def evinugur():
     print 'there is a ', (random.random()*100), "% chance that something cool will come from this..."
-=======
-    geoip = json.loads(requests.get('http://freegeoip.net/json/').content)['country_name']
-    print 'there once was a coder from', geoip
 
 def ncammarata():
     tweets = json.loads(requests.get("https://search.twitter.com/search.json?q=a").content)
     tweet = tweets['results'][0]['text']
     print "Random Tweet:", tweet
->>>>>>> Load random tweet
     
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
