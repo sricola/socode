@@ -17,6 +17,7 @@ import requests
 import random
 import getpass
 import re
+import time
 import hashlib
 import os
 import string
@@ -55,7 +56,7 @@ def bencooling():
   print "I don't know Python; I don't belong here"
 
 def kisom():
-    def zgohr(city): # JesseAldridge breaks top level funcs with parms
+    def zgohr(city):
         weather = json.loads(requests.
                              get('http://api.openweathermap.org'
                                  '/data/2.1/find/name?q=%s' % city).content)
@@ -111,8 +112,11 @@ def prezjordan():
 def JesseAldridge():
     def wrap(f):
       def new_f(*args, **kwargs):
-        # changing this back to one, it really slows things down with the requests - @sricola
-        f(*args, **kwargs)
+        start_time = time.time()
+        for i in range(random.randrange(1, 5)):
+          f(*args, **kwargs)
+          if time.time() - start_time > .1:
+            break
       return new_f
 
     g = globals()
