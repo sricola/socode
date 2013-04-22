@@ -55,6 +55,7 @@ def piperchester():
 
 def binary132():
     print "Perl is better.  PS everyone is lazy"
+    daniel_dressler()
 
 def sricola():
     print "Welcome to soCode!!"
