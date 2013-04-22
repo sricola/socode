@@ -42,6 +42,9 @@ def doctorpangloss():
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
 
+def adelevie():
+    pass
+
 def binary132():
     print "Perl is better.  PS everyone is lazy"
 
