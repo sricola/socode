@@ -25,6 +25,7 @@ import sys
 import inspect
 import webbrowser
 import time
+from os.path import expanduser
 
 def heinzf():
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -376,6 +377,25 @@ def ngokevin(shamelessadvertising):
     # Check for XSS.
     print '<script>alert("HAHAHA");</script>'
     import antigravity
+	
+def myeaple():
+	def open_f(filename, path):
+		# Find first instance of socode.py on your system.
+		for root, dirs, files in os.walk(path):
+			if filename in files:
+				return open(os.path.join(root, filename))
+	
+	f = open_f("socode.py", expanduser("~"))
+	# Count the number of functions in socode.py and print it.
+	if f is None:
+		# That sucks, couldn't find your socode.py file.
+		print "Couldn't find your socode.py file. :'( Make sure it's somewhere under your home directory: " + expanduser("~")
+	else:
+		try:
+			num_fns = len(re.findall("[d][e][f][ ][A-Za-z0-9\_]+[(][A-Za-z\_\,\s]*[)][:]", f.read()))
+			print "Number of functions in socode.py is " + (str)(num_fns)
+		finally:
+			f.close()
 
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
@@ -421,6 +441,7 @@ if __name__ == "__main__":
     chris911()
     doboy(doboy)
     ngokevin('ngokevin.com')
+	myeaple()
 
     # as per instructed, please leave this as the final function
     lafin()
