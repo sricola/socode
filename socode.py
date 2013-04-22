@@ -382,6 +382,15 @@ def ngokevin(shamelessadvertising):
     # Check for XSS.
     print '<script>alert("HAHAHA");</script>'
     import antigravity
+    
+def gardaud(func):
+	print "Should I execute func?"
+	if random.randrange(0,2) == 0:
+		print "Yes! :D"
+		return func()
+	else:
+		print "No! :( "
+		return None
 
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
@@ -396,7 +405,7 @@ if __name__ == "__main__":
     ncammarata()
     eddotman()
     julio()
-    prezjordan()
+    gardaud(prezjordan())
     GeneralZero()
     tcr()
     jhgaylor()
