@@ -181,8 +181,6 @@ def fweakout(x):
         if x % i == 0:
 	    return False
     return True
- 
-
 
 def monsdar():
     print "Hello?..."
