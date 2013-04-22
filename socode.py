@@ -19,7 +19,7 @@ def sricola():
     
 def quaz3l():
     print "Today is " + str(datetime.date.today()) + ", quaz3l was here on 2013-04-21"
-    if(str(datetime.date.today()) == '2013-04-22'): 
+    if(str(datetime.date.today()) == '2013-04-21'): 
         print "Hey! thats today!"
 
 def lefin():
