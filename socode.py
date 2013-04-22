@@ -27,13 +27,33 @@ import webbrowser
 import urllib2
 import platform
 import time
-
+import struct
 
 # IF ANY OF YOU GUYS WANT THE SOURCE OF THIS FILE USE THIS VARIABLE
 ###################################################################
 
 socode_source = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
 
+def harshavardhana(data):
+    n = b = 0
+    decode = ''
+    for c in data:
+        if '!' <= c and c <= 'u':
+            n += 1
+            b = b*85+(ord(c)-33)
+            if n == 5:
+                decode += struct.pack('>L',b)
+                n = b = 0
+        elif c == 'z':
+            assert n == 0
+            decode += '\0\0\0\0'
+        elif c == '~':
+            if n:
+                for _ in range(5-n):
+                    b = b*85+84
+                out += struct.pack('>L',b)[:n-1]
+            break
+    print decode
 
 def thisjustin(command=None, username=None):
     ''' Responds to a few choice HAL 9000 commands form 2001: A Space Odyssey'''
@@ -1090,6 +1110,7 @@ if __name__ == "__main__":
     pocon()
     bheesham()
     calvcoll(random.randint(1,1024))
+    harshavardhana('E,9)oF*2M7/c~>')
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
