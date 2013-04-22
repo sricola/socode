@@ -189,6 +189,15 @@ def adelevie():
 def thisishugo():
     time.sleep(1)
 
+def dlad():
+    cursor='/-\|'
+    for i in xrange(0,4):
+      for c in cursor:
+          sys.stdout.write(c)
+          time.sleep(0.1)
+          sys.stdout.write('\b')
+          sys.stdout.flush()
+
 def piperchester():
     print "I love this idea. Hailing from Rochester, NY!"
 
@@ -959,7 +968,7 @@ if __name__ == "__main__":
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
-
+    dlad()
     dpayne()
     arkokoley()
     drewcrawford()
