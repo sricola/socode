@@ -8,7 +8,7 @@
 #       - Once your function is written, you can call it from anywhere else in the 
 #         already existing exectution chain.
 #       - Never entirely delete anyone else's function, edit it if needed.
-#       - lefin() should be the last executing function, always
+#       - lafin() should be the last executing function, always
 
 # Lets see if we can make something meaningful out of this.
 
@@ -22,10 +22,10 @@ def quaz3l():
     if(str(datetime.date.today()) == '2013-04-21'): 
         print "Hey! thats today!"
 
-def lefin():
+def lafin():
     print "Goodbye Social World!"
     
 if __name__ == "__main__":
     sricola()
     quaz3l()
-    lefin()
+    lafin()
