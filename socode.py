@@ -17,13 +17,30 @@ import requests
 import random
 import getpass
     
+
+def binary132():
+    print "Perl is better.  PS everyone is lazy"
+
 def sricola():
     print "Welcome to soCode!!"
+
+def bencooling():
+  print "I don't know Python; I don't belong here"
     
 def kisom():
+    def zgohr(city): # JesseAldridge breaks top level funcs with parms
+        weather = json.loads(requests.
+                             get('http://api.openweathermap.org'
+                                 '/data/2.1/find/name?q=%s' % city).content)
+        kelvin = weather['list'][0]['main']['temp']
+        fahrenheit = 9/5*(kelvin - 273) + 32
+        print 'and it is too damn cold' \
+            if fahrenheit < 50 else 'and the temperature outside is tolerable'
+
     ip = requests.get('http://ifconfig.me/ip').content
-    geoip = json.loads(requests.get('http://freegeoip.net/json/').content)['country_name']
-    print 'there once was a coder from', geoip
+    geoip = json.loads(requests.get('http://freegeoip.net/json/').content)
+    print 'there once was a coder from', geoip['country_name']
+    zgohr(geoip['city'])
     
 def evinugur():
     print 'there is a ', (random.random()*100), "% chance that something cool will come from this..."
@@ -74,4 +91,5 @@ if __name__ == "__main__":
     prezjordan()
     tcr()
     agoebel()
+    binary132()
     lafin()
