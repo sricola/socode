@@ -125,6 +125,10 @@ def cyclo():
     
 def chrisgw():
     print "meh"
+    
+def jhgaylor():
+    print "Signing in from Starkville, Mississippi."
+
 
 if __name__ == "__main__":
     heinzf()
@@ -141,6 +145,7 @@ if __name__ == "__main__":
     doctorpangloss()
     chrisgw()
     fmazon3()
+    jhgaylor()
     
     # special
     lafin()
