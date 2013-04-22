@@ -12,8 +12,15 @@
 
 # Lets see if we can make something meaningful out of this.
 
+import datetime
+
 def sricola():
     print "Welcome to soCode!!"
+    
+def quaz3l():
+    print "Today is " + str(datetime.date.today()) + ", quaz3l was here on 2013-04-21"
+    if(str(datetime.date.today()) == '2013-04-22'): 
+        print "Hey! thats today!"
 
 def lefin():
     print "Goodbye Social World!"
