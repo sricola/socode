@@ -210,6 +210,11 @@ def julio():
 
 
 
+    
+def chewxy():
+    # because there is nothing better to do after the world has ended.
+    pass
+    
 if __name__ == "__main__":
     jpadilla()
     heinzf()
@@ -232,6 +237,9 @@ if __name__ == "__main__":
     chrisgw()
     fmazon3()
     bprater()
+    prezjordan()
+    shuhaowu()
+    chewxy()
     rburgosnavas('CTHULHU LIVES!')
 
     # as per instructed, please leave this as the final function
