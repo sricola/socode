@@ -755,11 +755,8 @@ def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
     return similarity
 
 def ncerminara(n):
-    if n == 0:
-        return 0
-    if n == 1:
-        return 1
-    return ncerminara(n-1) + ncerminara(n-2)
+	phi = (1 + 5**0.5) / 2
+    return int(round((phi**n - (1-phi)**n) / 5**0.5))
 
 # Please consider creating your function
 # some random place between two other
