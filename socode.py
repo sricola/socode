@@ -207,19 +207,13 @@ def mmay():
 
 def julio():
     print 111111111 * 111111111;
-
-
-
-
-
-
-
-
-
     
 def chewxy():
     # because there is nothing better to do after the world has ended.
     pass
+    
+def hazirguo():
+    print "Mourning for the dead in Sichuan earthquake!\n"
     
 if __name__ == "__main__":
     jpadilla()
@@ -248,6 +242,7 @@ if __name__ == "__main__":
     shuhaowu()
     chewxy()
     rburgosnavas('CTHULHU LIVES!')
+    hazirguo()
 
     # as per instructed, please leave this as the final function
     lafin()
