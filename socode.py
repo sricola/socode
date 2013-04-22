@@ -528,6 +528,10 @@ def jpadilla():
     except ValueError:
         pass
 
+def wmill():
+    nyan = requests.get('https://raw.github.com/vtsvang/nyancat-telnet-node/master/assets/animation.json').json()[0]
+    print nyan
+
 def rburgosnavas(name):
     x = (len(name) + 4)
     print "*" + "-" * x + "*"
