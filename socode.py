@@ -450,6 +450,41 @@ def ryanseys():
     except:
         pass
 
+def danielnr(huehue):
+  print "                                                                                "
+  print "                                                                                "
+  print "                             SIGNING IN FROM ALASKA                             "
+  print "                                                                                "
+  print "                                                                                "
+  print "                                                                                "
+  print "                                           ``-:/:::.                            "
+  print "                          `.::::::-.``-:////:-.```.://:::--`                    "
+  print "                      .:///-.````.-://///:.          `....-://:.                "
+  print "                   -//-..-:::--`    .hNNNs:+                 ``:/-              "
+  print "                 -/-`  //-....-+:   oMMMMm`o: ``                `-+.            "
+  print "                //`   `y      `o-   -ydmdo:s+//////:.       `://+/-+:           "
+  print "             `-/:      o:   .:/.     ``.../o.     `.:/.    -+./mNNm+o:          "
+  print "        ```-//-`       `+///-`           -s```       `//   :+`yMMMMd`/:.        "
+  print "     `////:-`            ``              y/./.    .`   o:   .:ohmdy/  .:/:-     "
+  print "     .s        `.                       `h-.`     ::.` +/      ...`      `-/-   "
+  print "      ://:::::/::/-                      //.       `.:oo`                   -/- "
+  print "        `....`   `////:-         `.`      `:/::---:://-`                 ..`  -+"
+  print "                    ```s-        +/+-    `.```.....``                   o/://. +"
+  print "                      /+         -s.+-.-//::///--..``                   .o. `s.+"
+  print "                     `y`          :/-://-```  `.--::/:                   .+-.o-+"
+  print "                     .y            `-:::::////--.````:/.`````              --. +"
+  print "                     +o                      `.-::://:-/+++++                  +"
+  print "                    `d++                             .:://::`                  +"
+  print "                    :d +:                                                      +"
+  print "                    os  //`                                                    +"
+  print "                  `+++/- `:/.       DANIELNR                            .//:::-o"
+  print "                 `o-   -/:``:/-`                                      `:h. `...:"
+  print "                 o:      .//.`HTTPS://DANIELNR.COM/                 `//.h+      "
+  print "                +/         `-///--////-.                         `.//. `d:      "
+  print "               :o              `-/////+sy-                   -////-`   oy       "
+  print "               y.                   `````                   /so+//:::/+d-       "
+  print "              /s------------------------------------------------::///:/         "
+
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -499,6 +534,7 @@ if __name__ == "__main__":
     ngokevin('ngokevin.com')
     jessex()
     lax()
+    danielnr()
     
     # as per instructed, please leave this as the final function
     lafin()
