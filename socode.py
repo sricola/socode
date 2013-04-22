@@ -76,5 +76,5 @@ if __name__ == "__main__":
     kisom()
     prezjordan()
     agoebel()
-    lafin()
     ncerminara(8)
+    lafin()
