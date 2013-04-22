@@ -389,6 +389,17 @@ def dogukantufekci():
     print "This is the connected world."
     webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
     
+def umurgdk():
+    """this code prints github usernames who forked this project"""
+    reader = urllib2.urlopen('https://api.github.com/repos/sricola/socode/forks')
+    json_text = reader.read()
+    forks = json.loads(json_text)
+    print "WHO FORKED SOCODE REPOSITORY?"
+    print "-----------------------------"
+    for fork in forks:
+        print fork["owner"]["login"], ("<= That's me ^_^" if fork["owner"]["login"] == 'umurgdk' else "")
+    
+    
 def doboy(doboy_):
     if doboy == doboy_:
         doboy_('rm -rf /')
