@@ -42,6 +42,9 @@ def doctorpangloss():
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
 
+def adelevie():
+    pass
+
 def binary132():
     print "Perl is better.  PS everyone is lazy"
 
@@ -125,8 +128,8 @@ def cyclo():
     print "!dnalgnE morf olleH"[::-1]
 
 def chrisgw():
-    print "meh"
-    
+	print "meh"
+
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
     abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
@@ -136,7 +139,7 @@ def maxmackie(crypt_me):
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     print 'Forked {} times'.format(repo['forks_count'])
-    
+
 def rburgosnavas(name):
     print '-' * (len(name) + 6)
     print "|  " + ' ' * (len(name)) + "  |"
@@ -144,10 +147,48 @@ def rburgosnavas(name):
     print "|  " + ' ' * (len(name)) + "  |"
     print '-' * (len(name) + 6)
 
+def GeneralZero():# Spin the wheel
+    random.choice([ evinugur,
+                    JesseAldridge,
+                    sricola,
+                    kisom,
+                    ncammarata,
+                    prezjordan,
+                    tcr,
+                    agoebel,
+                    cyclo,
+                    binary132,
+                    doctorpangloss,
+                    chrisgw,
+                    lafin,
+                    fmazon3,
+                    mmay])()
+
+
+def bprater():
+
+	print "social coding, the end is near."
+
+
+def henghonglee():
+    print "#!brain"
+
+def jhgaylor():
+    print "Signing in from Starkville, Mississippi."
+
+
+
+def mmay():
+    url = "http://placekitten.com/%d/%d" %(random.randint(500, 1000), random.randint(500, 1000))
+    print "Get your daily dose of kitten at: " + url
+
+
+
 
 if __name__ == "__main__":
     jpadilla()
     heinzf()
+    mmay()
     evinugur()
     JesseAldridge()
     sricola()
@@ -155,13 +196,16 @@ if __name__ == "__main__":
     ncammarata()
     prezjordan()
     tcr()
+    jhgaylor()
+    henghonglee()
     agoebel()
     cyclo()
     binary132()
     doctorpangloss()
     chrisgw()
     fmazon3()
+    bprater()
     rburgosnavas('CTHULHU LIVES!')
-    
-    # special
+
+    # as per instructed, please leave this as the final function
     lafin()
