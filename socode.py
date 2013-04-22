@@ -517,6 +517,9 @@ def spratt():
 def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
 
+def mepcotterell():
+    print "ಠ_ಠ"
+
 def dpayne():
     try:
         #sets the desktop wallpaper to the top image on the wallpapers subreddit
@@ -614,6 +617,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
+    mepcotterell()
     alisnic(random.randint(1, 1024))
     
     # as per instructed, please leave this as the final function
