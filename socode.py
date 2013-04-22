@@ -553,6 +553,9 @@ def dpayne():
         print 'There was an error'
     
     return False
+    
+def johnmoberg():
+	print "I don't know what I'm doing."
   
 if __name__ == "__main__":
     starefossen()
@@ -611,6 +614,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
+    johnmoberg()
     
     # as per instructed, please leave this as the final function
     lafin()
