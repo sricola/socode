@@ -510,6 +510,9 @@ def danielnr(huehue):
   
 def spratt():
     print "Simon was here"
+    
+def fanquake():
+    print "G'Day, Mate!"	
 
 def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
@@ -611,6 +614,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
+    fanquake()
     
     # as per instructed, please leave this as the final function
     lafin()
