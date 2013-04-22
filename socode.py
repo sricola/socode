@@ -243,6 +243,9 @@ def vellamike(n=10):
 def chrisgw():
     print "meh"
 
+def yuvadm():
+    print requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
+
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
     abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
@@ -622,6 +625,7 @@ if __name__ == "__main__":
     cyclo()
     binary132()
     sfrnld()
+    yuvadm()
     kghose()
     doctorpangloss()
     chrisgw()
