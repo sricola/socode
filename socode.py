@@ -425,5 +425,8 @@ if __name__ == "__main__":
     doboy(doboy)
     ngokevin('ngokevin.com')
 
+def shazeline(name):
+    print name + " is a pretty cool guy"
+
     # as per instructed, please leave this as the final function
     lafin()
