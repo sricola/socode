@@ -556,7 +556,19 @@ def dpayne():
         print 'There was an error'
     
     return False
-  
+
+def shadabahmed():
+  str = """
+  _____ _               _       _       _____            _        
+ / ____| |             | |     | |     |  __ \          | |       
+| (___ | |__   __ _  __| | __ _| |__   | |__) |___   ___| | _____ 
+ \___ \| '_ \ / _` |/ _` |/ _` | '_ \  |  _  // _ \ / __| |/ / __|
+ ____) | | | | (_| | (_| | (_| | |_) | | | \ \ (_) | (__|   <\__ \\
+|_____/|_| |_|\__,_|\__,_|\__,_|_.__/  |_|  \_\___/ \___|_|\_\___/  
+                                                                 
+"""
+  print str
+
 if __name__ == "__main__":
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
@@ -615,6 +627,6 @@ if __name__ == "__main__":
     windspy()
     samlabs821()
     alisnic(random.randint(1, 1024))
-    
+    shadabahmed()
     # as per instructed, please leave this as the final function
     lafin()
