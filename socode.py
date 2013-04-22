@@ -154,7 +154,11 @@ def GeneralZero():# Spin the wheel
                     fmazon3])()
     
     
-    
+def bprater():
+
+	print "social coding, the end is near."
+
+
 
 if __name__ == "__main__":
     jpadilla()
@@ -172,6 +176,7 @@ if __name__ == "__main__":
     doctorpangloss()
     chrisgw()
     fmazon3()
+    bprater()
 
-    # special
+    # as per instructed, please leave this as the final function
     lafin()
