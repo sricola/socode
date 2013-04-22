@@ -69,6 +69,9 @@ def rjwebb(n):
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
 
+def payomdousti():
+    print "There is no spoon."
+
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
     codesuela('b')
@@ -861,6 +864,7 @@ if __name__ == "__main__":
     djrausch()
     jeffjose()
     agoebel()
+    payomdousti()
     ZackMullaly()
     cyclo()
     binary132()
