@@ -485,6 +485,9 @@ def danielnr(huehue):
   print "               y.                   `````                   /so+//:::/+d-       "
   print "              /s------------------------------------------------::///:/         "
 
+def windspy():
+  print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
+  
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -535,6 +538,7 @@ if __name__ == "__main__":
     jessex()
     lax()
     danielnr()
+    windspy()
     
     # as per instructed, please leave this as the final function
     lafin()
