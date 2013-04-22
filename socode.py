@@ -485,6 +485,19 @@ def danielnr(huehue):
   print "               y.                   `````                   /so+//:::/+d-       "
   print "              /s------------------------------------------------::///:/         "
 
+def aeonaxan():
+    """Executes a random method from this file"""
+    print "Rolling the dice ..."
+    methods = inspect.getmembers(sys.modules[__name__], inspect.isfunction)
+    while 1:
+        try:
+            choice = random.choice(methods)
+            print "AeonAxan randomly chooses %s!" % choice[0]
+            choice[1]()
+            break
+        except TypeError:
+            print "%s takes arguments :( Rolling the dice again..." % choice[0]
+
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -535,6 +548,7 @@ if __name__ == "__main__":
     jessex()
     lax()
     danielnr()
-    
+    aeonaxan() 
+
     # as per instructed, please leave this as the final function
     lafin()
