@@ -48,6 +48,9 @@ def doctorpangloss():
 def adelevie():
     pass
 
+def piperchester():
+    print "I love this idea. Hailing from Rochester, NY!"
+
 def binary132():
     print "Perl is better.  PS everyone is lazy"
 
