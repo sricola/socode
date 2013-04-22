@@ -344,12 +344,12 @@ def jpadilla():
         pass
 
 def rburgosnavas(name):
-    x = (len(name) + 6)
-    print '-' * x
-    print "|" + ' ' * x + "|"
-    print "|  " + name + "  |"
-    print "|" + ' ' * x + "|"
-    print '-' * x
+    x = (len(name) + 4)
+    print "*" + "-" * x + "*"
+    print "|\\" + '-' * (x-2) + "/|"
+    print "| *" + name + "* |"
+    print "|/" + '-' * (x-2) + "\\|"
+    print "*" + "-" * x + "*"
 
 def GeneralZero():# Spin the wheel
     random.choice([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])()
@@ -923,7 +923,7 @@ if __name__ == "__main__":
     shuhaowu()
     chewxy()
     theabrad()
-    rburgosnavas('CTHULHU LIVES!')
+    rburgosnavas('ANNIHILATE!!!!')
     markembling()
     satshabad()
     ondrae()
