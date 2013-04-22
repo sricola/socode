@@ -137,6 +137,8 @@ def antonaut(print_color=None):
         # Change stdout
         sys.stdout = F()
 
+def sikado():
+    print "There is", len(socode_source), "characters in this file..."
 
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
@@ -970,6 +972,7 @@ def nazgu1():
 if __name__ == "__main__":
     seripap("deleting ",1,"......")
     rjwebb(5)
+    sikado()
     antonaut() # DOUBLE-RAINBOW!
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
