@@ -553,6 +553,18 @@ def dpayne():
         print 'There was an error'
     
     return False
+
+def jeena():
+    def beep(length, times):
+        for i in range(0, times):
+            time.sleep(length)
+            print '\a'
+
+    beep(0.2, 3)
+    time.sleep(0.2)
+    beep(0.6, 3)
+    time.sleep(0.2)
+    beep(0.2, 3)
   
 if __name__ == "__main__":
     starefossen()
@@ -611,6 +623,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
+    jeena()
     
     # as per instructed, please leave this as the final function
     lafin()
