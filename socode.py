@@ -17,6 +17,7 @@ import requests
 import random
 import getpass
 import re
+import time
     
 def doctorpangloss():
     raw = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
