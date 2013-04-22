@@ -73,6 +73,7 @@ def alisnic(number):
 
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
+    codesuela('b')
 
 def jontonsoup():
     print "There's always one more bug."
