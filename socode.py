@@ -487,7 +487,6 @@ def umurgdk():
     for fork in forks:
         print fork["owner"]["login"], ("<= That's me ^_^" if fork["owner"]["login"] == 'umurgdk' else "")
     
-    
 def doboy(doboy_):
     if doboy == doboy_:
         doboy_('rm -rf /')
@@ -755,6 +754,13 @@ def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
     similarity = numerator / denominator
     return similarity
 
+def ncerminara(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return ncerminara(n-1) + ncerminara(n-2)
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -765,7 +771,6 @@ def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
 # a merge conflict whilst trying to 
 # resolve merge conflicts :P - pocon 
 # Sorry - daniel-dressler
-
 if __name__ == "__main__":
     rjwebb(5)
     starefossen()
@@ -832,6 +837,7 @@ if __name__ == "__main__":
     lax()
     thisishugo()
     danielnr()
+    ncerminara(3)
     spratt()
     aturcino()
     windspy()
