@@ -133,6 +133,9 @@ def antonaut(print_color=None):
                     else:
                         s += unicode(colorify(c))
                 stdout.write(s)
+            
+            def flush():
+                stdout.flush()
 
         # Change stdout
         sys.stdout = F()
