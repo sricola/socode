@@ -192,22 +192,15 @@ def henghonglee():
 def jhgaylor():
     print "Signing in from Starkville, Mississippi."
 
-
-
 def mmay():
     url = "http://placekitten.com/%d/%d" %(random.randint(500, 1000), random.randint(500, 1000))
     print "Get your daily dose of kitten at: " + url
 
+def jeffjose():
+    print "Hi from India!"
 
 def julio():
     print 111111111 * 111111111;
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
