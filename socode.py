@@ -126,6 +126,9 @@ def cyclo():
 def chrisgw():
     print "meh"
 
+def henghonglee():
+	print "#!brain"
+
 if __name__ == "__main__":
     heinzf()
     evinugur()
