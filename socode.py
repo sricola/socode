@@ -379,6 +379,9 @@ def ngokevin(shamelessadvertising):
     # Check for XSS.
     print '<script>alert("HAHAHA");</script>'
     import antigravity
+    
+def bigdavecoding():
+    print "It was Smerdyakov!!!!!"
 
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
