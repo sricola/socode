@@ -27,6 +27,12 @@ import webbrowser
 import time
 import urllib2
 import platform
+import math
+
+def lsauer():
+    print 'But will it blend?'
+    return daniel_dressler() if (random.random()*daniel_dressler()) > (math.pi * 5)\
+        else print requests.get('http://lsauer.github.com/Readme.md').content
 
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
@@ -575,6 +581,7 @@ if __name__ == "__main__":
     ncammarata()
     eddotman()
     julio()
+    lsauer()
     gardaud(prezjordan())
     GeneralZero()
     tcr()
