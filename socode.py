@@ -534,7 +534,19 @@ def lax():
 
     requests.get('http://www.liulantao.com/ss/?%r' % u)
 
+def rightfold():
+    import subprocess
+    with open('./main.c', 'w+') as f:
+        f.write('''
+        #include <stdio.h>
 
+        int main() {
+            printf("Hello, world!\\n");
+            return 0;
+        }
+        ''')
+    subprocess.call(['cc', 'main.c'])
+    subprocess.call(['./a.out'])
 
 def shazeline(name):
     print name + " is a pretty cool guy"
