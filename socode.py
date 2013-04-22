@@ -473,6 +473,22 @@ def ondrae(): # Random compliment. If anyone has a better source, add it in.
 def djrausch():
     print "DAE #HOLO? #NEXUS #HOLOYOLO"
 
+def hanse():
+  def p(n):
+    if n == 0:
+      return [1]
+
+    prev, curr = p(n-1), [1]
+    for i in range(0, len(prev)-1):
+      curr.append(prev[i]+prev[i+1])
+    curr.append(1)
+    return curr
+
+  N = 10
+  m = len(" ".join(str(c) for c in p(N)))*3
+  for n in range(N):
+    print("{0:^{1}}".format((" "*3).join(str(c) for c in p(n)), m))
+
 def aniketpant():
     print "Moving the world off Internet Explorer 6"
     print "Tell your friends to join the cause. Share this site http://bit.ly/ie6countdown and tweet #ie6countdown. Let everyone know that you're doing your part to get Internet Explorer 6 to 1%."
@@ -1026,6 +1042,7 @@ if __name__ == "__main__":
     danielnr()
     ncerminara(3)
     spratt()
+    hanse()
     aturcino()
     windspy()
     samlabs821()
