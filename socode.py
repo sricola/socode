@@ -622,6 +622,7 @@ if __name__ == "__main__":
     shuhaowu()
     chewxy()
     rburgosnavas('CTHULHU LIVES!')
+    markembling()
     satshabad()
     ondrae()
     hazirguo()
