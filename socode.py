@@ -354,6 +354,11 @@ def devonbarrett():
     print "Gotta make you understand"
     eternalmatt()
     charliegroll()
+    
+def lbalceda(value=None):
+    if value is None:
+        value = 100
+    print map(lambda x: x * 2, range(1,value))
 
 def shuhaowu(): # Call me last! :D
     l = locals()
@@ -972,6 +977,7 @@ if __name__ == "__main__":
     rjwebb(5)
     antonaut() # DOUBLE-RAINBOW!
     starefossen()
+    lbalceda(42)
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     dlad()
