@@ -103,7 +103,12 @@ def peterwallhead():
 def cyclo():
     print "!dnalgnE morf olleH"[::-1]
     
+def jpadilla():
+    repo = requests.get('https://api.github.com/repos/sricola/socode').json()
+    print 'Forked {} times'.format(repo['forks_count'])
+    
 if __name__ == "__main__":
+    jpadilla()
     evinugur()
     JesseAldridge()
     sricola()
