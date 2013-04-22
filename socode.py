@@ -43,6 +43,9 @@ def doctorpangloss():
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
 
+def adelevie():
+    pass
+
 def binary132():
     print "Perl is better.  PS everyone is lazy"
 
@@ -131,6 +134,7 @@ def cyclo():
 def chrisgw():
     print "meh"
     
+<<<<<<< HEAD
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
     abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
@@ -165,7 +169,19 @@ def GeneralZero():# Spin the wheel
                     fmazon3])()
     
     
-    
+def bprater():
+
+	print "social coding, the end is near."
+
+
+
+def henghonglee():
+    print "#!brain"
+=======
+def jhgaylor():
+    print "Signing in from Starkville, Mississippi."
+
+>>>>>>> b5cf150ada455df6bee399349b2adf0de829299d
 
 if __name__ == "__main__":
     jpadilla()
@@ -177,13 +193,16 @@ if __name__ == "__main__":
     ncammarata()
     prezjordan()
     tcr()
+    jhgaylor()
+    henghonglee()
     agoebel()
     cyclo()
     binary132()
     doctorpangloss()
     chrisgw()
     fmazon3()
+    bprater()
     rburgosnavas('CTHULHU LIVES!')
-    
-    # special
+
+    # as per instructed, please leave this as the final function
     lafin()
