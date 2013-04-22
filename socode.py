@@ -216,6 +216,16 @@ def mmay():
 def julio():
     print 111111111 * 111111111;
 
+def ondrae(): # Random compliment. If anyone has a better source, add it in.
+    response = requests.get("http://peoplearenice.blogspot.com/p/compliment-list.html")
+    lines = response.text.split('\n')
+    pattern = '\d+\.\s+(.*)</span>'
+    compliments = []
+    for line in lines:
+        m = re.search(pattern, line)
+        if m:
+            compliments.append(m.group(1))
+    print getpass.getuser() +', ' + compliments[random.randint(1,len(compliments))].lower()
 
 
 
@@ -257,6 +267,7 @@ if __name__ == "__main__":
     chewxy()
     rburgosnavas('CTHULHU LIVES!')
     satshabad()
+    ondrae()
 
     # as per instructed, please leave this as the final function
     lafin()
