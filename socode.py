@@ -739,6 +739,7 @@ def hako():
     	print "Yellow World! @hako was here! :D", wuzhere
     	print "=[],"
     	print yllo.NRML
+    	print url
 
 def pocon():
 	import __hello__
