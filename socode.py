@@ -277,6 +277,9 @@ def shuhaowu(): # Call me last! :D
 def agoebel():
     print "America!"
 
+def MikeGrace():
+    print map(lambda x: "Happy Birthday to " + ("you" if x != 2 else "dear " + getpass.getuser()),range(4))
+
 def theabrad():
     print "Baltimore Ravens"
     print "Super Bowl Champions!!!"
@@ -893,6 +896,7 @@ if __name__ == "__main__":
     ZackMullaly()
     cyclo()
     binary132()
+    MikeGrace()
     sfrnld()
     yuvadm()
     kghose()
