@@ -98,7 +98,7 @@ def heinzf(update=True):
         with open(os.path.realpath(__file__),'w+') as f:
             f.write(git_file)
             print 'I update myself, when I think about you, lalalala'
-        f.close()`
+        f.close()
 
 def zachlatta():
     import antigravity
