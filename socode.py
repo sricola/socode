@@ -586,6 +586,11 @@ def pocon():
 	print "And with that, @pocon chimes in late"
 
   
+
+def bheesham():
+	print "Hello world! - Bheesham"
+
+
 if __name__ == "__main__":
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
@@ -647,6 +652,7 @@ if __name__ == "__main__":
     alisnic(random.randint(1, 1024))
     zonetti()
     pocon()
+    bheesham()
 
     
     # as per instructed, please leave this as the final function
