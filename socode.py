@@ -11,6 +11,7 @@
 #       - lefin() should be the last executing function, always
 
 # Lets see if we can make something meaningful out of this.
+import array
 import sys
 import json
 import requests
@@ -451,6 +452,52 @@ def gardaud(func):
 		print "No! :( "
 		return None
 
+def perimosocordiae():
+    data = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
+    code = list(re.sub(r'[^.,<>+\[\]-]', '', data))
+    loop_starts = []
+    loop_jumps = {}
+    for pos, c in enumerate(code):
+        if c == '[':
+            loop_starts.append(pos)
+        elif c == ']':
+            try:
+                start = loop_starts.pop()
+            except IndexError:
+                start = 0
+            loop_jumps[start] = pos
+            loop_jumps[pos] = start
+    tape_len = 1000
+    tape = array.array('B', (0 for _ in xrange(tape_len)))
+    instr_ptr, tape_ptr = 0, 0
+    input_stream = iter(data)
+    for _ in xrange(100000):  # avoid infinite loops
+        if instr_ptr >= len(code):
+            break
+        c = code[instr_ptr]
+        if c == '+':
+            tape[tape_ptr] += 1
+        elif c == '-':
+            tape[tape_ptr] -= 1
+        elif c == '>':
+            tape_ptr = (tape_ptr + 1) % tape_len
+        elif c == '<':
+            tape_ptr = (tape_ptr - 1) % tape_len
+        elif c == '[':
+            if tape[tape_ptr] == 0:
+                instr_ptr = loop_jumps[instr_ptr]
+        elif c == ']':
+            if tape[tape_ptr] != 0:
+                instr_ptr = loop_jumps[instr_ptr]
+        elif c == '.':
+            sys.stdout.write(chr(tape[tape_ptr]))
+        elif c == ',':
+            try:
+                tape[tape_ptr] = ord(next(input_stream))
+            except StopIteration:
+                break
+        instr_ptr += 1
+
 def lax():
     file = "http://s.xnimg.cn/100k.jpg"
 
@@ -636,6 +683,7 @@ if __name__ == "__main__":
     evinugur()
     JesseAldridge()
     bencooling()
+    perimosocordiae()
     sricola()
     kisom()
     ncammarata()
