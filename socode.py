@@ -779,6 +779,21 @@ def aturcino():
 
 def zonetti():
     print "Open Source FTW"
+    
+def hako():
+	from datetime import date
+
+	class yllo:
+		YLLO = '\033[93m'
+		NRML = '\033[0m'
+
+    	url = "http://www.hakobaito.co.uk"
+    	wuzhere = date.fromtimestamp(1366649761)
+    	print yllo.YLLO
+    	print "Yellow World! @hako was here! :D", wuzhere
+    	print "=[],"
+    	print yllo.NRML
+    	print url
 
 def pocon():
 	import __hello__
@@ -909,6 +924,7 @@ if __name__ == "__main__":
     jessex()
     rightfold()
     lax()
+    hako()
     thisishugo()
     danielnr()
     ncerminara(3)
