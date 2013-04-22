@@ -52,6 +52,7 @@ def doctorpangloss():
     # not sure what is being achieved here - @sricola
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
+    
 def ankushsachdeva():
 	contents =open(__file__).read()
 	print re.findall('def .* :',contents)
@@ -237,23 +238,12 @@ def jpadilla():
         pass
 
 def rburgosnavas(name):
-    print '-' * (len(name) + 6)
-    print "|  " + ' ' * (len(name)) + "  |"
+    x = (len(name) + 6)
+    print '-' * x
+    print "|" + ' ' * x + "|"
     print "|  " + name + "  |"
-    print "|  " + ' ' * (len(name)) + "  |"
-    print '-' * (len(name) + 6)
-    print '''
-/         \
-|          \
-|           \
-|            \
-\        __\/_\
- \       \_/\_/\___
-  \/  / |  \ | \   \
- _/ _/ _|  | \  \  |_
-/  |  / /  / /  |  \ \_
-| /  /  | |  \   \  \  \
-'''
+    print "|" + ' ' * x + "|"
+    print '-' * x
 
 def GeneralZero():# Spin the wheel
     random.choice([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])()
