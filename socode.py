@@ -443,11 +443,18 @@ def dmercer(number, start=2):
         if is_prime:
             sieve.append(n)
     return sieve
+    
+def ryanseys():
+    try:
+        ryanseys()
+    except:
+        pass
 
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     dmercer(42)
+    ryanseys()
     jpadilla()
     mmay()
     evinugur()
