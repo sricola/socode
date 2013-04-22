@@ -564,8 +564,16 @@ def dpayne():
     
     return False
 
+
 def zonetti():
     print "Open Source FTW"
+
+    
+    
+def pocon():
+	import __hello__
+	print "And with that, @pocon chimes in late"
+
   
 if __name__ == "__main__":
     starefossen()
@@ -627,6 +635,8 @@ if __name__ == "__main__":
     vellamike(10)
     alisnic(random.randint(1, 1024))
     zonetti()
+    pocon()
+
     
     # as per instructed, please leave this as the final function
     lafin()
