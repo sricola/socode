@@ -46,6 +46,14 @@ def JesseAldridge():
       if callable(v) and k != 'JesseAldridge':
         g[k] = wrap(v)
     
+def shuhaowu(): # Call me last! :D
+    l = locals()
+    for f in l.keys():
+        if not (f.startswith("_") or f == "shuhaowu"):
+            del l[f] # ^_^
+
+    print "Goodbye, cruel world"
+    
 if __name__ == "__main__":
     JesseAldridge()
     sricola()
