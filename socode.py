@@ -28,6 +28,35 @@ import time
 import urllib2
 import platform
 
+from cStringIO import StringIO
+
+
+# WARNING: call only if very cool:
+def gunn(n=3):
+    caller = inspect.stack()[1][3]
+
+    if caller != "<module>":
+        sysStdOut = sys.stdout
+        sys.stdout = StringIO()
+
+        shazeline(caller)
+        out = sys.stdout.getvalue()
+
+        sys.stdout.close()
+        sys.stdout = sysStdOut
+
+        print "\n"+out.replace("pretty", "VERY").replace("\n", "!!!\n")
+
+    members = inspect.getmembers(sys.modules[__name__])
+    names   = [name for name, obj in members if inspect.isfunction(obj) and name!="lafin"]
+    random.shuffle(names)
+    coolGuys = names[:n]
+
+    [shazeline(name) for name in coolGuys]
+
+    if caller != "gunn" and random.random() > 0.6: gunn(0)
+    print
+
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
 
@@ -615,6 +644,7 @@ if __name__ == "__main__":
     windspy()
     samlabs821()
     alisnic(random.randint(1, 1024))
+    gunn()
     
     # as per instructed, please leave this as the final function
     lafin()
