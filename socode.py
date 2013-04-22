@@ -680,14 +680,24 @@ def aturcino():
 def zonetti():
     print "Open Source FTW"
 
-    
-    
 def pocon():
 	import __hello__
 	print "And with that, @pocon chimes in late"
 	
 def reksy():
 	print "I thought Python was like the snake game?"
+
+def bheesham():
+	print "Hello world! - Bheesham"
+
+def markembling(talkative=True):
+    """Generate a random colour as a tuple (R,G,B) and optionally print it"""
+    colour = (random.randint(0, 255), 
+              random.randint(0, 255), 
+              random.randint(0, 255))
+    if talkative:
+        print "Your randomly created colour is: #%x%x%x" % colour
+    return colour
 
 # Please consider creating your function
 # some random place between two other
@@ -698,10 +708,7 @@ def reksy():
 # Ironically, the commit adding ^ gave me 
 # a merge conflict whilst trying to 
 # resolve merge conflicts :P - pocon 
-  
-
-def bheesham():
-	print "Hello world! - Bheesham"
+# Sorry - daniel-dressler
 
 if __name__ == "__main__":
     starefossen()
@@ -722,7 +729,7 @@ if __name__ == "__main__":
     ncammarata()
     eddotman()
     julio()
-    gardaud(prezjordan())
+    gardaud(prezjordan)
     GeneralZero()
     tcr()
     jhgaylor()
@@ -753,6 +760,7 @@ if __name__ == "__main__":
     chewxy()
     theabrad()
     rburgosnavas('CTHULHU LIVES!')
+    markembling()
     satshabad()
     ondrae()
     hazirguo()
@@ -773,14 +781,11 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
-
-    
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
     # bottom of someone else's function then your
     # commit should automerge. Please consider this
     # ---------------------------------------------
-
     # as per instructed, please leave this as the final function
     lafin()
