@@ -28,6 +28,9 @@ import time
 import urllib2
 import platform
 
+def alisnic(number):
+    print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
+
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
 
@@ -611,6 +614,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
+    alisnic(random.randint(1, 1024))
     
     # as per instructed, please leave this as the final function
     lafin()
