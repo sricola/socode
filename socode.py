@@ -20,6 +20,7 @@ import re
 import hashlib
 import os
 import string
+import math
 
 def heinzf():
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -102,7 +103,7 @@ def lafin(): # Please speak proper french :)
 
 def prezjordan():
     h,s='.;*&8#',''
-    for q in range(801):
+    for q in range(HoLyVieR(43, 1013)):
         if q%40==0:print s;s=''
         i,k=0,0
         while(abs(k)<2*(i<15)):k,i=k**2+complex(q%40*.075-2,q/40*-.1+1),i+1
@@ -112,7 +113,7 @@ def JesseAldridge():
     def wrap(f):
       def new_f(*args, **kwargs):
         # changing this back to one, it really slows things down with the requests - @sricola
-        f(*args, **kwargs)
+        return f(*args, **kwargs)
       return new_f
 
     g = globals()
@@ -213,7 +214,65 @@ def julio():
 
 
 
-
+# Compute the modular multiplicative inverse using the extended Euclide algorithm
+# See this for more information : http://en.wikipedia.org/wiki/Modular_multiplicative_inverse#Extended_Euclidean_algorithm 
+#
+# @param nb  Number to be inversed
+# @param mod Modular base
+# @return The modular multiplicative inverse if found and None if not found.
+def HoLyVieR(nb, mod):
+    # 1 is a special case, the inverse modulo is always 1 for all modular base #
+    if (nb == 1):
+        return 1
+    
+    # We apply the Euclide method to find the GCD step for gcd(nb, mod) #
+    stack = []
+    a = mod;
+    b = nb;
+    n = mod / nb;
+    r = mod % nb;
+    
+    while r != 0:
+        stack.append([a, b, n, r]);
+        
+        a = b;
+        b = r;
+        n = a / b;
+        r = a % b;
+    
+    # If we reach this condition it means there was no step and therefore gcd(nb, mod) != 1 and there is no modular multiplicative inverse #
+    if len(stack) == 0:
+        return None
+    
+    values = stack.pop()
+    
+    # If the last value isn't 1 then gcd(nb, mod) != 1 and there is no modular multiplicative inverse #
+    if values[3] != 1:
+        return None
+    
+    # We do the GCD step backward to find the solution #
+    f1 = values[3]
+    f2 = values[2]
+    atN2 = True
+    
+    while len(stack) > 0:
+        values = stack.pop()
+        
+        if atN2:
+            f1 += f2 * values[2]
+        else:
+            f2 += f1 * values[2]
+        
+        atN2 = not atN2
+    
+    f = -f2 if atN2 else f1
+    
+    # While "f" is a correct result, it's sometimes a negative value and it's usually more 
+    # convenient to have a positive value that's in the range of 0 to "mod".
+    if (f < 0):
+        f += mod * (math.fabs(math.floor(f / mod)) + 1)
+    
+    return int(f % mod)
 
 
     
