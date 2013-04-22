@@ -78,4 +78,5 @@ if __name__ == "__main__":
     prezjordan()
     tcr()
     agoebel()
+    binary132()
     lafin()
