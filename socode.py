@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # coding=utf-8
 
 # Welcome to soCode, the social coding experiment.
@@ -210,7 +210,7 @@ def agoebel():
     print "America!"
 
 def tcr():
-    print "You know we love you, ", getpass.getuser(), "."
+    print "You know we love you, " + getpass.getuser() + "."
 
 def fmazon3():
     print "%d" % 0xDEADC0DE
@@ -474,7 +474,7 @@ def ryanseys():
     except:
         pass
 
-def danielnr(huehue):
+def danielnr():
     print "                                                                                "
     print "                                                                                "
     print "                             SIGNING IN FROM ALASKA                             "
@@ -587,7 +587,7 @@ if __name__ == "__main__":
     ncammarata()
     eddotman()
     julio()
-    gardaud(prezjordan())
+    gardaud(prezjordan)
     GeneralZero()
     tcr()
     jhgaylor()
