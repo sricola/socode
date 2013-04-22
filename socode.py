@@ -83,6 +83,9 @@ def agoebel():
 def tcr():
     print "You know we love you, ", getpass.getuser(), "."
     
+def peterwallhead():
+    print '\n'.join('Fizz'*(not i%3) + 'Buzz'*(not i%5) or str(i) for i in range(1, 101))
+    
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
