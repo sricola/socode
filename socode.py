@@ -41,6 +41,9 @@ def heinzf():
             print 'I update myself, when I think about you, lalalala'
         f.close()
 
+def zachlatta():
+    import antigravity
+
 def doctorpangloss():
     raw = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
     # not sure what is being achieved here - @sricola
@@ -62,6 +65,7 @@ def sricola():
 
 def bencooling():
     print "I don't know Python; I don't belong here"
+    zachlatta()
     
 def kisom():
     def zgohr(city): # JesseAldridge breaks top level funcs with parms
