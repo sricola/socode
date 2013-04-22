@@ -821,6 +821,9 @@ def myeaple():
 def reksy():
 	print "I thought Python was like the snake game?"
 
+def NerdyTherapist():
+    print "What am I doing? I should be working on my Bachelor thesis..."
+
 def calvcoll(rs):
 	if rs == 1024:
 		print "You have struck the gold mine!"
@@ -917,6 +920,7 @@ if __name__ == "__main__":
     ankushsachdeva()
     aniketpant()
     umurgdk()
+    NerdyTherapist()
     jontonsoup()
     prezjordan()
     joshryandavis()
