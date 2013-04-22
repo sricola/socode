@@ -224,6 +224,14 @@ def hazirguo():
  
 def sfrnld():
     print "From Indonesia with love!"
+
+def chris911():
+    contributors = requests.get('https://api.github.com/repos/sricola/socode/contributors').json()
+    contributors_list = []
+    for x in contributors:
+        contributors_list.append(x['login'])
+    print 'Contributors: '
+    print ', '.join(contributors_list) 
  
 if __name__ == "__main__":
     jpadilla()
@@ -258,6 +266,7 @@ if __name__ == "__main__":
     satshabad()
     ondrae()
     hazirguo()
+    chris911()
 
     # as per instructed, please leave this as the final function
     lafin()
