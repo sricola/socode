@@ -614,7 +614,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
-    keikun17()
+    keikun17('Why do we exist?')
     
     # as per instructed, please leave this as the final function
     lafin()
