@@ -71,9 +71,11 @@ def prezjordan():
 def JesseAldridge():
     def wrap(f):
       def new_f(*args, **kwargs):
-        # changing this back to one, it really slows things down with the requests - @sricola
-        for i in range(random.randrange(1)):
+        start_time = time.time()
+        for i in range(random.randrange(1, 5)):
           f(*args, **kwargs)
+          if time.time() - start_time > .1:
+            break
       return new_f
 
     g = globals()
