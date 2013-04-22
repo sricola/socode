@@ -61,6 +61,14 @@ def shuhaowu(): # Call me last! :D
 def agoebel():
     print "America!"
     
+def ncerminara(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return ncerminara(n-1) + ncerminara(n-2)
+
+
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
@@ -69,3 +77,4 @@ if __name__ == "__main__":
     prezjordan()
     agoebel()
     lafin()
+    ncerminara(8)
