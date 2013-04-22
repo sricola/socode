@@ -556,7 +556,10 @@ def dpayne():
         print 'There was an error'
     
     return False
-  
+
+def zigamorph():
+    pass
+
 if __name__ == "__main__":
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
@@ -614,6 +617,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
+    zigamorph()
     alisnic(random.randint(1, 1024))
     
     # as per instructed, please leave this as the final function
