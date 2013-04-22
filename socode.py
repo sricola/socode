@@ -45,6 +45,12 @@ def JesseAldridge():
     for k, v in g.iteritems():
       if callable(v) and k != 'JesseAldridge':
         g[k] = wrap(v)
+
+def eternalmatt():
+    print "Never gonna give you up."
+    print "Never gonna let you down."
+    print "Never gonna run around."
+    print "And hurt you."
     
 def shuhaowu(): # Call me last! :D
     l = locals()
@@ -58,5 +64,6 @@ if __name__ == "__main__":
     JesseAldridge()
     sricola()
     kisom()
-    lafin()
+    eternalmatt()
     prezjordan()
+    lafin()
