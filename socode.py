@@ -127,7 +127,6 @@ def cyclo():
 def chrisgw():
     print "meh"
     
-<<<<<<< HEAD
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
     abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
@@ -170,11 +169,9 @@ def bprater():
 
 def henghonglee():
     print "#!brain"
-=======
+
 def jhgaylor():
     print "Signing in from Starkville, Mississippi."
-
->>>>>>> b5cf150ada455df6bee399349b2adf0de829299d
 
 if __name__ == "__main__":
     jpadilla()
