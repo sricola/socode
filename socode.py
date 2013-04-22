@@ -19,6 +19,7 @@ import getpass
 import re
 import hashlib
 import os
+import string
 
 def heinzf():
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -126,9 +127,49 @@ def cyclo():
 def chrisgw():
     print "meh"
 
+def maxmackie(crypt_me):
+    """Just try and crack this cipher."""
+    abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    crypt = "mplnkoijbqazdsxcwerfgvhutyQASXZWDVFCERGTBHNYKMJLUPIO4567382901"
+    print crypt_me.translate(string.maketrans(abc, crypt))
+
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     print 'Forked {} times'.format(repo['forks_count'])
+
+def rburgosnavas(name):
+    print '-' * (len(name) + 6)
+    print "|  " + ' ' * (len(name)) + "  |"
+    print "|  " + name + "  |"
+    print "|  " + ' ' * (len(name)) + "  |"
+    print '-' * (len(name) + 6)
+
+def GeneralZero():# Spin the wheel
+    random.choice([ evinugur,
+                    JesseAldridge,
+                    sricola,
+                    kisom,
+                    ncammarata,
+                    prezjordan,
+                    tcr,
+                    agoebel,
+                    cyclo,
+                    binary132,
+                    doctorpangloss,
+                    chrisgw,
+                    lafin,
+                    fmazon3,
+                    mmay])()
+
+
+def bprater():
+
+	print "social coding, the end is near."
+
+def mmay():
+    url = "http://placekitten.com/%d/%d" %(random.randint(500, 1000), random.randint(500, 1000))
+    print "Get your daily dose of kitten at: " + url
+
 
 
 if __name__ == "__main__":
@@ -147,6 +188,9 @@ if __name__ == "__main__":
     doctorpangloss()
     chrisgw()
     fmazon3()
+    bprater()
+    rburgosnavas('CTHULHU LIVES!')
+    mmay()
 
-    # special
+    # as per instructed, please leave this as the final function
     lafin()
