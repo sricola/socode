@@ -566,6 +566,16 @@ def dpayne():
 
 def zonetti():
     print "Open Source FTW"
+
+def markembling(talkative=True):
+    """Generate a random colour as a tuple (R,G,B) and optionally print it"""
+    colour = (random.randint(0, 255), 
+              random.randint(0, 255), 
+              random.randint(0, 255))
+    if talkative:
+        print "Your randomly created colour is: #%x%x%x" % colour
+    return colour
+    
   
 if __name__ == "__main__":
     starefossen()
