@@ -428,6 +428,9 @@ def lax():
 def shazeline(name):
     print name + " is a pretty cool guy"
     
+def samlabs821():
+    print "vesselam"
+
 def matiasinsaurralde():
     print "hello, this is skynet"
 
@@ -603,6 +606,7 @@ if __name__ == "__main__":
     danielnr()
     spratt()
     windspy()
+    samlabs821()
     
     # as per instructed, please leave this as the final function
     lafin()
