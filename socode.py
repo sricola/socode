@@ -26,6 +26,9 @@ import inspect
 import webbrowser
 import time
 
+def jontonsoup():
+    print "There's always one more bug."
+
 def heinzf(update=True):
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
     git_file = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
@@ -424,6 +427,16 @@ def shazeline(name):
 def matiasinsaurralde():
     print "hello, this is skynet"
 
+def drewcrawford():
+    print "Let's see that again..."
+    functions = filter(lambda l: hasattr(l,'__call__') and l.func_code.co_argcount==0,globals().values())
+    from random import choice
+    f = choice(functions)
+    try:
+        f()
+    except Exception as e:
+        print "didn't work.",e
+
 def dmercer(number, start=2):
     """
        Sift the Two's and Sift the Three's,
@@ -488,9 +501,13 @@ def danielnr(huehue):
 def spratt():
     print "Simon was here"
 
+def windspy():
+  print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
+  
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
+    drewcrawford()
     dmercer(42)
     ryanseys()
     jpadilla()
@@ -525,6 +542,7 @@ if __name__ == "__main__":
     PiersonBro()
     ankushsachdeva()
     aniketpant()
+    jontonsoup()
     prezjordan()
     shuhaowu()
     chewxy()
@@ -539,6 +557,7 @@ if __name__ == "__main__":
     lax()
     danielnr()
     spratt()
+    windspy()
     
     # as per instructed, please leave this as the final function
     lafin()
