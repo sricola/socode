@@ -285,6 +285,17 @@ def ondrae(): # Random compliment. If anyone has a better source, add it in.
 def djrausch():
     print "DAE #HOLO? #NEXUS #HOLOYOLO"
 
+def daniel_levin():
+    import time
+    import sys
+    greeting = "Red leader standing by..."
+    delay = 0.5
+    for i in range(0, len(greeting)):
+        print greeting[i],
+        sys.stdout.flush()
+        time.sleep(delay)
+        delay *= 0.5
+
 def aniketpant():
     print "Moving the world off Internet Explorer 6"
     print "Tell your friends to join the cause. Share this site http://bit.ly/ie6countdown and tweet #ie6countdown. Let everyone know that you're doing your part to get Internet Explorer 6 to 1%."
@@ -535,6 +546,7 @@ if __name__ == "__main__":
     jessex()
     lax()
     danielnr()
+    daniel_levin()
     
     # as per instructed, please leave this as the final function
     lafin()
