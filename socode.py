@@ -150,6 +150,10 @@ def starefossen():
 
 def jontonsoup():
     print "There's always one more bug."
+    
+def monsdar():
+    print "Hello?..."
+    print "         ...yes, this is dog!"
 
 def heinzf(update=True):
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -1016,6 +1020,7 @@ if __name__ == "__main__":
     hazirguo()
     chris911()
     doboy(doboy)
+    monsdar()
     ngokevin('ngokevin.com')
     jessex()
     rightfold()
