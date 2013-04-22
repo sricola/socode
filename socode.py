@@ -92,8 +92,8 @@ def ncammarata():
 # Generate a random nonsense word with a vowel:consolant ratio of 1:5
 def taylorlapeyre():
     word = []
-    consonants = "bcdfghjklmnpqrstvwxyz"
-    vowels     = "aeiou"
+    consonants = "かふさとみまもはひろりべだぶ"
+    vowels     = "あいうえお"
 
     for i in range(random.randint(3, 15)):
         if i % 5 == 0:
