@@ -206,12 +206,12 @@ def henghonglee():
 def jhgaylor():
     print "Signing in from Starkville, Mississippi."
 
-
-
 def mmay():
     url = "http://placekitten.com/%d/%d" %(random.randint(500, 1000), random.randint(500, 1000))
     print "Get your daily dose of kitten at: " + url
 
+def jeffjose():
+    print "Hi from India!"
 
 def julio():
     print 111111111 * 111111111;
@@ -226,13 +226,6 @@ def ondrae(): # Random compliment. If anyone has a better source, add it in.
         if m:
             compliments.append(m.group(1))
     print getpass.getuser() +', ' + compliments[random.randint(1,len(compliments))].lower()
-
-
-
-
-
-
-
 
     
 def chewxy():
@@ -254,6 +247,7 @@ if __name__ == "__main__":
     jhgaylor()
     henghonglee()
     taylorlapeyre()
+    jeffjose()
     agoebel()
     cyclo()
     binary132()
