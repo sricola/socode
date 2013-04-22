@@ -556,6 +556,11 @@ def dpayne():
         print 'There was an error'
     
     return False
+    
+    
+def pocon():
+	import __hello__
+	print "And with that, @pocon chimes in late"
   
 if __name__ == "__main__":
     starefossen()
@@ -615,6 +620,7 @@ if __name__ == "__main__":
     windspy()
     samlabs821()
     alisnic(random.randint(1, 1024))
+    pocon()
     
     # as per instructed, please leave this as the final function
     lafin()
