@@ -147,6 +147,6 @@ if __name__ == "__main__":
     doctorpangloss()
     chrisgw()
     fmazon3()
-    
+
     # special
     lafin()
