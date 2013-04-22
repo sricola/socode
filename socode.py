@@ -14,7 +14,7 @@
 
 import json
 import requests
-
+import random
 def sricola():
     print "Welcome to soCode!!"
     
@@ -22,6 +22,9 @@ def kisom():
     ip = requests.get('http://ifconfig.me/ip').content
     geoip = json.loads(requests.get('http://freegeoip.net/json/').content)['country_name']
     print 'there once was a coder from', geoip
+    
+def evinugur():
+    print 'there is a ', (random.random()*100), "% change that something cool will come from this..."
     
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
@@ -58,6 +61,7 @@ def agoebel():
     print "America!"
     
 if __name__ == "__main__":
+    evinugur()
     JesseAldridge()
     sricola()
     kisom()
