@@ -15,6 +15,8 @@
 import json
 import requests
 import random
+import getpass
+
 def sricola():
     print "Welcome to soCode!!"
 
@@ -24,10 +26,11 @@ def kisom():
     print 'there once was a coder from', geoip
 
 def evinugur():
-    print 'there is a ', (random.random()*100), "% change that something cool will come from this..."
+    print 'there is a ', (random.random()*100), "% chance that something cool will come from this..."
 
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
+    print "\nStarted with <3 in Brooklyn, NY\n"
 
 def prezjordan():
     h,s='.;*&8#',''
@@ -75,12 +78,16 @@ def adamdecaf():
             ret += "f"
     print ret
 
+def tcr():
+    print "You know we love you, ", getpass.getuser(), "."
+
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
     sricola()
     kisom()
-    lafin()
     prezjordan()
+    tcr()
     agoebel()
     adamdecaf()
+    lafin()
