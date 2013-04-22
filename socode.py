@@ -729,6 +729,22 @@ def pocon():
 	import __hello__
 	print "And with that, @pocon chimes in late"
 	
+def myeaple():
+	new = 2 # Open a new tab, if possible
+	
+	num_fn = len([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])
+	
+	text = "There%20are%20currently%20" + (str)(num_fn) + "%20functions%20in%20socode.py"
+	hashtags = "socode"
+	socode_url = "https%3A%2F%2Fgithub.com%2Fsricola%2Fsocode"
+	
+	print "Number of functions in socode.py = " + (str)(num_fn)
+	
+	# Tweet the number of functions in socode.py
+	url = "https://twitter.com/intent/tweet?url=" + socode_url + "&text=" + text + "&hashtags=" + hashtags
+	
+	webbrowser.open(url, new=new)
+
 def reksy():
 	print "I thought Python was like the snake game?"
 
