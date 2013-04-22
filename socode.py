@@ -72,8 +72,7 @@ def JesseAldridge():
     def wrap(f):
       def new_f(*args, **kwargs):
         # changing this back to one, it really slows things down with the requests - @sricola
-        for i in range(random.randrange(1)):
-          f(*args, **kwargs)
+        f(*args, **kwargs)
       return new_f
 
     g = globals()
