@@ -163,7 +163,7 @@ def JesseAldridge():
     def wrap(f):
       def new_f(*args, **kwargs):
         start_time = time.time()
-        for i in range(randrange(1, 3)):
+        for i in range(random.randrange(1, 3)):
             ret_val = f(*args, **kwargs)
             if time.time() - start_time > .1:
                 break
