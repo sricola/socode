@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 # Welcome to soCode, the social coding experiment.
-# Here are the rules! 
+# Here are the rules!
 #       - Add a funtion with your github name as its name.
 #       - Your function can do anything and everything, as long as it
 #         finishes in a reasonable amount of time (no infinite loops please)
-#       - Once your function is written, you can call it from anywhere else in the 
+#       - Once your function is written, you can call it from anywhere else in the
 #         already existing exectution chain.
 #       - Never entirely delete anyone else's function, edit it if needed.
 #       - lefin() should be the last executing function, always
@@ -16,18 +16,18 @@ import json
 import requests
 import random
 import getpass
-    
+
 def sricola():
     print "Welcome to soCode!!"
-    
+
 def kisom():
     ip = requests.get('http://ifconfig.me/ip').content
     geoip = json.loads(requests.get('http://freegeoip.net/json/').content)['country_name']
     print 'there once was a coder from', geoip
-    
+
 def evinugur():
     print 'there is a ', (random.random()*100), "% chance that something cool will come from this..."
-    
+
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
     print "\nStarted with <3 in Brooklyn, NY\n"
@@ -39,7 +39,7 @@ def prezjordan():
         i,k=0,0
         while(abs(k)<2*(i<15)):k,i=k**2+complex(q%40*.075-2,q/40*-.1+1),i+1
         s+=h[i/3]*2
-    
+
 def JesseAldridge():
     def wrap(f):
       def new_f():
@@ -51,7 +51,7 @@ def JesseAldridge():
     for k, v in g.iteritems():
       if callable(v) and k != 'JesseAldridge':
         g[k] = wrap(v)
-    
+
 def shuhaowu(): # Call me last! :D
     l = locals()
     for f in l.keys():
@@ -59,13 +59,28 @@ def shuhaowu(): # Call me last! :D
             del l[f] # ^_^
 
     print "Goodbye, cruel world"
-    
+
 def agoebel():
     print "America!"
 
+def adamdecaf():
+    ret = ""
+    for q in range(800):
+        if q % 10 == 0:
+            ret += "t"
+        elif q % 7 == 0:
+            ret += "b"
+        elif q % 3 == 0:
+            ret += "o"
+        elif q % 11 == 0:
+            ret += "j"
+        else:
+            ret += "f"
+    print ret
+
 def tcr():
     print "You know we love you, ", getpass.getuser(), "."
-    
+
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
@@ -74,4 +89,5 @@ if __name__ == "__main__":
     prezjordan()
     tcr()
     agoebel()
+    adamdecaf()
     lafin()
