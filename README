@@ -15,7 +15,7 @@ Here are the rules!
 Let's see if we can make something meaningful out of this.
 
 Tip: Add a call to your function at the bottom of someone else's function.
-This reduces the chances of a merge conflicts as things appraoch light speed.
+This reduces the chances of a merge conflicts as things approach light speed.
 If you do not move fast enough and the automerge fails there is a good chance
 your commit will never get merged.
 
