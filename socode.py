@@ -382,6 +382,15 @@ def ngokevin(shamelessadvertising):
     # Check for XSS.
     print '<script>alert("HAHAHA");</script>'
     import antigravity
+    
+def gardaud(func):
+	print "Should I execute func?"
+	if random.randrange(0,2) == 0:
+		print "Yes! :D"
+		return func()
+	else:
+		print "No! :( "
+		return None
 
 def lax():
     file = "http://s.xnimg.cn/100k.jpg"
@@ -413,7 +422,7 @@ if __name__ == "__main__":
     ncammarata()
     eddotman()
     julio()
-    prezjordan()
+    gardaud(prezjordan())
     GeneralZero()
     tcr()
     jhgaylor()
