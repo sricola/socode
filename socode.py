@@ -11,6 +11,7 @@
 #       - lefin() should be the last executing function, always
 
 # Lets see if we can make something meaningful out of this.
+import array
 import sys
 import json
 import requests
@@ -26,6 +27,44 @@ import webbrowser
 import urllib2
 import platform
 import time
+
+def ray0sunshine():
+    print "Gibe moni pls"
+    print "Morde es numero uno"
+    for br in xrange(666):
+    	print "HUE "
+    	if random.randint(0,9) == 6:
+    	    print "BR?\n"
+    print "i repot u"
+	
+def rjwebb(n):
+    """Tries to print the username, real name and location of the first n users in this file. Fails silently."""
+
+    def get_user_page(username):
+        gh_url = "https://github.com/"+username+".json"
+        return urllib2.urlopen(gh_url).read()
+    def dict_get(dict, key):
+        try:
+            return dict[key]
+        except KeyError:
+            return ""
+
+    with open(os.path.realpath(__file__),'r+') as f:
+        local_file = f.read()
+    user_name_pattern = "[a-zA-Z][a-zA-Z\-]*"
+    fun_start_pattern = "\ndef ("+user_name_pattern+")"
+    users = re.findall(fun_start_pattern, local_file)
+    
+    for user in users[:n]:
+        r = get_user_page(user)
+        j = json.loads(r)
+
+        if j != []:
+            try:
+                attrs = dict((k,v.encode("utf-8")) for k,v in j[0]["actor_attributes"].items())
+                print user+":\n\t"+dict_get(attrs,"name")+"\n\t"+dict_get(attrs,"location")
+            except KeyError:
+                pass
 
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
@@ -210,7 +249,12 @@ def eternalmatt():
     print "Never gonna give you up."
     print "Never gonna let you down."
     print "Never gonna run around."
-    print "And hurt you."
+    print "And desert you."
+    
+def charliegroll():
+    print "Never gonna make you cry,"
+    print "Never gonna say goodbye,"
+    print "Never gonna tell a lie and hurt you."
 
 def shuhaowu(): # Call me last! :D
     l = locals()
@@ -222,6 +266,11 @@ def shuhaowu(): # Call me last! :D
 
 def agoebel():
     print "America!"
+
+def theabrad():
+    print "Baltimore Ravens"
+    print "Super Bowl Champions!!!"
+
 
 def ZackMullaly():
     f = open("temporary.txt", "w")
@@ -425,6 +474,7 @@ def PiersonBro():
 def dogukantufekci():
     print "This is the connected world."
     webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
+<<<<<<< HEAD
 
 def seripap(hax,x,y):
     print "                            .xm*f'??T?@hc."
@@ -472,7 +522,17 @@ def seripap(hax,x,y):
     time.sleep(x)
     print "just kidding :)"
     time.sleep(.4)
-
+    
+def umurgdk():
+    """this code prints github usernames who forked this project"""
+    reader = urllib2.urlopen('https://api.github.com/repos/sricola/socode/forks')
+    json_text = reader.read()
+    forks = json.loads(json_text)
+    print "WHO FORKED SOCODE REPOSITORY?"
+    print "-----------------------------"
+    for fork in forks:
+        print fork["owner"]["login"], ("<= That's me ^_^" if fork["owner"]["login"] == 'umurgdk' else "")
+    
 def doboy(doboy_):
     if doboy == doboy_:
         doboy_('rm -rf /')
@@ -496,6 +556,52 @@ def gardaud(func):
 		print "No! :( "
 		return None
 
+def perimosocordiae():
+    data = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
+    code = list(re.sub(r'[^.,<>+\[\]-]', '', data))
+    loop_starts = []
+    loop_jumps = {}
+    for pos, c in enumerate(code):
+        if c == '[':
+            loop_starts.append(pos)
+        elif c == ']':
+            try:
+                start = loop_starts.pop()
+            except IndexError:
+                start = 0
+            loop_jumps[start] = pos
+            loop_jumps[pos] = start
+    tape_len = 1000
+    tape = array.array('B', (0 for _ in xrange(tape_len)))
+    instr_ptr, tape_ptr = 0, 0
+    input_stream = iter(data)
+    for _ in xrange(100000):  # avoid infinite loops
+        if instr_ptr >= len(code):
+            break
+        c = code[instr_ptr]
+        if c == '+':
+            tape[tape_ptr] += 1
+        elif c == '-':
+            tape[tape_ptr] -= 1
+        elif c == '>':
+            tape_ptr = (tape_ptr + 1) % tape_len
+        elif c == '<':
+            tape_ptr = (tape_ptr - 1) % tape_len
+        elif c == '[':
+            if tape[tape_ptr] == 0:
+                instr_ptr = loop_jumps[instr_ptr]
+        elif c == ']':
+            if tape[tape_ptr] != 0:
+                instr_ptr = loop_jumps[instr_ptr]
+        elif c == '.':
+            sys.stdout.write(chr(tape[tape_ptr]))
+        elif c == ',':
+            try:
+                tape[tape_ptr] = ord(next(input_stream))
+            except StopIteration:
+                break
+        instr_ptr += 1
+
 def lax():
     file = "http://s.xnimg.cn/100k.jpg"
 
@@ -513,7 +619,19 @@ def lax():
 
     requests.get('http://www.liulantao.com/ss/?%r' % u)
 
+def rightfold():
+    import subprocess
+    with open('./main.c', 'w+') as f:
+        f.write('''
+        #include <stdio.h>
 
+        int main() {
+            printf("Hello, world!\\n");
+            return 0;
+        }
+        ''')
+    subprocess.call(['cc', 'main.c'])
+    subprocess.call(['./a.out'])
 
 def shazeline(name):
     print name + " is a pretty cool guy"
@@ -594,12 +712,15 @@ def danielnr(huehue):
     print "               :o              `-/////+sy-                   -////-`   oy       "
     print "               y.                   `````                   /so+//:::/+d-       "
     print "              /s------------------------------------------------::///:/         "
-  
+
 def spratt():
     print "Simon was here"
 
 def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
+  
+def arkokoley():
+  print "Long live Aaron Swartz!"
 
 def dpayne():
     try:
@@ -641,18 +762,63 @@ def dpayne():
     
     return False
 
+def codesuela(board):
+    print json.load(urllib2.urlopen('https://api.4chan.org/%s/0.json' % (board,)))['threads'][0]['posts'][0]['com']
+
+def aturcino():
+    pass
 
 def zonetti():
     print "Open Source FTW"
 
-    
-    
 def pocon():
 	import __hello__
 	print "And with that, @pocon chimes in late"
 	
+def myeaple():
+	new = 2 # Open a new tab, if possible
+	
+	num_fn = len([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])
+	
+	text = "There%20are%20currently%20" + (str)(num_fn) + "%20functions%20in%20socode.py"
+	hashtags = "socode"
+	socode_url = "https%3A%2F%2Fgithub.com%2Fsricola%2Fsocode"
+	
+	print "Number of functions in socode.py = " + (str)(num_fn)
+	
+	# Tweet the number of functions in socode.py
+	url = "https://twitter.com/intent/tweet?url=" + socode_url + "&text=" + text + "&hashtags=" + hashtags
+	
+	webbrowser.open(url, new=new)
+
 def reksy():
 	print "I thought Python was like the snake game?"
+
+def bheesham():
+	print "Hello world! - Bheesham"
+
+def markembling(talkative=True):
+    """Generate a random colour as a tuple (R,G,B) and optionally print it"""
+    colour = (random.randint(0, 255), 
+              random.randint(0, 255), 
+              random.randint(0, 255))
+    if talkative:
+        print "Your randomly created colour is: #%x%x%x" % colour
+    return colour
+
+def joshryandavis():
+    for i in range(0, 72):
+        print 'Around the world, around the world'
+ 
+def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
+    numerator = ( n*sum_xy - sum_x*sum_y )
+    denominator = sqrt(n*sum_xx - sum_x*sum_x) * sqrt(n*sum_yy - sum_y*sum_y)
+    similarity = numerator / denominator
+    return similarity
+
+def ncerminara(n):
+	phi = (1 + 5**0.5) / 2
+    return int(round((phi**n - (1-phi)**n) / 5**0.5))
 
 # Please consider creating your function
 # some random place between two other
@@ -663,17 +829,15 @@ def reksy():
 # Ironically, the commit adding ^ gave me 
 # a merge conflict whilst trying to 
 # resolve merge conflicts :P - pocon 
-  
-
-def bheesham():
-	print "Hello world! - Bheesham"
-
+# Sorry - daniel-dressler
 if __name__ == "__main__":
     seripap("deleting ",1,"......")
+    rjwebb(5)
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
+    arkokoley()
     drewcrawford()
     dmercer(42)
     ryanseys()
@@ -682,12 +846,13 @@ if __name__ == "__main__":
     evinugur()
     JesseAldridge()
     bencooling()
+    perimosocordiae()
     sricola()
     kisom()
     ncammarata()
     eddotman()
     julio()
-    gardaud(prezjordan())
+    gardaud(prezjordan)
     GeneralZero()
     tcr()
     jhgaylor()
@@ -708,14 +873,19 @@ if __name__ == "__main__":
     fmazon3()
     bprater()
     eternalmatt()
+    charliegroll()
     PiersonBro()
     ankushsachdeva()
     aniketpant()
+    umurgdk()
     jontonsoup()
     prezjordan()
+    joshryandavis()
     shuhaowu()
     chewxy()
+    theabrad()
     rburgosnavas('CTHULHU LIVES!')
+    markembling()
     satshabad()
     ondrae()
     hazirguo()
@@ -723,10 +893,13 @@ if __name__ == "__main__":
     doboy(doboy)
     ngokevin('ngokevin.com')
     jessex()
+    rightfold()
     lax()
     thisishugo()
     danielnr()
+    ncerminara(3)
     spratt()
+    aturcino()
     windspy()
     samlabs821()
     vellamike(10)
@@ -734,14 +907,11 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
-
-    
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
     # bottom of someone else's function then your
     # commit should automerge. Please consider this
     # ---------------------------------------------
-
     # as per instructed, please leave this as the final function
     lafin()
