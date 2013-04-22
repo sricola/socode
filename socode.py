@@ -18,6 +18,14 @@ def sricola():
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
     
+def shuhaowu(): # Call me last! :D
+    l = locals()
+    for f in l.keys():
+        if not (f.startswith("_") or f == "shuhaowu"):
+            del l[f] # ^_^
+
+    print "Goodbye, cruel world"
+    
 if __name__ == "__main__":
     sricola()
     lafin()
