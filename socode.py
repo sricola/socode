@@ -16,7 +16,7 @@ import json
 import requests
 import random
 import getpass
-    
+import os
 
 def binary132():
     print "Perl is better.  PS everyone is lazy"
@@ -48,6 +48,9 @@ def evinugur():
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
     print "\nStarted with <3 in Brooklyn, NY\n"
+
+def geuniq():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def prezjordan():
     h,s='.;*&8#',''
@@ -82,8 +85,9 @@ def agoebel():
 
 def tcr():
     print "You know we love you, ", getpass.getuser(), "."
-    
+
 if __name__ == "__main__":
+    geuniq()
     evinugur()
     JesseAldridge()
     sricola()
