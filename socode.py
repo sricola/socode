@@ -553,6 +553,20 @@ def dpayne():
         print 'There was an error'
     
     return False
+    
+def borntyping():
+    print """
+“There’s no grays, only white that’s got grubby. I’m surprised you don’t know that. And sin, young man, is when you treat people like things. Including yourself. That’s what sin is.”
+
+“It’s a lot more complicated than that—”
+
+“No. It ain’t. When people say things are a lot more complicated than that, they means they’re getting worried that they won’t like the truth. People as things, that’s where it starts.”
+
+“Oh, I’m sure there are worse crimes—”
+
+“But they starts with thinking about people as things…”
+
+        -– from Carpe Jugulum, by Terry Pratchett."""
   
 if __name__ == "__main__":
     starefossen()
@@ -611,6 +625,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
+    borntyping()
     
     # as per instructed, please leave this as the final function
     lafin()
