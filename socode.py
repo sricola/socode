@@ -310,10 +310,19 @@ def chris911():
     for x in contributors:
         contributors_list.append(x['login'])
     print 'Contributors: '
-	print ', '.join(contributors_list) 
+    print ', '.join(contributors_list) 
 
 def PiersonBro():
     print "My bane was not capability it was randomness."
+
+def shrayas():
+    commits = requests.get('https://api.github.com/repos/sricola/socode/commits').json()
+    commitString = ''
+    for commit in commits:
+        commitString = commitString + commit['commit']['message'][0]
+
+    print 'Weird commit String: ' + commitString
+
  
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
@@ -352,6 +361,7 @@ if __name__ == "__main__":
     ondrae()
     hazirguo()
     chris911()
+    shrayas()
 
     # as per instructed, please leave this as the final function
     lafin()
