@@ -17,6 +17,23 @@ import requests
 import random
 import getpass
 import re
+import hashlib
+import os
+
+def heinzf():
+    """Compare itself with the raw code github. If there's something new, it updates the file localy."""
+    git_file = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
+    git_hash = hashlib.sha256(git_file).hexdigest()
+    with open(os.path.realpath(__file__),'r+') as f:
+        local_file = f.read()
+    f.close()
+    local_hash = hashlib.sha256(local_file).hexdigest()
+
+    if  local_hash != git_hash:
+        with open(os.path.realpath(__file__),'w+') as f:
+            f.write(git_file)
+            print 'I update myself, when I think about you, lalalala'
+        f.close()
     
 def doctorpangloss():
     raw = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
@@ -110,6 +127,7 @@ def chrisgw():
     print "meh"
 
 if __name__ == "__main__":
+    heinzf()
     evinugur()
     JesseAldridge()
     sricola()
