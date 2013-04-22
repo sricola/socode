@@ -503,6 +503,10 @@ def spratt():
 
 def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
+
+def apas():
+    for x in range(0, 3):
+        print "3.14159265"
   
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
@@ -558,6 +562,7 @@ if __name__ == "__main__":
     danielnr()
     spratt()
     windspy()
+    apas()
     
     # as per instructed, please leave this as the final function
     lafin()
