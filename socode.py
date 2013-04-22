@@ -22,6 +22,11 @@ def kisom():
     ip = requests.get('http://ifconfig.me/ip').content
     geoip = json.loads(requests.get('http://freegeoip.net/json/').content)['country_name']
     print 'there once was a coder from', geoip
+
+def ncammarata():
+    tweets = json.loads(requests.get("https://search.twitter.com/search.json?q=a").content)
+    tweet = tweets['results'][0]['text']
+    print "Random Tweet:", tweet
     
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
@@ -58,5 +63,6 @@ if __name__ == "__main__":
     JesseAldridge()
     sricola()
     kisom()
+    ncammarata()
     lafin()
     prezjordan()
