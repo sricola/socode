@@ -91,6 +91,9 @@ def tcr():
 def fmazon3():
     print "%d" % 0xDEADC0DE
     
+def peterwallhead():
+    print '\n'.join('Fizz'*(not i%3) + 'Buzz'*(not i%5) or str(i) for i in range(1, 101))
+    
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
