@@ -555,6 +555,7 @@ def dpayne():
     return False
   
 if __name__ == "__main__":
+    starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
