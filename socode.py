@@ -561,6 +561,7 @@ if __name__ == "__main__":
     danielnr()
     spratt()
     windspy()
+    samlabs821()
     
     # as per instructed, please leave this as the final function
     lafin()
