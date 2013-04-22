@@ -15,6 +15,10 @@
 import json
 import requests
 import random
+
+def binary132():
+    print "Perl is better.  PS everyone is lazy"
+
 def sricola():
     print "Welcome to soCode!!"
     
