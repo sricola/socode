@@ -81,6 +81,22 @@ def ncammarata():
     tweet = tweets['results'][0]['text']
     print "Random Tweet:", tweet
 
+# Generate a random nonsense word with a vowel:consolant ratio of 1:5
+def taylorlapeyre():
+    word = []
+    consonants = "bcdfghjklmnpqrstvwxyz"
+    vowels     = "aeiou"
+
+    for i in range(randint(3, 15)):
+        if i % 5 == 0:
+            letter = choice(vowels)
+        else:
+            letter = choice(consonants)
+        word.append(letter)
+
+    return ''.join(word)
+
+
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
     print "\nStarted with <3 in Brooklyn, NY\n"
@@ -198,6 +214,11 @@ def julio():
 
 
 
+    
+def chewxy():
+    # because there is nothing better to do after the world has ended.
+    pass
+    
 if __name__ == "__main__":
     jpadilla()
     heinzf()
@@ -212,6 +233,7 @@ if __name__ == "__main__":
     tcr()
     jhgaylor()
     henghonglee()
+    taylorlapeyre()
     agoebel()
     cyclo()
     binary132()
@@ -219,6 +241,9 @@ if __name__ == "__main__":
     chrisgw()
     fmazon3()
     bprater()
+    prezjordan()
+    shuhaowu()
+    chewxy()
     rburgosnavas('CTHULHU LIVES!')
 
     # as per instructed, please leave this as the final function
