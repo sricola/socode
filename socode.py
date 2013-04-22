@@ -746,6 +746,12 @@ def joshryandavis():
     for i in range(0, 72):
         print 'Around the world, around the world'
  
+def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
+    numerator = ( n*sum_xy - sum_x*sum_y )
+    denominator = sqrt(n*sum_xx - sum_x*sum_x) * sqrt(n*sum_yy - sum_y*sum_y)
+    similarity = numerator / denominator
+    return similarity
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
