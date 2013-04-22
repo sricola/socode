@@ -29,6 +29,15 @@ import urllib2
 import platform
 import time
 
+def ray0sunshine():
+    print "Gibe moni pls"
+    print "Morde es numero uno"
+    for br in xrange(666):
+    	print "HUE "
+    	if random.randint(0,9) == 6:
+    	    print "BR?\n"
+    print "i repot u"
+	
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
 
