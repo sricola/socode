@@ -237,6 +237,9 @@ def chewxy():
 def hazirguo():
     print "Mourning for the dead in Sichuan earthquake!\n"
  
+def sfrnld():
+    print "From Indonesia with love!"
+ 
 if __name__ == "__main__":
     jpadilla()
     heinzf()
@@ -257,6 +260,7 @@ if __name__ == "__main__":
     agoebel()
     cyclo()
     binary132()
+    sfrnld()
     doctorpangloss()
     chrisgw()
     fmazon3()
