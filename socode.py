@@ -20,12 +20,14 @@ import getpass
 
 def binary132():
     print "Perl is better.  PS everyone is lazy"
+    bencooling()
 
 def sricola():
     print "Welcome to soCode!!"
 
 def bencooling():
-  print "I don't know Python; I don't belong here"
+    print "I don't know Python; I don't belong here"
+    agoebel()
     
 def kisom():
     def zgohr(city): # JesseAldridge breaks top level funcs with parms
@@ -45,6 +47,11 @@ def kisom():
 def evinugur():
     print 'there is a ', (random.random()*100), "% chance that something cool will come from this..."
     
+def daniel_dressler(): #really daniel-dressler
+    #return 42
+    shuhaowu()
+
+
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
     print "\nStarted with <3 in Brooklyn, NY\n"
@@ -76,9 +83,11 @@ def shuhaowu(): # Call me last! :D
             del l[f] # ^_^
 
     print "Goodbye, cruel world"
+    lafin()
     
 def agoebel():
     print "America!"
+    daniel_dressler()
 
 def tcr():
     print "You know we love you, ", getpass.getuser(), "."
@@ -90,6 +99,4 @@ if __name__ == "__main__":
     kisom()
     prezjordan()
     tcr()
-    agoebel()
     binary132()
-    lafin()
