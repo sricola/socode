@@ -175,7 +175,7 @@ def antonaut(print_color=None):
                         s += unicode(colorify(c))
                 stdout.write(s)
 
-            def flush():
+            def flush(self):
                 stdout.flush()
 
         # Change stdout
@@ -1019,15 +1019,15 @@ def nazgu1():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    antonaut() # DOUBLE-RAINBOW!
     seripap("deleting ",1,"......")
     rjwebb(5)
     sikado()
-    antonaut() # DOUBLE-RAINBOW!
+    dlad()
     starefossen()
     lbalceda(42)
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
-    dlad()
     dpayne()
     arkokoley()
     drewcrawford()
