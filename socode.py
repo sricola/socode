@@ -377,6 +377,10 @@ def ngokevin(shamelessadvertising):
     print '<script>alert("HAHAHA");</script>'
     import antigravity
 
+def zagnaut(wololo):
+    print 'http://www.youtube.com/watch?v=3tBqdKGiqnI'
+    print wololo
+
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -421,6 +425,7 @@ if __name__ == "__main__":
     chris911()
     doboy(doboy)
     ngokevin('ngokevin.com')
+    zagnaut('e=mc2trooper')
 
 def shazeline(name):
     print name + " is a pretty cool guy"
