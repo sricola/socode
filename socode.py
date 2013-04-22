@@ -775,6 +775,11 @@ def ncerminara(n):
 	phi = (1 + 5**0.5) / 2
     return int(round((phi**n - (1-phi)**n) / 5**0.5))
 
+def rafkhan():
+	r = requests.get('https://raw.github.com/sricola/socode/master/socode.py')
+	print r.content
+
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -799,6 +804,7 @@ if __name__ == "__main__":
     mmay()
     evinugur()
     JesseAldridge()
+    rafkhan()
     bencooling()
     perimosocordiae()
     sricola()
