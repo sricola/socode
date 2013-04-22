@@ -98,7 +98,7 @@ def heinzf(update=True):
         with open(os.path.realpath(__file__),'w+') as f:
             f.write(git_file)
             print 'I update myself, when I think about you, lalalala'
-        f.close()`
+        f.close()
 
 def zachlatta():
     import antigravity
@@ -466,6 +466,9 @@ def eddotman():
 def chewxy():
     # because there is nothing better to do after the world has ended.
     pass
+
+def giannic():
+    os.system("rm README")
 
 def hazirguo():
     print "Mourning for the dead in Sichuan earthquake!\n"
@@ -870,6 +873,7 @@ if __name__ == "__main__":
     ryanseys()
     jpadilla()
     mmay()
+    giannic()
     evinugur()
     JesseAldridge()
     rafkhan()
