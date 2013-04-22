@@ -591,6 +591,9 @@ def zonetti():
 def pocon():
 	import __hello__
 	print "And with that, @pocon chimes in late"
+	
+def reksy():
+	print "I thought Python was like the snake game?"
 
 # Please consider creating your function
 # some random place between two other
