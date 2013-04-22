@@ -49,7 +49,10 @@ def doctorpangloss():
     # not sure what is being achieved here - @sricola
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
-
+def ankushsachdeva():
+	contents =open(__file__).read()
+	print re.findall('def .* :',contents)
+	
 def adelevie():
     pass
 
@@ -475,6 +478,7 @@ if __name__ == "__main__":
     bprater()
     eternalmatt()
     PiersonBro()
+    ankushsachdeva()
     aniketpant()
     prezjordan()
     shuhaowu()
