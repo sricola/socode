@@ -355,7 +355,7 @@ def HoLyVieR(nb, mod):
 def sturmeh(address):
     uri = "http://blockchain.info/q/addressbalance/%s?confirmations=6"
     r = requests.get(uri % address)
-    print("Balance of %s: %f BTC" % (address, (float(r.text) / 100000000)))
+    print "Balance of %s: %f BTC" % (address, (float(r.text) / 100000000))
 
 def eddotman():
     a = range(5)
@@ -502,7 +502,7 @@ def danielnr(huehue):
     print "               :o              `-/////+sy-                   -////-`   oy       "
     print "               y.                   `````                   /so+//:::/+d-       "
     print "              /s------------------------------------------------::///:/         "
-  
+
 def spratt():
     print "Simon was here"
 
