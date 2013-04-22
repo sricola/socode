@@ -17,6 +17,7 @@ import requests
 import random
 import getpass
 import re
+import webbrowser
     
 def doctorpangloss():
     raw = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
@@ -101,6 +102,10 @@ def fmazon3():
 def peterwallhead():
     print '\n'.join('Fizz'*(not i%3) + 'Buzz'*(not i%5) or str(i) for i in range(1, 101))
     
+def dogukantufekci():
+    print "This is the connected world."
+    webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
+    
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
@@ -112,5 +117,6 @@ if __name__ == "__main__":
     agoebel()
     binary132()
     doctorpangloss()
+    dogukantufekci()
     lafin()
     fmazon3()
