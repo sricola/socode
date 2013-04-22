@@ -585,7 +585,7 @@ if __name__ == "__main__":
     ncammarata()
     eddotman()
     julio()
-    gardaud(prezjordan())
+    gardaud(prezjordan)
     GeneralZero()
     tcr()
     jhgaylor()
