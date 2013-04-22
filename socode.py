@@ -132,9 +132,8 @@ def cyclo():
     print "!dnalgnE morf olleH"[::-1]
 
 def chrisgw():
-    print "meh"
-    
-<<<<<<< HEAD
+	print "meh"
+
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
     abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
@@ -144,7 +143,7 @@ def maxmackie(crypt_me):
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     print 'Forked {} times'.format(repo['forks_count'])
-    
+
 def rburgosnavas(name):
     print '-' * (len(name) + 6)
     print "|  " + ' ' * (len(name)) + "  |"
@@ -166,31 +165,49 @@ def GeneralZero():# Spin the wheel
                     doctorpangloss,
                     chrisgw,
                     lafin,
-                    fmazon3])()
-    
-    
+                    fmazon3,
+                    mmay])()
+
+
 def bprater():
 
 	print "social coding, the end is near."
 
 
-
 def henghonglee():
     print "#!brain"
-=======
+
 def jhgaylor():
     print "Signing in from Starkville, Mississippi."
 
->>>>>>> b5cf150ada455df6bee399349b2adf0de829299d
+
+
+def mmay():
+    url = "http://placekitten.com/%d/%d" %(random.randint(500, 1000), random.randint(500, 1000))
+    print "Get your daily dose of kitten at: " + url
+
+
+def julio():
+    print 111111111 * 111111111;
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
     jpadilla()
     heinzf()
+    mmay()
     evinugur()
     JesseAldridge()
     sricola()
     kisom()
     ncammarata()
+    julio()
     prezjordan()
     tcr()
     jhgaylor()
