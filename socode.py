@@ -230,6 +230,10 @@ def ondrae(): # Random compliment. If anyone has a better source, add it in.
 def djrausch():
     print "DAE #HOLO? #NEXUS #HOLOYOLO"
 
+def aniketpant():
+    print "Moving the world off Internet Explorer 6"
+    print "Tell your friends to join the cause. Share this site http://bit.ly/ie6countdown and tweet #ie6countdown. Let everyone know that you're doing your part to get Internet Explorer 6 to 1%."
+
 # Compute the modular multiplicative inverse using the extended Euclide algorithm
 # See this for more information : http://en.wikipedia.org/wiki/Modular_multiplicative_inverse#Extended_Euclidean_algorithm 
 #
@@ -339,6 +343,7 @@ if __name__ == "__main__":
     fmazon3()
     bprater()
     eternalmatt()
+    aniketpant()
     prezjordan()
     shuhaowu()
     chewxy()
