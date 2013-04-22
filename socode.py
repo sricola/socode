@@ -17,6 +17,38 @@ import requests
 import random
 import getpass
     
+def saada():
+    print "                   ___   ___| |_ ___   ___ __ _| |_"
+    print "                  / _ \ / __| __/ _ \ / __/ _` | __|"
+    print "                 | (_) | (__| || (_) | (_| (_| | |_"
+    print "                  \___/ \___|\__\___/ \___\__,_|\__|"
+    print ""
+    print ""
+    print "                         |\                    ,"
+    print "                        |  `.   ______        /|                      _,-."
+    print "                        | _,--''      `'-.. ,'  |                   ,'    |"
+    print "                        |'                 `-.  |                 ,'   ,,'"
+    print "                      ,'                      `.|                '   ,'"
+    print "                     /                          \               '   '"
+    print "                    /  '''\         ,''`.        .             '   '"
+    print "                   |   `..'          ..,         |             '   '"
+    print "                   |                             | '.       ,-'   '"
+    print "           _.---..  \     .   .,.                /   ``---''    ,'"
+    print "         ,'       `._\     `.,,'-...-'         ,' ,'._       _,'"
+    print "        .'   ,---.   ``.                      /    \  `-----'"
+    print "       ,'  .'     `._   `..               _,-', \   ,"
+    print "  _,,,'   /           ,-'  `--..____,,..-',    \ |  |"
+    print " |     _,'           /    , ,   , ,  , ,  , \   ||  |"
+    print " `----'            ,'   ,' /  ,'  |  . '  '  |  |'  \""
+    print "                   /   / ,'  ,'   |  ||  |    |  |   ,"
+    print "                  |   / /   /     '  ||  |    \   \  | \""
+    print "                  |  | /   /    ,'  , '   \    |  |  |   \""
+    print "                 /   ',   ,   ,'   ,   \   |   \   \, ,   '."
+    print "                ,'  / |  .'  ,   ,'     |  |    \   \  ',   ',._"
+    print "              ,'   / ,-  |  .   /       |   \  / \   ,_ __      `'--."
+    print "          ,'''   ,' /   .' /   ,         \   \ ,  \       | -,__    |"
+    print "          |    ,'  |   .'  |   '          |   | \/ '-___,/      '--,'"
+    print "          `---'     `--'    ---`           ---'"
 
 def binary132():
     print "Perl is better.  PS everyone is lazy"
@@ -84,6 +116,7 @@ def tcr():
     print "You know we love you, ", getpass.getuser(), "."
     
 if __name__ == "__main__":
+    saada()
     evinugur()
     JesseAldridge()
     sricola()
