@@ -428,6 +428,9 @@ if __name__ == "__main__":
 
 def shazeline(name):
     print name + " is a pretty cool guy"
+    
+def matiasinsaurralde():
+    print "hello, this is skynet"
 
     # as per instructed, please leave this as the final function
     lafin()
