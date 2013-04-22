@@ -16,7 +16,8 @@ import json
 import requests
 import random
 import getpass
-    
+import sys    
+import inspect
 
 def binary132():
     print "Perl is better.  PS everyone is lazy"
@@ -84,10 +85,8 @@ def tcr():
     print "You know we love you, ", getpass.getuser(), "."
 
 def PiersonBro():
-    names = [evingur.__name__,JesseAldridge.__name__,sricola.__name__,kisom.__name__,prezjordan.__name__,tcr.__name__,agoebel.__name__,binary132.__name__,lafin.__name__]
-    print "Once upon a time a group of programmers got together\, Their names were:" + '[%s]' % ', '.join(map(str, mylist)) #Please continue the Story!
+    print "My bane was not capability it was randomness."
  
-    
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
