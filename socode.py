@@ -17,7 +17,10 @@ def sricola():
 
 def lefin():
     print "Goodbye Social World!"
+
+def zgohr():
+    lefin()
     
 if __name__ == "__main__":
     sricola()
-    lefin()
+    zgohr()
