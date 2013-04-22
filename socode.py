@@ -167,6 +167,9 @@ def bprater():
 
 
 
+def henghonglee():
+    print "#!brain"
+
 if __name__ == "__main__":
     jpadilla()
     heinzf()
@@ -177,6 +180,7 @@ if __name__ == "__main__":
     ncammarata()
     prezjordan()
     tcr()
+    henghonglee()
     agoebel()
     cyclo()
     binary132()
