@@ -699,6 +699,9 @@ def ngokevin(shamelessadvertising):
     print '<script>alert("HAHAHA");</script>'
     import antigravity
 
+def rodaaj():
+    name = karl
+    print name + " The Bro"
 def gardaud(func):
         print "Should I execute func?"
         if random.randrange(0,2) == 0:
