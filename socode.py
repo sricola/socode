@@ -484,6 +484,9 @@ def danielnr(huehue):
   print "               :o              `-/////+sy-                   -////-`   oy       "
   print "               y.                   `````                   /so+//:::/+d-       "
   print "              /s------------------------------------------------::///:/         "
+  
+def sspross():
+    import this
 
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
@@ -535,6 +538,7 @@ if __name__ == "__main__":
     jessex()
     lax()
     danielnr()
+    sspross()
     
     # as per instructed, please leave this as the final function
     lafin()
