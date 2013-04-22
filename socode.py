@@ -191,6 +191,14 @@ def bprater():
 
 	print "social coding, the end is near."
 
+def satshabad():
+    # this doesn't seem to space right... 
+    for x in range(10000):
+        r = random.randint(0,1)
+        if r== 0:
+            sys.stdout.write('/')
+        else:
+            sys.stdout.write('\\')
 
 def henghonglee():
     print "#!brain"
@@ -248,6 +256,7 @@ if __name__ == "__main__":
     shuhaowu()
     chewxy()
     rburgosnavas('CTHULHU LIVES!')
+    satshabad()
 
     # as per instructed, please leave this as the final function
     lafin()
