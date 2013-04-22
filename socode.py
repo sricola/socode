@@ -156,8 +156,8 @@ def cyclo():
     print "!dnalgnE morf olleH"[::-1]
 
 def chrisgw():
-	print "meh"
-
+    print "meh"
+    
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
     abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
