@@ -21,6 +21,8 @@ import hashlib
 import os
 import string
 import math
+import sys    
+import inspect
 
 def heinzf():
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -292,7 +294,10 @@ def chris911():
     for x in contributors:
         contributors_list.append(x['login'])
     print 'Contributors: '
-    print ', '.join(contributors_list) 
+	print ', '.join(contributors_list) 
+
+def PiersonBro():
+    print "My bane was not capability it was randomness."
  
 if __name__ == "__main__":
     jpadilla()
@@ -314,6 +319,7 @@ if __name__ == "__main__":
     agoebel()
     cyclo()
     binary132()
+<<<<<<< HEAD
     sfrnld()
     doctorpangloss()
     chrisgw()
@@ -330,4 +336,7 @@ if __name__ == "__main__":
     chris911()
 
     # as per instructed, please leave this as the final function
+=======
+    PiersonBro()
+>>>>>>> 0c7762f2a43b5300d07d2bf5d1702a468daffb2b
     lafin()
