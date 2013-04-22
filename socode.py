@@ -649,5 +649,8 @@ if __name__ == "__main__":
     pocon()
 
     
+    def reksy():
+    print "From the moon."
+    
     # as per instructed, please leave this as the final function
     lafin()
