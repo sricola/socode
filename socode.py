@@ -28,6 +28,13 @@ import time
 import urllib2
 import platform
 
+def kirualex():
+    s = "Go placidly amid the noise and haste, and remember what peace there may be in silence."
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(.03)
+
 def jontonsoup():
     print "There's always one more bug."
 
@@ -552,6 +559,7 @@ def dpayne():
     return False
   
 if __name__ == "__main__":
+    kirualex()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
