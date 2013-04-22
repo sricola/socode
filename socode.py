@@ -585,6 +585,15 @@ def pocon():
 	import __hello__
 	print "And with that, @pocon chimes in late"
 
+# Please consider creating your function
+# some random place between two other
+# functions instead of right here.
+# This will give your commit a much
+# better chance of getting merged.
+
+# Ironically, the commit adding ^ gave me 
+# a merge conflict whilst trying to 
+# resolve merge conflicts :P - pocon 
   
 
 def bheesham():
@@ -655,5 +664,12 @@ if __name__ == "__main__":
     bheesham()
 
     
+    # If you add a call to your function here you will
+    # hit a merge conflict. Instead if you add your
+    # call some place random wihin the list or at the
+    # bottom of someone else's function then your
+    # commit should automerge. Please consider this
+    # ---------------------------------------------
+
     # as per instructed, please leave this as the final function
     lafin()
