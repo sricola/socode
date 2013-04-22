@@ -82,6 +82,16 @@ def bencooling():
     print "I don't know Python; I don't belong here"
     zachlatta()
     
+def quarterto(m,n):
+    if m == 0:
+        return n+1
+    else if m > 0 and n == 0:
+        return quarterto(m-1,1)
+    else if m > 0 and n > 0:
+        return quarterto(m-1,quarterto(m,n-1))
+    else:
+        return 0
+    
 def kisom():
     def zgohr(city):
         weather = json.loads(requests.
@@ -283,6 +293,7 @@ def jeffjose():
 
 def julio():
     print 111111111 * 111111111;
+    print quarterto(4,2)
 
 def ondrae(): # Random compliment. If anyone has a better source, add it in.
     response = requests.get("http://peoplearenice.blogspot.com/p/compliment-list.html")
