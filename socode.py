@@ -417,9 +417,30 @@ def shazeline(name):
 def matiasinsaurralde():
     print "hello, this is skynet"
 
+def dmercer(number, start=2):
+    """
+       Sift the Two's and Sift the Three's,
+       The Sieve of Eratosthenes.
+       When the multiples sublime,
+       The numbers that remain are Prime!
+    """
+    sieve = []
+    for n in xrange(start, number+1):
+        is_prime = True
+        for p in sieve:
+            if n % p == 0:
+                is_prime = False
+                break
+            if p * p > n:
+                break
+        if is_prime:
+            sieve.append(n)
+    return sieve
+
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
+    dmercer(42)
     jpadilla()
     mmay()
     evinugur()
