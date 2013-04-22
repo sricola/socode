@@ -424,6 +424,16 @@ def shazeline(name):
 def matiasinsaurralde():
     print "hello, this is skynet"
 
+def drewcrawford():
+    print "Let's see that again..."
+    functions = filter(lambda l: hasattr(l,'__call__') and l.func_code.co_argcount==0,globals().values())
+    from random import choice
+    f = choice(functions)
+    try:
+        f()
+    except Exception as e:
+        print "didn't work.",e
+
 def dmercer(number, start=2):
     """
        Sift the Two's and Sift the Three's,
@@ -488,6 +498,7 @@ def danielnr(huehue):
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
+    drewcrawford()
     dmercer(42)
     ryanseys()
     jpadilla()
