@@ -821,6 +821,12 @@ def myeaple():
 def reksy():
 	print "I thought Python was like the snake game?"
 
+def calvcoll(rs):
+	if rs == 1024:
+		print "You have struck the gold mine!"
+		print "Well done for getting the 2^10"
+		print "--Love from your ginger friend, Calv"
+
 def bheesham():
 	print "Hello world! - Bheesham"
 
@@ -941,6 +947,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
+    calvcoll(random.randint(1,1024))
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
