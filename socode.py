@@ -59,9 +59,9 @@ def prezjordan():
     
 def JesseAldridge():
     def wrap(f):
-      def new_f():
+      def new_f(*args, **kwargs):
         for i in range(random.randrange(1, 5)):
-          f()
+          f(*args, **kwargs)
       return new_f
 
     g = globals()
