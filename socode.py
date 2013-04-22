@@ -54,9 +54,13 @@ def shuhaowu(): # Call me last! :D
 
     print "Goodbye, cruel world"
     
+def agoebel():
+    print "America!"
+    
 if __name__ == "__main__":
     JesseAldridge()
     sricola()
     kisom()
     lafin()
     prezjordan()
+    agoebel()
