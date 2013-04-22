@@ -30,6 +30,12 @@ import urllib2
 import platform
 import time
 
+
+# IF ANY OF YOU GUYS WANT THE SOURCE OF THIS FILE USE THIS VARIABLE
+###################################################################
+
+socode_source = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
+
 def ray0sunshine():
     print "Gibe moni pls"
     print "Morde es numero uno"
@@ -80,7 +86,7 @@ def jontonsoup():
 
 def heinzf(update=True):
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
-    git_file = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
+    git_file = socode_source
     git_hash = hashlib.sha256(git_file).hexdigest()
     with open(os.path.realpath(__file__),'r+') as f:
         local_file = f.read()
@@ -91,13 +97,13 @@ def heinzf(update=True):
         with open(os.path.realpath(__file__),'w+') as f:
             f.write(git_file)
             print 'I update myself, when I think about you, lalalala'
-        f.close()
+        f.close()`
 
 def zachlatta():
     import antigravity
 
 def doctorpangloss():
-    raw = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
+    raw = socode_source
     # not sure what is being achieved here - @sricola
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
@@ -776,9 +782,7 @@ def ncerminara(n):
     return int(round((phi**n - (1-phi)**n) / 5**0.5))
 
 def rafkhan():
-	r = requests.get('https://raw.github.com/sricola/socode/master/socode.py')
-	print r.content
-
+	print socode_source
 
 # Please consider creating your function
 # some random place between two other
