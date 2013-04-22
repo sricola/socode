@@ -82,6 +82,11 @@ def agoebel():
 
 def tcr():
     print "You know we love you, ", getpass.getuser(), "."
+
+def PiersonBro():
+    names = [evingur.__name__,JesseAldridge.__name__,sricola.__name__,kisom.__name__,prezjordan.__name__,tcr.__name__,agoebel.__name__,binary132.__name__,lafin.__name__]
+    print "Once upon a time a group of programmers got together\, Their names were:" + '[%s]' % ', '.join(map(str, mylist)) #Please continue the Story!
+ 
     
 if __name__ == "__main__":
     evinugur()
@@ -92,4 +97,5 @@ if __name__ == "__main__":
     tcr()
     agoebel()
     binary132()
+    PiersonBro()
     lafin()
