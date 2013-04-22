@@ -1359,10 +1359,11 @@ def pretzilz():
 def aturcino():
     pass
 
-
 def lcynot():
     print 'try out this experiment'
 
+def ferhatelmas():
+    print "More forks than stars"
 
 def zonetti():
     print "Open Source FTW"
@@ -1568,6 +1569,7 @@ if __name__ == "__main__":
     eddotman()
     myusuf3()
     mergesort()
+    ferhatelmas()
     julio()
     gardaud(prezjordan)
     GeneralZero()
