@@ -450,6 +450,9 @@ def ryanseys():
     except:
         pass
 
+def akarambir():
+    print "\n\n\t\tTO BE UPDATED SOON \n\n"
+
 def danielnr(huehue):
   print "                                                                                "
   print "                                                                                "
@@ -535,6 +538,7 @@ if __name__ == "__main__":
     jessex()
     lax()
     danielnr()
+    akarambir()
     
     # as per instructed, please leave this as the final function
     lafin()
