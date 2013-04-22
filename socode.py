@@ -477,7 +477,7 @@ def uiri():
                 print line.strip()
 
 def jpadilla():
-    repo = requests.get('https://api.github.com/repos/sricola/socode').json()
+    repo = requests.get('https://api.github.com/repos/sricola/socode').json
     try:
         print 'Forked {} times'.format(repo['forks_count'])
     except ValueError:
