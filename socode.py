@@ -131,7 +131,7 @@ def maxmackie(crypt_me):
     """Just try and crack this cipher."""
     abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
     crypt = "mplnkoijbqazdsxcwerfgvhutyQASXZWDVFCERGTBHNYKMJLUPIO4567382901"
-    print "hello".translate(string.maketrans(abc, crypt))
+    print crypt_me.translate(string.maketrans(abc, crypt))
 
 if __name__ == "__main__":
     heinzf()
