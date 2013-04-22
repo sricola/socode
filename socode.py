@@ -662,6 +662,9 @@ def spratt():
 
 def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
+  
+def arkokoley():
+  print "Long live Aaron Swartz!"
 
 def dpayne():
     try:
@@ -745,6 +748,7 @@ if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
+    arkokoley()
     drewcrawford()
     dmercer(42)
     ryanseys()
