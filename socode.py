@@ -418,8 +418,7 @@ def matiasinsaurralde():
     print "hello, this is skynet"
 
 if __name__ == "__main__":
-    heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
-    uiri() # Can I go first unless you're going to modify the file?
+    uiri()
     jpadilla()
     mmay()
     evinugur()
@@ -463,6 +462,6 @@ if __name__ == "__main__":
     ngokevin('ngokevin.com')
     jessex()
     lax()
-    
+    heinzf(False) # This will auto-update the file. Deactivated for now.
     # as per instructed, please leave this as the final function
     lafin()
