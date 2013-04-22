@@ -29,7 +29,7 @@ import urllib2
 import platform
 from operator import itemgetter
 
-def kirangangadharan():
+def kirang89():
     a = [('Ant', 1), ('Elephant', 2), ('Cow', 3), ('Deer', 4)]
     print "List sorted according to animal name: ", sorted(a, key=itemgetter(0,1))
     print "List sorted according to number: ", sorted(a, key=itemgetter(1,0))
