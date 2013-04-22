@@ -144,6 +144,8 @@ def kghose():
     
     curses.wrapper(main_loop)
     
+def jessex():
+    os.execl("/bin/echo", "echo", "This is a long way to go for 'hello world' but life's about the journey.")
 
 def lafin():
     print "Goodbye Social World!"
@@ -424,6 +426,7 @@ if __name__ == "__main__":
     chris911()
     doboy(doboy)
     ngokevin('ngokevin.com')
+    jessex()
 
     # as per instructed, please leave this as the final function
     lafin()
