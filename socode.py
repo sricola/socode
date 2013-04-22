@@ -16,7 +16,12 @@ import json
 import requests
 import random
 import getpass
+import re
     
+def doctorpangloss():
+    raw = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
+    matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
+    print raw
 
 def binary132():
     print "Perl is better.  PS everyone is lazy"
@@ -79,4 +84,5 @@ if __name__ == "__main__":
     tcr()
     agoebel()
     binary132()
+    doctorpangloss()
     lafin()
