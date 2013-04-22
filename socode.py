@@ -11,7 +11,7 @@
 #       - lefin() should be the last executing function, always
 
 # Lets see if we can make something meaningful out of this.
-
+import sys
 import json
 import requests
 import random
@@ -224,6 +224,20 @@ def shuhaowu(): # Call me last! :D
 
 def agoebel():
     print "America!"
+
+def ZackMullaly():
+    f = open("temporary.txt", "w")
+    stdout = sys.stdout
+    sys.stdout = f
+    for stuff in globals():
+        if stuff.startswith("__") and stuff.endswith("__"):
+            continue
+        globals()[stuff]
+    f.close()
+    sys.stdout = stdout
+    output = open("temporary.txt").read().split("\n")
+    longest = sorted(output, lambda a, b: 1 if len(a) < len(b) else -1)[0]
+    print "The longest thing anyone's said seems to be " + longest
 
 def tcr():
     print "You know we love you, ", getpass.getuser(), "."
@@ -609,7 +623,6 @@ def reksy():
 def bheesham():
 	print "Hello world! - Bheesham"
 
-
 if __name__ == "__main__":
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
@@ -637,6 +650,7 @@ if __name__ == "__main__":
     djrausch()
     jeffjose()
     agoebel()
+    ZackMullaly()
     cyclo()
     binary132()
     sfrnld()
