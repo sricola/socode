@@ -26,6 +26,9 @@ import inspect
 import webbrowser
 import time
 
+def jontonsoup():
+    print "There's always one more bug."
+
 def heinzf(update=True):
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
     git_file = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
@@ -525,6 +528,7 @@ if __name__ == "__main__":
     PiersonBro()
     ankushsachdeva()
     aniketpant()
+    jontonsoup()
     prezjordan()
     shuhaowu()
     chewxy()
