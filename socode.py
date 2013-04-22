@@ -121,6 +121,7 @@ if __name__ == "__main__":
     kisom()
     ncammarata()
     prezjordan()
+    GeneralZero()
     tcr()
     agoebel()
     cyclo()
