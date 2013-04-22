@@ -486,6 +486,50 @@ def ondrae(): # Random compliment. If anyone has a better source, add it in.
 def djrausch():
     print "DAE #HOLO? #NEXUS #HOLOYOLO"
 
+# Checks to see if an episode of Doctor Who aired on this date, and if so the title.
+def mikemiles86():
+	# 1. check for a list of air dates
+	if os.path.exists('doctorwho.txt')
+	# 1.1 file exists, load it
+		f = open('doctorwho.txt','r')
+		airdates = eval(f.read())
+	else
+	# 1.2 file not found, generate it
+		airdates = {}
+		#1.2.1 get air dates of original series (1963 - 1996)
+		response = requests.get('http://epguides.com/DoctorWho/')
+		lines = response.text.split('<pre>')
+		lines = lines[1].text.split('</pre>')
+		lines = lines[0].text.split('\n')
+		
+		for line in lines:
+			
+		
+		#1.2.2 get air dates of new series (2005 - 2013)
+		response = requests.get('http://epguides.com/DoctorWho_2005/')
+		lines = response.text.split('<pre>')
+		lines = lines[1].text.split('</pre>')
+		lines = lines[0].text.split('\n')
+
+		for line in lines:
+			airdate = line.text.split('   ')
+			if airdate[0].isdigit()
+				date = airdate[6].text.split('/')
+				date = date[0].date[1]
+				name = airdate[7].text.split('</a>')
+				name = name[0].text.split('">')
+				name = name[1]
+				airdates[date] = {'airdate':airdate[6],'title':name,'episode':airdate[2]}
+		
+		#1.2.3 store dictionary into file
+		f = open('doctorwho.txt','w')
+		f.write(airdates)
+	# 2. get current date in same format as keys
+	# 3. an episode aired on this date
+		# 3.1 Yes, print the details
+		# 3.2 No, print a sad message.
+	
+
 def aniketpant():
     print "Moving the world off Internet Explorer 6"
     print "Tell your friends to join the cause. Share this site http://bit.ly/ie6countdown and tweet #ie6countdown. Let everyone know that you're doing your part to get Internet Explorer 6 to 1%."
@@ -1030,6 +1074,7 @@ if __name__ == "__main__":
     chewxy()
     theabrad()
     rburgosnavas('ANNIHILATE!!!!')
+    mikemiles86()
     markembling()
     satshabad()
     ondrae()
