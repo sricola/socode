@@ -61,6 +61,9 @@ def shuhaowu(): # Call me last! :D
 def agoebel():
     print "America!"
     
+def sfrnld():
+    print "From Indonesia with love!"
+    
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
@@ -68,4 +71,5 @@ if __name__ == "__main__":
     kisom()
     prezjordan()
     agoebel()
+    sfrnld()
     lafin()
