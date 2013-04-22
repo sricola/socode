@@ -760,6 +760,7 @@ if __name__ == "__main__":
     doboy(doboy)
     ngokevin('ngokevin.com')
     jessex()
+    rightfold()
     lax()
     thisishugo()
     danielnr()
