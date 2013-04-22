@@ -101,6 +101,9 @@ def fmazon3():
 def peterwallhead():
     print '\n'.join('Fizz'*(not i%3) + 'Buzz'*(not i%5) or str(i) for i in range(1, 101))
     
+def cyclo():
+    print "!dnalgnE morf olleH"[::-1]
+    
 if __name__ == "__main__":
     evinugur()
     JesseAldridge()
@@ -110,6 +113,7 @@ if __name__ == "__main__":
     prezjordan()
     tcr()
     agoebel()
+    cyclo()
     binary132()
     doctorpangloss()
     lafin()
