@@ -81,6 +81,9 @@ def sricola():
 def bencooling():
     print "I don't know Python; I don't belong here"
     zachlatta()
+
+def chrisfinne():
+    print "I don't know Python either, but it is 4am and I'm very good at procrastinating."
     
 def kisom():
     def zgohr(city):
@@ -570,6 +573,7 @@ if __name__ == "__main__":
     evinugur()
     JesseAldridge()
     bencooling()
+    chrisfinne()
     sricola()
     kisom()
     ncammarata()
