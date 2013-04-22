@@ -863,6 +863,20 @@ def dpayne():
     
     return False
 
+def mrjaeger():
+    rand_func = random.choice([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])
+    num_args = inspect.getargspec(rand_func)[0]
+    args = []
+    for i in range(0, len(num_args)):
+        args.append("%d" % (random.randint(0, 9001)))
+    passed_args = ', '.join(args)
+    function_str = "rand_func(%s)" % (passed_args)
+    the_result = eval(function_str)
+    if isinstance(the_result, (int, float, long)):
+        print "Mathematical!"
+    else:
+        print "Be gone biddies!"
+
 def codesuela(board):
     print json.load(urllib2.urlopen('https://api.4chan.org/%s/0.json' % (board,)))['threads'][0]['posts'][0]['com']
 
@@ -996,6 +1010,7 @@ if __name__ == "__main__":
     gardaud(prezjordan)
     GeneralZero()
     tcr()
+    mrjaeger()
     jhgaylor()
     henghonglee()
     taylorlapeyre()
