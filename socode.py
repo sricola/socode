@@ -140,5 +140,7 @@ if __name__ == "__main__":
     binary132()
     doctorpangloss()
     chrisgw()
-    lafin()
     fmazon3()
+    
+    # special
+    lafin()
