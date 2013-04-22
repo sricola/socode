@@ -204,10 +204,10 @@ def satshabad():
     # this doesn't seem to space right... 
     for x in range(10000):
         r = random.randint(0,1)
-        if r== 0:
-            sys.stdout.write('/')
+        if r == 0:
+            print '/'
         else:
-            sys.stdout.write('\\')
+            print '\\'
 
 def henghonglee():
     print "#!brain"
