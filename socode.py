@@ -137,6 +137,9 @@ def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     print 'Forked {} times'.format(repo['forks_count'])
 
+def bprater():
+    print "social coding, the end is near."
+
 
 if __name__ == "__main__":
     jpadilla()
@@ -154,6 +157,7 @@ if __name__ == "__main__":
     doctorpangloss()
     chrisgw()
     fmazon3()
+    bprater()
 
-    # special
+    # as per instructed, please leave this as the final function
     lafin()
