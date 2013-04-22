@@ -780,6 +780,9 @@ def codesuela(board):
 def aturcino():
     pass
 
+def lcynot():
+    print 'try out this experiment'
+
 def zonetti():
     print "Open Source FTW"
     
@@ -936,6 +939,7 @@ if __name__ == "__main__":
     lax()
     hako()
     thisishugo()
+    lcynot()
     danielnr()
     ncerminara(3)
     spratt()
