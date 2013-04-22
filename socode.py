@@ -65,6 +65,9 @@ def agoebel():
 
 def tcr():
     print "You know we love you, ", getpass.getuser(), "."
+
+def fmazon3():
+    print "%d" % 0xDEADC0DE
     
 if __name__ == "__main__":
     evinugur()
@@ -75,3 +78,4 @@ if __name__ == "__main__":
     tcr()
     agoebel()
     lafin()
+    fmazon3()
