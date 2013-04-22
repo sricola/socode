@@ -631,7 +631,7 @@ if __name__ == "__main__":
     windspy()
     samlabs821()
     alisnic(random.randint(1, 1024))
-	myeaple()
+    myeaple()
     
     # as per instructed, please leave this as the final function
     lafin()
