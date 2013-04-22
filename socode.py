@@ -15,9 +15,9 @@
 def sricola():
     print "Welcome to soCode!!"
 
-def lefin():
+def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
     
 if __name__ == "__main__":
     sricola()
-    lefin()
+    lafin()
