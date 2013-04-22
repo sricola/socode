@@ -332,6 +332,16 @@ def charliegroll():
     print "Never gonna say goodbye,"
     print "Never gonna tell a lie and hurt you."
 
+def devonbarrett():
+    print "We're no strangers to love"
+    print "You Know the rules and so do I"
+    print "A full commitment's what I'm thinking of"
+    print "You wouldn't get this from any other guy"
+    print "I just wanna tell you how I'm feeling"
+    print "Gotta make you understand"
+    eternalmatt()
+    charliegroll()
+
 def shuhaowu(): # Call me last! :D
     l = locals()
     for f in l.keys():
@@ -945,6 +955,7 @@ if __name__ == "__main__":
     drewcrawford()
     dmercer(42)
     ryanseys()
+    devonbarrett()
     jpadilla()
     mmay()
     evinugur()
