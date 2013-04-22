@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 
 # Welcome to soCode, the social coding experiment.
 # Here are the rules!
