@@ -34,7 +34,7 @@ def bencooling():
   print "I don't know Python; I don't belong here"
     
 def kisom():
-    def zgohr(city): # JesseAldridge breaks top level funcs with parms
+    def zgohr(city):
         weather = json.loads(requests.
                              get('http://api.openweathermap.org'
                                  '/data/2.1/find/name?q=%s' % city).content)
