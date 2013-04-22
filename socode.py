@@ -24,7 +24,7 @@ def kisom():
     print 'there once was a coder from', geoip
     
 def evinugur():
-    print 'there is a ', (random.random()*100), "% change that something cool will come from this..."
+    print 'there is a ', (random.random()*100), "% chance that something cool will come from this..."
     
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
