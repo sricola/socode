@@ -227,7 +227,8 @@ def ondrae(): # Random compliment. If anyone has a better source, add it in.
             compliments.append(m.group(1))
     print getpass.getuser() +', ' + compliments[random.randint(1,len(compliments))].lower()
 
-
+def djrausch():
+    print "DAE #HOLO? #NEXUS #HOLOYOLO"
 
 
 
