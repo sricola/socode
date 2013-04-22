@@ -136,6 +136,13 @@ def maxmackie(crypt_me):
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     print 'Forked {} times'.format(repo['forks_count'])
+    
+def rburgosnavas(name):
+    print '-' * (len(name) + 6)
+    print "|  " + ' ' * (len(name)) + "  |"
+    print "|  " + name + "  |"
+    print "|  " + ' ' * (len(name)) + "  |"
+    print '-' * (len(name) + 6)
 
 def GeneralZero():# Spin the wheel
     random.choice([ evinugur,
@@ -177,6 +184,7 @@ if __name__ == "__main__":
     chrisgw()
     fmazon3()
     bprater()
+    rburgosnavas('CTHULHU LIVES!')
 
     # as per instructed, please leave this as the final function
     lafin()
