@@ -28,6 +28,7 @@ def evinugur():
     
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
+    print "\nStarted with <3 in Brooklyn, NY\n"
 
 def prezjordan():
     h,s='.;*&8#',''
@@ -65,6 +66,6 @@ if __name__ == "__main__":
     JesseAldridge()
     sricola()
     kisom()
-    lafin()
     prezjordan()
     agoebel()
+    lafin()
