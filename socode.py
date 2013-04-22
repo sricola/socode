@@ -383,8 +383,12 @@ def ngokevin(shamelessadvertising):
     print '<script>alert("HAHAHA");</script>'
     import antigravity
 
+def clark():
+    print "Hello, cruel world!"
+
 if __name__ == "__main__":
     heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
+    clark() # No! :)
     uiri() # Can I go first unless you're going to modify the file?
     jpadilla()
     mmay()
