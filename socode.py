@@ -409,6 +409,14 @@ def lax():
 
     requests.get('http://www.liulantao.com/ss/?%r' % u)
 
+
+
+def shazeline(name):
+    print name + " is a pretty cool guy"
+    
+def matiasinsaurralde():
+    print "hello, this is skynet"
+
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -455,12 +463,6 @@ if __name__ == "__main__":
     ngokevin('ngokevin.com')
     jessex()
     lax()
-
-def shazeline(name):
-    print name + " is a pretty cool guy"
     
-def matiasinsaurralde():
-    print "hello, this is skynet"
-
     # as per instructed, please leave this as the final function
     lafin()
