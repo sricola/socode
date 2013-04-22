@@ -223,6 +223,13 @@ def peterwallhead():
 def cyclo():
     print "!dnalgnE morf olleH"[::-1]
 
+def vellamike(n=10):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return vellamike(n-1) + vellamike(n-2)
+
 def chrisgw():
     print "meh"
 
@@ -614,6 +621,7 @@ if __name__ == "__main__":
     spratt()
     windspy()
     samlabs821()
+    vellamike(10)
     alisnic(random.randint(1, 1024))
     
     # as per instructed, please leave this as the final function
