@@ -755,6 +755,9 @@ def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
     similarity = numerator / denominator
     return similarity
 
+def georgemandis():
+    return True
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
