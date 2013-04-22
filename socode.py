@@ -86,11 +86,11 @@ def taylorlapeyre():
     consonants = "bcdfghjklmnpqrstvwxyz"
     vowels     = "aeiou"
 
-    for i in range(randint(3, 15)):
+    for i in range(random.randint(3, 15)):
         if i % 5 == 0:
-            letter = choice(vowels)
+            letter = random.choice(vowels)
         else:
-            letter = choice(consonants)
+            letter = random.choice(consonants)
         word.append(letter)
 
     return ''.join(word)
@@ -160,7 +160,10 @@ def maxmackie(crypt_me):
 
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
-    print 'Forked {} times'.format(repo['forks_count'])
+    try:
+        print 'Forked {} times'.format(repo['forks_count'])
+    except ValueError:
+        pass
 
 def rburgosnavas(name):
     print '-' * (len(name) + 6)
@@ -242,7 +245,7 @@ def sfrnld():
  
 if __name__ == "__main__":
     jpadilla()
-    heinzf()
+    #heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
     mmay()
     evinugur()
     JesseAldridge()
