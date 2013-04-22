@@ -108,6 +108,13 @@ def cyclo():
     
 def chrisgw():
     print "meh"
+    
+def rburgosnavas(name):
+    print '-' * (len(name) + 6)
+    print "|  " + ' ' * (len(name)) + "  |"
+    print "|  " + name + "  |"
+    print "|  " + ' ' * (len(name)) + "  |"
+    print '-' * (len(name) + 6)
 
 if __name__ == "__main__":
     evinugur()
@@ -122,5 +129,6 @@ if __name__ == "__main__":
     binary132()
     doctorpangloss()
     chrisgw()
-    lafin()
     fmazon3()
+    rburgosnavas('CTHULHU LIVES!')
+    lafin()
