@@ -25,6 +25,8 @@ import sys
 import inspect
 import webbrowser
 import time
+import urllib2
+import platform
 
 def heinzf(update=True):
     """Compare itself with the raw code github. If there's something new, it updates the file localy."""
@@ -450,6 +452,43 @@ def ryanseys():
     except:
         pass
 
+def dpayne():
+    #sets the desktop wallpaper to the top image on the wallpapers subreddit
+    sub_reddit = 'wallpapers'
+    
+    #get the top image link
+    reddit_json_url = 'http://www.reddit.com/r/' + sub_reddit + '/top.json?sort=top&t=day'
+    response = urllib2.urlopen(reddit_json_url)
+    redditJson = response.read()
+    m = re.search('\"url\": \"(.*?)\",', redditJson)
+    imageUrl = m.group(1)
+    
+    extension = imageUrl[-4:]
+    accepted_extensions = set(['jpeg', '.jpg', '.png', '.bmp'])
+    if extension not in accepted_extensions:
+        #ignore non image extensions
+        return False
+    
+    #save top wallpaper
+    opener1 = urllib2.build_opener()
+    page1 = opener1.open(imageUrl)
+    my_picture = page1.read()
+    filename = "reddit_wallpaper.jpg"
+    fout = open(filename, "wb")
+    fout.write(my_picture)
+    fout.close()
+    
+    currentDir = os.getcwd()
+    plat = platform.system().lower()
+    
+    #set wallpaper
+    if (plat == 'darwin'):
+        os.system("defaults write com.apple.desktop Background '{default = {ImageFilePath = \"" + currentDir + "/reddit_wallpaper.jpg\"; };}'")
+        os.system("killall Dock")
+        return True
+    
+    return False
+
 if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
@@ -499,6 +538,6 @@ if __name__ == "__main__":
     ngokevin('ngokevin.com')
     jessex()
     lax()
-    
+    dpayne()
     # as per instructed, please leave this as the final function
     lafin()
