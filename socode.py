@@ -557,6 +557,10 @@ def dpayne():
     
     return False
   
+def joshryandavis():
+    for i in range(0, 72):
+        print 'Around the world, around the world'
+
 if __name__ == "__main__":
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
@@ -615,6 +619,7 @@ if __name__ == "__main__":
     windspy()
     samlabs821()
     alisnic(random.randint(1, 1024))
+    joshryandavis()
     
     # as per instructed, please leave this as the final function
     lafin()
