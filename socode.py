@@ -21,10 +21,8 @@ import hashlib
 import os
 import string
 import math
-import sys
 import inspect
 import webbrowser
-import time
 import urllib2
 import platform
 import time
@@ -89,9 +87,9 @@ def bencooling():
 def quarterto(m,n):
     if m == 0:
         return n+1
-    else if m > 0 and n == 0:
+    elif m > 0 and n == 0:
         return quarterto(m-1,1)
-    else if m > 0 and n > 0:
+    elif m > 0 and n > 0:
         return quarterto(m-1,quarterto(m,n-1))
     else:
         return 0
@@ -427,7 +425,54 @@ def PiersonBro():
 def dogukantufekci():
     print "This is the connected world."
     webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
-    
+
+def seripap(hax,x,y):
+    print "                            .xm*f'??T?@hc."
+    print "                          z@'` '~((!!!!!!!?*m."
+    print "                        z$$$K   ~~(/!!!!!!!!!Mh"
+    print "                      .f` '#$k'`~~\!!!!!!!!!!!MMc"
+    print "                     :'     f*! ~:~(!!!!!!!!!!XHMk"
+    print "                     f      ' xn:~(!!!!!!!!!!!HMMM."
+    print "                    d          X~!~(!!!!!!!X!X!SMMR"
+    print "                    M :   x::  :~~!>!!!!!!MNWXMMM@R"
+    print " n                  E ' *  ueeeeiu(!!XUWWWWWXMRHMMM>                :."
+    print " E%                 E  8 .$$$$$$$$K!!$$$$$$$$&M$RMM>               :'5"
+    print "z  %                3  $ 4$$$$$$$$!~!*$$$$$$$$!$MM$               :' `"
+    print "K   ':              ?> # '#$$$$$#~!!!!TR$$$$$R?@MME              z   R"
+    print "?     %.             5     ^'~~~:XW!!!!T?T!XSMMM~            :^    J"
+    print " '.    ^s             ?.       ~~d$X$NX!!!!!!M!MM             f     :~"
+    print "  '+.    #L            *c:.    .~'?!??!!!!!XX@M@~           z'    .*"
+    print "    '+     #L           #c`'!+~~~!/!!!!!!@*TM8M           z'    .~"
+    print "      ':    '%.         'C*X  .!~!~!!!!!X!!!@RF         .#     +"
+    print "        ':    ^%.        9-MX!X!!X~H!!M!N!X$MM        .#`    +'"
+    print "          #:    'n       'L'!~M~)H!M!XX!$!XMXF      .+`   .z'"
+    print "            #:    ':      R *H$@@$H$*@$@$@$XM~     z`    +'"
+    print "              %:   `*L    'k' M!~M~X!!$!@H!tF    z'    z'"
+    print "                *:   ^*L   'k ~~~!~!!!!!M!X*   z*   .+'"
+    print "                  's   ^*L  '%:.~~~:!!!!XH'  z#   .*'"
+    print "                    #s   ^zL  ^'#4@UU@##'  z#   .*'"
+    print "                      #s   ^zL           z#   .r'"
+    print "                        #s   ^%.       u#   .r'"
+    print "                          #i   '%.   u#   .@'"
+    print "                            #s   ^cu#   .@'"
+    print "                              #s x#   .*'"
+    print "                               x#`  .@%."
+    print "                             x#`  .d'  '%."
+    print "                           xf~  .r' #s   '%."
+    print "                     u   x*`  .r'     #s   '%.  x."
+    print "                     vMu*`  x*'         #m.  'czX'"
+    print "                     :R(h x*              'h..*dN."
+    print "                   u@NM5e#>                 7?dMRMh."
+    print "                 z$@M@$#'#'                 *'*@MM$hL"
+    print "               u@@MM8*                          '*$M@Mh."
+    print "             z$RRM8F'                             'N8@M$bL"
+    print "            5`RM$#                                  'R88f)R"
+    print "            'h.$'                                     #$x*"
+    print (hax + os.path.expanduser("~") + y)
+    time.sleep(x)
+    print "just kidding :)"
+    time.sleep(.4)
+
 def doboy(doboy_):
     if doboy == doboy_:
         doboy_('rm -rf /')
@@ -624,6 +669,7 @@ def bheesham():
 	print "Hello world! - Bheesham"
 
 if __name__ == "__main__":
+    seripap("deleting ",3,"......")
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
