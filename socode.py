@@ -89,11 +89,11 @@ def taylorlapeyre():
     consonants = "bcdfghjklmnpqrstvwxyz"
     vowels     = "aeiou"
 
-    for i in range(randint(3, 15)):
+    for i in range(random.randint(3, 15)):
         if i % 5 == 0:
-            letter = choice(vowels)
+            letter = random.choice(vowels)
         else:
-            letter = choice(consonants)
+            letter = random.choice(consonants)
         word.append(letter)
 
     return ''.join(word)
@@ -161,9 +161,18 @@ def maxmackie(crypt_me):
     crypt = "mplnkoijbqazdsxcwerfgvhutyQASXZWDVFCERGTBHNYKMJLUPIO4567382901"
     print crypt_me.translate(string.maketrans(abc, crypt))
 
+def uiri():
+    with open(os.path.realpath(__file__),'r') as f:
+        for line in f.readlines():
+            if line.strip()[:5] == "print":
+                print line.strip()
+
 def jpadilla():
     repo = requests.get('https://api.github.com/repos/sricola/socode').json()
-    print 'Forked {} times'.format(repo['forks_count'])
+    try:
+        print 'Forked {} times'.format(repo['forks_count'])
+    except ValueError:
+        pass
 
 def rburgosnavas(name):
     print '-' * (len(name) + 6)
@@ -183,10 +192,10 @@ def satshabad():
     # this doesn't seem to space right... 
     for x in range(10000):
         r = random.randint(0,1)
-        if r== 0:
-            sys.stdout.write('/')
+        if r == 0:
+            print '/'
         else:
-            sys.stdout.write('\\')
+            print '\\'
 
 def henghonglee():
     print "#!brain"
@@ -300,8 +309,9 @@ def PiersonBro():
     print "My bane was not capability it was randomness."
  
 if __name__ == "__main__":
+    heinzf() # this thing makes it hard to make sure stuff works, doesn't it?
+    uiri() # Can I go first unless you're going to modify the file?
     jpadilla()
-    heinzf()
     mmay()
     evinugur()
     JesseAldridge()
