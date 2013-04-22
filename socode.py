@@ -242,6 +242,18 @@ def rburgosnavas(name):
     print "|  " + name + "  |"
     print "|  " + ' ' * (len(name)) + "  |"
     print '-' * (len(name) + 6)
+    print '''
+/         \
+|          \
+|           \
+|            \
+\        __\/_\
+ \       \_/\_/\___
+  \/  / |  \ | \   \
+ _/ _/ _|  | \  \  |_
+/  |  / /  / /  |  \ \_
+| /  /  | |  \   \  \  \
+'''
 
 def GeneralZero():# Spin the wheel
     random.choice([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])()
