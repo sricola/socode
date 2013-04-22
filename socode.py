@@ -474,7 +474,6 @@ def PiersonBro():
 def dogukantufekci():
     print "This is the connected world."
     webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
-<<<<<<< HEAD
 
 def seripap(hax,x,y):
     print "                            .xm*f'??T?@hc."
