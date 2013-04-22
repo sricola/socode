@@ -34,6 +34,27 @@ import time
 
 socode_source = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
 
+
+def thisjustin(command=None, username=None):
+    ''' Responds to a few choice HAL 9000 commands form 2001: A Space Odyssey'''
+
+    user = username if username else 'Dave'
+
+    if command == 'open the pod bay doors':
+        print "I'm sorry, %s. afraid I can't do that." % user
+
+    elif command == 'sing a song':
+        print "Daisy, Daisy, give me your answer do. I'm half\
+                crazy all for the love of you. It won't be a stylish\
+                marriage, I can't afford a carriage. But you'll look sweet\
+                upon the seat of a bicycle build for two."
+
+    elif command == 'do you read me?':
+        print "Affirmative, %s. I read you." % user
+
+    elif command is None:
+        print "Just what do you think you're doing, %s?" % user
+
 def ray0sunshine():
     print "Gibe moni pls"
     print "Morde es numero uno"
@@ -1011,6 +1032,7 @@ if __name__ == "__main__":
     yuvadm()
     kghose()
     doctorpangloss()
+    thisjustin('open the pod bay doors')
     chrisgw()
     dogukantufekci()
     fmazon3()
