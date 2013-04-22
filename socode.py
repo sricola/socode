@@ -628,5 +628,8 @@ if __name__ == "__main__":
     alisnic(random.randint(1, 1024))
     zonetti()
     
+    def reksy():
+    print "From the moon."
+    
     # as per instructed, please leave this as the final function
     lafin()
