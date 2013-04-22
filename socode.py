@@ -174,7 +174,14 @@ def starefossen():
 
 def jontonsoup():
     print "There's always one more bug."
-    
+
+def fweakout(x):
+    print "Just following the rules!"
+    for i in range(2,int(x**0.5)+1):
+        if x % i == 0:
+	    return False
+    return True
+
 def monsdar():
     print "Hello?..."
     print "         ...yes, this is dog!"
@@ -1070,6 +1077,7 @@ if __name__ == "__main__":
     thisishugo()
     lcynot()
     danielnr()
+    fweakout(9009)
     ncerminara(3)
     spratt()
     aturcino()
