@@ -17,6 +17,10 @@ import requests
 import random
 import getpass
     
+
+def binary132():
+    print "Perl is better.  PS everyone is lazy"
+
 def sricola():
     print "Welcome to soCode!!"
     
