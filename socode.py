@@ -12,9 +12,17 @@
 
 # Lets see if we can make something meaningful out of this.
 
+import json
+import requests
+
 def sricola():
     print "Welcome to soCode!!"
-
+    
+def kisom():
+    ip = requests.get('http://ifconfig.me/ip').content
+    geoip = json.loads(requests.get('http://freegeoip.net/json/' + ip).content)['country']
+    print 'there once was a coder from', geoip
+    
 def lafin(): # Please speak proper french :)
     print "Goodbye Social World!"
     
