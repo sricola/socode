@@ -566,7 +566,15 @@ def dpayne():
 
 def zonetti():
     print "Open Source FTW"
-  
+
+
+def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
+    numerator = ( n*sum_xy - sum_x*sum_y )
+    denominator = sqrt(n*sum_xx - sum_x*sum_x) * sqrt(n*sum_yy - sum_y*sum_y)
+    similarity = numerator / denominator
+    return similarity
+
+
 if __name__ == "__main__":
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
