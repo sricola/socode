@@ -143,7 +143,7 @@ def kghose():
     curses.wrapper(main_loop)
     
 
-def lefin():
+def lafin():
     print "Goodbye Social World!"
     print "\nStarted with <3 in Brooklyn, NY\n"
 
