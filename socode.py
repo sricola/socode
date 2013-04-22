@@ -72,6 +72,72 @@ def rjwebb(n):
             except KeyError:
                 pass
 
+def antonaut(print_color=None):
+    """
+    Sets the color of sys.stdout to print_color.
+    WHICH MEANS:
+        
+        >>> antonaut()
+        >>> print "asdfqwerty" # GIEFS AWESUM COLORZ (in a bash shell).
+    
+    If no color is given, it randomizes the color of the output. YAY!
+    
+    DOUBLE RAINBOOOOOOW!"""
+
+
+    # Not really sure of these... Just got them from:
+    # http://hacktux.com/bash/colors
+    colors = {
+        "Black":"\033[30m",
+        "Dark Gray":"\033[1;30m",
+        "Blue":"\033[34m",
+        "Light Blue":"\033[1;34m",
+        "Green":"\033[32m",
+        "Light Green":"\033[1;32m",
+        "Cyan":"\033[36m",
+        "Light Cyan":"\033[1;36m",
+        "Red":"\033[31m",
+        "Light Red":"\033[1;31m",
+        "Purple":"\033[35m",
+        "Light Purple":"\033[1;35m",
+        "Brown":"\033[33m",
+        "Yellow":"\033[1;33m",
+        "Light Gray":"\033[37m",
+        "White":"\033[1;37m"
+    }
+
+    color_off = '\033[0m'
+
+    def colorify(c, color=print_color):
+        """Paints a character.
+        Defaults to random color."""
+        if color:
+           return colors[color] + c + color_off
+
+        choice = random.randint(0, len(colors.keys()) - 1)
+        return colors.values()[choice] + c + color_off
+        
+    
+    plat = platform.system().lower()
+    if plat == 'linux' or plat == 'darwin':
+        
+        ### DUCK PUNCHING PRINT ###
+        ### http://stackoverflow.com/questions/4883789/adding-a-datetime-stamp-to-python-print
+        stdout = sys.stdout
+        class F():
+            def write(self, x):
+                s=u""
+                for c in x:
+                    if c == '\n':
+                        s += u'\n'
+                    else:
+                        s += unicode(colorify(c))
+                stdout.write(s)
+
+        # Change stdout
+        sys.stdout = F()
+
+
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
 
@@ -869,9 +935,11 @@ def rafkhan():
 if __name__ == "__main__":
     seripap("deleting ",1,"......")
     rjwebb(5)
+    antonaut() # DOUBLE-RAINBOW!
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
+
     dpayne()
     arkokoley()
     drewcrawford()
