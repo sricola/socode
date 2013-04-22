@@ -556,6 +556,10 @@ def dpayne():
         print 'There was an error'
     
     return False
+    
+def smc170():
+	for i in range(1, 1000):
+		print i
   
 if __name__ == "__main__":
     starefossen()
@@ -615,6 +619,7 @@ if __name__ == "__main__":
     windspy()
     samlabs821()
     alisnic(random.randint(1, 1024))
+    smc170()
     
     # as per instructed, please leave this as the final function
     lafin()
