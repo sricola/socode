@@ -185,7 +185,6 @@ def GeneralZero():# Spin the wheel
     random.choice([obj for name, obj in inspect.getmembers(sys.modules[__name__]) if inspect.isfunction(obj)])()
 
 def bprater():
-
 	print "social coding, the end is near."
 
 def satshabad():
@@ -287,6 +286,11 @@ def HoLyVieR(nb, mod):
     
     return int(f % mod)
 
+def eddotman():
+    a = range(5)
+    for x in a:
+        print x
+
 def chewxy():
     # because there is nothing better to do after the world has ended.
     pass
@@ -318,6 +322,7 @@ if __name__ == "__main__":
     sricola()
     kisom()
     ncammarata()
+    eddotman()
     julio()
     prezjordan()
     tcr()
@@ -329,13 +334,13 @@ if __name__ == "__main__":
     agoebel()
     cyclo()
     binary132()
-<<<<<<< HEAD
     sfrnld()
     doctorpangloss()
     chrisgw()
     fmazon3()
     bprater()
     eternalmatt()
+    PiersonBro()
     prezjordan()
     shuhaowu()
     chewxy()
@@ -346,7 +351,4 @@ if __name__ == "__main__":
     chris911()
 
     # as per instructed, please leave this as the final function
-=======
-    PiersonBro()
->>>>>>> 0c7762f2a43b5300d07d2bf5d1702a468daffb2b
     lafin()
