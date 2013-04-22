@@ -853,6 +853,10 @@ def ncerminara(n):
     phi = (1 + 5**0.5) / 2
     return int(round((phi**n - (1-phi)**n) / 5**0.5))
 
+def fdansv():
+	print 'NYAN CAT REVIVAL!'
+	webbrowser.open_new('http://nyan.cat/')
+
 def rafkhan():
 	print socode_source
 
@@ -936,6 +940,7 @@ if __name__ == "__main__":
     lax()
     hako()
     thisishugo()
+    fdansv()
     danielnr()
     ncerminara(3)
     spratt()
