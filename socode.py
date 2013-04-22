@@ -188,7 +188,6 @@ def GeneralZero():# Spin the wheel
 
 
 def bprater():
-
 	print "social coding, the end is near."
 
 def satshabad():
@@ -230,6 +229,11 @@ def ondrae(): # Random compliment. If anyone has a better source, add it in.
 def djrausch():
     print "DAE #HOLO? #NEXUS #HOLOYOLO"
 
+def eddotman():
+    a = range(5)
+    for x in a:
+        print x
+
 def chewxy():
     # because there is nothing better to do after the world has ended.
     pass
@@ -249,6 +253,7 @@ if __name__ == "__main__":
     sricola()
     kisom()
     ncammarata()
+    eddotman()
     julio()
     prezjordan()
     tcr()
