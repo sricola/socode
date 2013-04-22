@@ -54,9 +54,16 @@ def shuhaowu(): # Call me last! :D
 
     print "Goodbye, cruel world"
     
+def chewxy():
+    # because there is nothing better to do after the world has ended.
+    pass
+    
 if __name__ == "__main__":
     JesseAldridge()
     sricola()
     kisom()
-    lafin()
     prezjordan()
+    shuhaowu()
+    chewxy()
+    lafin()
+    
