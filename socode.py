@@ -82,7 +82,23 @@ def ray0sunshine():
         print "HUE "
         if random.randint(0,9) == 6:
             print "BR?\n"
-    print "i repot u"
+    print "i repot u too"
+
+def 3boll():
+    word = []
+    consonants = "Socialcoding is so cool. Coffe 4 all <3"
+    vowels     = "aeiou3"
+    print "3boll.com"
+    for i in range(random.randint(3, 15)):
+        
+        if i % 5 == 0:
+            letter = random.choice(vowels)
+            
+        else:
+            letter = random.choice(consonants)
+        word.append(letter)
+        
+        return '3boll '.join(word)
 
 def rjwebb(n):
     """Tries to print the username, real name and location of the first n users in this file. Fails silently."""
@@ -1019,7 +1035,7 @@ def nazgu1():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
-    antonaut() # DOUBLE-RAINBOW!
+    antonaut() # DOUBLE-RAINBOW! Soo cool
     seripap("deleting ",1,"......")
     rjwebb(5)
     sikado()
@@ -1029,6 +1045,7 @@ if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
+    3boll()
     arkokoley()
     drewcrawford()
     dmercer(42)
