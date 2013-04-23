@@ -90,7 +90,7 @@ def hutattedonmyarm(a = 0, b = 0, c = 0):
 	antonaut("Green")
 	print "Matrix, bitches"
 	return (a*a + b*b == c*c)
-	
+
 def 3boll():
     word = []
     consonants = "Socialcoding is so cool. Coffe 4 all <3"
@@ -918,7 +918,7 @@ def shazeline(name):
 
 def samlabs821():
     print "vesselam"
-    
+
 def nckrdrgz(month):
 	print "Holla, it's almost " + month
 
@@ -1095,7 +1095,7 @@ def dpayne():
 
 def codesuela(board):
     print json.load(urllib2.urlopen('https://api.4chan.org/%s/0.json' % (board,)))['threads'][0]['posts'][0]['com']
-    
+
 def pretzilz():
 	for i in range(0,10):
 		print i + "Butts on the wall, " + i + " butts. \nWhen you just feel down, just think:\n There are still " + i-1 + " butts left!"
@@ -1146,7 +1146,7 @@ def myeaple():
 
 def reksy():
         print "I thought Python was like the snake game?"
-		
+
 def vitovan():
 		print "Only after disaster can we be resurrected..."
 		print "It's only after you've lost every thing that you're free to do anything..."
@@ -1181,12 +1181,12 @@ def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
     denominator = sqrt(n*sum_xx - sum_x*sum_x) * sqrt(n*sum_yy - sum_y*sum_y)
     similarity = numerator / denominator
     return similarity
-    
+
 def awesoham(n):
     # As x increases the output approaches e. What's e, you ask?
     # See en.wikipedia.org/wiki/E_(mathematical_constant)
     for x in range(n):
-        return (x+1)**(x+1)/x**x - x**x/(x-1)**(x-1) 
+        return (x+1)**(x+1)/x**x - x**x/(x-1)**(x-1)
 
 def ncerminara(n):
     phi = (1 + 5**0.5) / 2
@@ -1204,16 +1204,19 @@ def nazgu1():
 def dlutcat():
     print "I have developed a Pinterest-like site focus on travelling: kantuban.com"
     print "Hope you like it!"
-    
 
 
 
-	
+
 def mapleray():
     print "It's awesome~~~"
 	print "Hello World , This is mapleray"
 	f = lambda x: x and x * f(x - 1) or 1
 	print f(199206)
+
+def erictherobot():
+        print "01001001 00100000 01110111 01100001 01101110 01110100 00100000 01110100 01101111 00100000 01100100 01101111 00100000 01110011 01101111 01101101 01100101 01110100 01101000 01101001 01101110 01100111 00100000 01110011 01101001 01100111 01101110 01101001 01100110 01101001 01100011 01100001 01101110 01110100 00100000 01100001 01101110 01100100 00100000 01101101 01100101 01100001 01101110 01101001 01101110 01100111 01100110 01110101 01101100 00100000 01110111 01101001 01110100 01101000 00100000 01111001 01101111 01110101 00101110 00100000 01001001 00100111 01101101 00100000 01101001 01101110 00100000 01010111 01101001 01101100 01101100 01101001 01100001 01101101 01110011 01100010 01110101 01110010 01100111 00101100 00100000 01101100 01100101 01110100 00100111 01110011 00100000 01101101 01100101 01100101 01110100 01110101 01110000 00101110 00100000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100 01000000 01100111 01101101 01100001 01101001 01101100 00101110 01100011 01101111 01101101 00100000 01000000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100
+"
 
 # Please consider creating your function
 # some random place between two other
