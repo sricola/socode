@@ -1198,6 +1198,13 @@ def dlutcat():
 
 
 
+	
+def mapleray():
+    print "It's awesome~~~"
+	print "Hello World , This is mapleray"
+	f = lambda x: x and x * f(x - 1) or 1
+	print f(199206)
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1312,6 +1319,7 @@ if __name__ == "__main__":
     harshavardhana('E,9)oF*2M7/c~>')
     vitovan()
     dlutcat()
+	mapleray()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
