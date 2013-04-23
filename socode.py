@@ -1221,6 +1221,7 @@ if __name__ == "__main__":
     antonaut() # DOUBLE-RAINBOW! Soo cool
     seripap("deleting ",1,"......")
     rjwebb(5)
+    erictherobot()
     sikado()
     dlad()
     starefossen()
