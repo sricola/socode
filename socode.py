@@ -390,6 +390,18 @@ def charliegroll():
     print "Never gonna make you cry,"
     print "Never gonna say goodbye,"
     print "Never gonna tell a lie and hurt you."
+    
+def justinrsmith():
+	tablist = []
+	wordlist = ['look','at','my','tabs']
+
+	for x in range(0,4):
+		tablist.append('\t')
+
+	numTabs = 1
+	for y in range(0,4):
+		print ''.join(tablist[0:numTabs]) + wordlist[y]
+		numTabs = numTabs + 1
 
 def devonbarrett():
     print "We're no strangers to love"
@@ -1034,6 +1046,7 @@ if __name__ == "__main__":
     dmercer(42)
     ryanseys()
     devonbarrett()
+    justinrsmith()
     jpadilla()
     mmay()
     evinugur()
