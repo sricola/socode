@@ -260,6 +260,10 @@ def dlad():
           sys.stdout.write('\b')
           sys.stdout.flush()
 
+def andyacs():
+  print: "I have absolutely no idea what I'm doing"
+  print: "#firstcommit"
+
 def piperchester():
     print "I love this idea. Hailing from Rochester, NY!"
 
@@ -1208,6 +1212,7 @@ if __name__ == "__main__":
     satshabad()
     ondrae()
     hazirguo()
+    andyacs()
     chris911()
     doboy(doboy)
     monsdar()
