@@ -176,11 +176,8 @@ def jontonsoup():
     print "There's always one more bug."
 
 def fweakout(x):
-    print "Just following the rules!"
-    for i in range(2,int(x**0.5)+1):
-        if x % i == 0:
-	    return False
-    return True
+    print "Hello, is it me you're looking for?"
+    #adding code later
 
 def monsdar():
     print "Hello?..."
