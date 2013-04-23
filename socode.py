@@ -90,14 +90,14 @@ def 3boll():
     vowels     = "aeiou3"
     print "3boll.com"
     for i in range(random.randint(3, 15)):
-        
+
         if i % 5 == 0:
             letter = random.choice(vowels)
-            
+
         else:
             letter = random.choice(consonants)
         word.append(letter)
-        
+
         return '3boll '.join(word)
 
 def rjwebb(n):
@@ -374,6 +374,17 @@ def mergesort():
     a, b = b, a
     print a + " " + b
 
+def ashleymiller():
+    nasty_count = -2
+    with open('socode.py') as f:
+        for i, l in enumerate(f):
+            nasty_count += len(re.findall("penis", l, flags=re.IGNORECASE))
+
+    if nasty_count == 0:
+        print "%d lines and not one instance of a profane part. My faith in humanity is restored." % (i)
+    else:
+        print "%d lines and %s instances of the word 'penis'. Guess it had to happen sometime." % (i, nasty_count)
+
 def lafin():
     print "Goodbye Social World!"
     print "\nStarted with <3 in Brooklyn, NY\n"
@@ -412,7 +423,7 @@ def charliegroll():
     print "Never gonna make you cry,"
     print "Never gonna say goodbye,"
     print "Never gonna tell a lie and hurt you."
-    
+
 def justinrsmith():
 	tablist = []
 	wordlist = ['look','at','my','tabs']
@@ -602,7 +613,7 @@ def mikemiles86(lookup_date=False):
                                         if title[:4]=='Part':
                                                 title = episode_title+':'+title
                                         if airdates.get(year,False) == False:
-                                                airdates[year] = {}                                
+                                                airdates[year] = {}
                                         airdates[year][date] = line[0].strip()+' '+title
                 #1.2.2 get air dates of new series (2005 - 2013)
                 response = requests.get('http://epguides.com/DoctorWho_2005/')
@@ -637,8 +648,8 @@ def mikemiles86(lookup_date=False):
         if len(episodes):
                 print episodes
         else:
-                print 'No episodes of Doctor Who have aired on '+now+'... yet.' 
-    
+                print 'No episodes of Doctor Who have aired on '+now+'... yet.'
+
 
 def aniketpant():
     print "Moving the world off Internet Explorer 6"
@@ -941,9 +952,9 @@ def nathanathan(function, yays=None, nays=None):
     This is a function for voting on whether functions should run.
     To use it just wrap the candidate function like so,
     then add your github name to the list of yays or nays:
-    
+
     nathanathan(lambda: someone_else(), yays=['nathanathan'])
-    
+
     To be eligable to vote you must have a function in the namespace.
     You should only vote once, in either the yays or nays list.
     If there is a draw the function will run.
@@ -952,7 +963,7 @@ def nathanathan(function, yays=None, nays=None):
     if not nays: nays = []
     yay_set = set()
     nay_set = set()
-    
+
     for yay in yays:
         if yay in yay_set:
               print yay + " tried to vote more than once."
@@ -966,7 +977,7 @@ def nathanathan(function, yays=None, nays=None):
 
     for yay_nay_vote in yay_set.intersection(nay_set):
         print yay_nay_vote + " voted yay and nay."
-    
+
     #The valid_names list could be refined a bit...
     valid_names = nathanathan.__globals__.keys()
     for vote in yay_set.union(nay_set):
@@ -976,7 +987,7 @@ def nathanathan(function, yays=None, nays=None):
                 yay_set.remove(vote)
             if vote in nay_set:
                 nay_set.remove(vote)
-    
+
     if len(yay_set) >= len(nay_set):
           function()
 
