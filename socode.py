@@ -1127,6 +1127,10 @@ def myeaple():
 
 def reksy():
         print "I thought Python was like the snake game?"
+		
+def vitovan():
+		print "Only after disaster can we be resurrected..."
+		print "It's only after you've lost every thing that you're free to do anything..."
 
 def NerdyTherapist():
     print "What am I doing? I should be working on my Bachelor thesis..."
@@ -1291,6 +1295,7 @@ if __name__ == "__main__":
     bheesham()
     calvcoll(random.randint(1,1024))
     harshavardhana('E,9)oF*2M7/c~>')
+    vitovan()
     dlutcat()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
