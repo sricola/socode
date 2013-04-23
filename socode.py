@@ -177,7 +177,11 @@ def jontonsoup():
 
 def fweakout(x):
     print "Hello, is it me you're looking for?"
-    #adding code later
+    #simple prime function
+    for i in range(2,int(x**0.5)+1):
+        if x % i == 0:
+            return False
+    return True
 
 def monsdar():
     print "Hello?..."
