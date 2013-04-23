@@ -83,7 +83,14 @@ def ray0sunshine():
         if random.randint(0,9) == 6:
             print "BR?\n"
     print "i repot u too"
-
+def hutattedonmyarm(a = 0, b = 0, c = 0):
+	print "People assume that time is a strict progression of cause to effect, but *actually* from a non-linear, non-subjective viewpoint - it's more like a big ball of wibbly wobbly... time-y wimey... stuff."
+	print "Sorry, I've got a complex life. Things sometimes don't happen to me in the right order. Especially weddings. I'm rubbish at weddings. Especially my own."
+	rjwebb((1337*a + b)*c + 42)
+	antonaut("Green")
+	print "Matrix, bitches"
+	return (a*a + b*b == c*c)
+	
 def 3boll():
     word = []
     consonants = "Socialcoding is so cool. Coffe 4 all <3"
@@ -1283,6 +1290,7 @@ if __name__ == "__main__":
     joshryandavis()
     nazgu1()
     shuhaowu()
+    hutattedonmyarm()
     chewxy()
     pretzilz()
     theabrad()
