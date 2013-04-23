@@ -1296,6 +1296,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
+    wmill()
     calvcoll(random.randint(1,1024))
     harshavardhana('E,9)oF*2M7/c~>')
     dlutcat()
