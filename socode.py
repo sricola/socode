@@ -517,6 +517,10 @@ def jpadilla():
     except ValueError:
         pass
 
+def wmill():
+    nyan = requests.get('https://raw.github.com/vtsvang/nyancat-telnet-node/master/assets/animation.json').json()[0]
+    print nyan
+
 def rburgosnavas(name):
     x = (len(name) + 4)
     print "*" + "-" * x + "*"
@@ -1229,6 +1233,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
+    wmill()
     calvcoll(random.randint(1,1024))
     harshavardhana('E,9)oF*2M7/c~>')
     dlutcat()
