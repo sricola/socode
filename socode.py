@@ -1283,6 +1283,5 @@ if __name__ == "__main__":
     # bottom of someone else's function then your
     # commit should automerge. Please consider this
     # ---------------------------------------------
->>>>>>> upstream/master
     # as per instructed, please leave this as the final function
     lafin()
