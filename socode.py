@@ -1007,6 +1007,11 @@ def nazgu1():
     www=urllib2.urlopen('https://cycloo.pl').read()
     print 'Hello World! :)'
 
+def imryan():
+    print 'Try typing: [import this] in your next .py project ;)'
+    print 'Check out my site: imryan.net'
+    print 'Happy coding all :)'
+
 
 # Please consider creating your function
 # some random place between two other
@@ -1119,3 +1124,4 @@ if __name__ == "__main__":
     # ---------------------------------------------
     # as per instructed, please leave this as the final function
     lafin()
+    imryan()
