@@ -1483,6 +1483,10 @@ def brandybuck():
           "Dragon"
 
 
+def gulbinas():
+    '''some function'''
+    print('herro word')
+
 def dpayne():
     try:
         # sets the desktop wallpaper to the top
@@ -1706,7 +1710,7 @@ def havanagrawal():
     print "|       ||       || | |   |       |   |    | |_|   ||       ||   | | | |   ||    _  |"
     print "|______| |_______||_|  |__|       |___|    |_______||_______||___| |_|  |__||___| |_|"
 
-        
+
 def ncerminara(n):
     phi = (1 + 5 ** 0.5) / 2
     return int(round((phi ** n - (1 - phi) ** n) / 5 ** 0.5))
@@ -1813,11 +1817,11 @@ def sluu99(n):
 
 def Caneco():
     return "I'm a, mother father gentleman!"
-    
+
 def nands():
     """ Dennis Ritchie was the first person to create a Hello World program """
     print "Hello World"
-    
+
 def arvindravi():
     print "Hello! Hi! Namaste! _/\_"
 
@@ -1891,7 +1895,7 @@ def alexako():
 
 def AtheistCat():
     print "Meow meow meow!"
-    
+
 def elebumm():
     print "I am new to this."
 
@@ -2063,6 +2067,7 @@ if __name__ == "__main__":
     AtheistCat()
     siva(5, 10)
     alexako()
+    gulbinas()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
