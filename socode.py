@@ -936,6 +936,50 @@ def ryanseys():
     except:
         pass
 
+def nathanathan(function, yays=None, nays=None):
+    """
+    This is a function for voting on whether functions should run.
+    To use it just wrap the candidate function like so,
+    then add your github name to the list of yays or nays:
+    
+    nathanathan(lambda: someone_else(), yays=['nathanathan'])
+    
+    To be eligable to vote you must have a function in the namespace.
+    You should only vote once, in either the yays or nays list.
+    If there is a draw the function will run.
+    """
+    if not yays: yays = []
+    if not nays: nays = []
+    yay_set = set()
+    nay_set = set()
+    
+    for yay in yays:
+        if yay in yay_set:
+              print yay + " tried to vote more than once."
+        else:
+              yay_set.add(yay)
+    for nay in nays:
+        if nay in nay_set:
+            print nay + " tried to vote more than once."
+        else:
+            nay_set.add(nay)
+
+    for yay_nay_vote in yay_set.intersection(nay_set):
+        print yay_nay_vote + " voted yay and nay."
+    
+    #The valid_names list could be refined a bit...
+    valid_names = nathanathan.__globals__.keys()
+    for vote in yay_set.union(nay_set):
+        if vote not in valid_names:
+            print vote + " is not a valid voter"
+            if vote in yay_set:
+                yay_set.remove(vote)
+            if vote in nay_set:
+                nay_set.remove(vote)
+    
+    if len(yay_set) >= len(nay_set):
+          function()
+
 def danielnr(huehue):
     print "                                                                                "
     print "                                                                                "
@@ -1215,6 +1259,7 @@ if __name__ == "__main__":
     jessex()
     rightfold()
     lax()
+    nathanathan(lambda: shazeline("sricola"), yays=["nathanathan"])
     hako()
     thisishugo()
     lcynot()
