@@ -896,6 +896,9 @@ def shazeline(name):
 
 def samlabs821():
     print "vesselam"
+    
+def nckrdrgz(month):
+	print "Holla, it's almost " + month
 
 def matiasinsaurralde():
     print "hello, this is skynet"
@@ -1223,6 +1226,7 @@ if __name__ == "__main__":
     cyclo()
     binary132()
     MikeGrace()
+    nckrdrgz('May')
     sfrnld()
     yuvadm()
     kghose()
