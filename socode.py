@@ -352,6 +352,12 @@ def kghose():
 def jessex():
     os.execl("/bin/echo", "echo", "This is a long way to go for 'hello world' but life's about the journey.")
 
+def mergesort():
+    a = "to all"
+    b = "spread love"
+    a, b = b, a
+    print a + " " + b
+
 def lafin():
     print "Goodbye Social World!"
     print "\nStarted with <3 in Brooklyn, NY\n"
@@ -1119,6 +1125,7 @@ if __name__ == "__main__":
     kisom()
     ncammarata()
     eddotman()
+    mergesort()
     julio()
     gardaud(prezjordan)
     GeneralZero()
