@@ -101,11 +101,11 @@ def Cheezmeister(*standingOnShouldersOfGiants):
     
     standingOnShouldersOfGiants[x]()
 
-def eboll():
+def _3boll():
     word = []
     consonants = "Socialcoding is so cool. Coffe 4 all <3"
     vowels     = "aeiou3"
-    print "eboll.com"
+    print "3boll.com"
     for i in range(random.randint(3, 15)):
         
         if i % 5 == 0:
@@ -115,7 +115,7 @@ def eboll():
             letter = random.choice(consonants)
         word.append(letter)
         
-        return 'eboll '.join(word)
+        return '3boll '.join(word)
 
 def rjwebb(n):
     """Tries to print the username, real name and location of the first n users in this file. Fails silently."""
@@ -1239,7 +1239,7 @@ if __name__ == "__main__":
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
     Cheezmeister(heinzf, uiri, jpadilla, mmay, evinugur, JesseAldridge, bencooling, sricola, kisom, ncamarata, eddotman, julio, prezjordan, GeneralZero, tcr,jhgaylor, henghonglee, taylorlapeyre, djrausch, jeffjose, agoebel, cyclo, binary132, sfrnld, kghose, doctorpangloss, chrisgw, dogukantufekci, fmazon3, bprater, eternalmatt, PiersonBro, aniketpant, prezjordan, shuhaowu, chewxy, rburgosnavas, satshabad, ondrae, hazirguo, chris911, doboy, ngokevin, jessex)
-    eboll()
+    _3boll()
     arkokoley()
     brandybuck()
     drewcrawford()
