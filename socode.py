@@ -1161,6 +1161,11 @@ def nazgu1():
     www=urllib2.urlopen('https://cycloo.pl').read()
     print 'Hello World! :)'
 
+def imryan():
+    print 'Try typing: [import this] in your next .py project ;)'
+    print 'Check out my site: imryan.net'
+    print 'Happy coding all :)'
+
 
 def dlutcat():
     print "I have developed a Pinterest-like site focus on travelling: kantuban.com"
@@ -1285,3 +1290,4 @@ if __name__ == "__main__":
     # ---------------------------------------------
     # as per instructed, please leave this as the final function
     lafin()
+    imryan()
