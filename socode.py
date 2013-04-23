@@ -1122,6 +1122,8 @@ def dlutcat():
     print "I have developed a Pinterest-like site focus on travelling: kantuban.com"
     print "Hope you like it!"
 
+def nakosung():
+    print "*bump*"
 
 # Please consider creating your function
 # some random place between two other
@@ -1232,6 +1234,7 @@ if __name__ == "__main__":
     calvcoll(random.randint(1,1024))
     harshavardhana('E,9)oF*2M7/c~>')
     dlutcat()
+    nakosung()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
