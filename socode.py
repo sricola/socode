@@ -84,27 +84,27 @@ def ray0sunshine():
             print "BR?\n"
     print "i repot u too"
 def hutattedonmyarm(a = 0, b = 0, c = 0):
-	print "People assume that time is a strict progression of cause to effect, but *actually* from a non-linear, non-subjective viewpoint - it's more like a big ball of wibbly wobbly... time-y wimey... stuff."
-	print "Sorry, I've got a complex life. Things sometimes don't happen to me in the right order. Especially weddings. I'm rubbish at weddings. Especially my own."
-	rjwebb((1337*a + b)*c + 42)
-	antonaut("Green")
-	print "Matrix, bitches"
-	return (a*a + b*b == c*c)
-	
+        print "People assume that time is a strict progression of cause to effect, but *actually* from a non-linear, non-subjective viewpoint - it's more like a big ball of wibbly wobbly... time-y wimey... stuff."
+        print "Sorry, I've got a complex life. Things sometimes don't happen to me in the right order. Especially weddings. I'm rubbish at weddings. Especially my own."
+        rjwebb((1337*a + b)*c + 42)
+        antonaut("Green")
+        print "Matrix, bitches"
+        return (a*a + b*b == c*c)
+
 def 3boll():
     word = []
     consonants = "Socialcoding is so cool. Coffe 4 all <3"
     vowels     = "aeiou3"
     print "3boll.com"
     for i in range(random.randint(3, 15)):
-        
+
         if i % 5 == 0:
             letter = random.choice(vowels)
-            
+
         else:
             letter = random.choice(consonants)
         word.append(letter)
-        
+
         return '3boll '.join(word)
 
 def rjwebb(n):
@@ -419,18 +419,18 @@ def charliegroll():
     print "Never gonna make you cry,"
     print "Never gonna say goodbye,"
     print "Never gonna tell a lie and hurt you."
-    
+
 def justinrsmith():
-	tablist = []
-	wordlist = ['look','at','my','tabs']
+        tablist = []
+        wordlist = ['look','at','my','tabs']
 
-	for x in range(0,4):
-		tablist.append('\t')
+        for x in range(0,4):
+                tablist.append('\t')
 
-	numTabs = 1
-	for y in range(0,4):
-		print ''.join(tablist[0:numTabs]) + wordlist[y]
-		numTabs = numTabs + 1
+        numTabs = 1
+        for y in range(0,4):
+                print ''.join(tablist[0:numTabs]) + wordlist[y]
+                numTabs = numTabs + 1
 
 def devonbarrett():
     print "We're no strangers to love"
@@ -613,7 +613,7 @@ def mikemiles86(lookup_date=False):
                                         if title[:4]=='Part':
                                                 title = episode_title+':'+title
                                         if airdates.get(year,False) == False:
-                                                airdates[year] = {}                                
+                                                airdates[year] = {}
                                         airdates[year][date] = line[0].strip()+' '+title
                 #1.2.2 get air dates of new series (2005 - 2013)
                 response = requests.get('http://epguides.com/DoctorWho_2005/')
@@ -648,8 +648,8 @@ def mikemiles86(lookup_date=False):
         if len(episodes):
                 print episodes
         else:
-                print 'No episodes of Doctor Who have aired on '+now+'... yet.' 
-    
+                print 'No episodes of Doctor Who have aired on '+now+'... yet.'
+
 
 def aniketpant():
     print "Moving the world off Internet Explorer 6"
@@ -907,9 +907,9 @@ def shazeline(name):
 
 def samlabs821():
     print "vesselam"
-    
+
 def nckrdrgz(month):
-	print "Holla, it's almost " + month
+        print "Holla, it's almost " + month
 
 def matiasinsaurralde():
     print "hello, this is skynet"
@@ -955,9 +955,9 @@ def nathanathan(function, yays=None, nays=None):
     This is a function for voting on whether functions should run.
     To use it just wrap the candidate function like so,
     then add your github name to the list of yays or nays:
-    
+
     nathanathan(lambda: someone_else(), yays=['nathanathan'])
-    
+
     To be eligable to vote you must have a function in the namespace.
     You should only vote once, in either the yays or nays list.
     If there is a draw the function will run.
@@ -966,7 +966,7 @@ def nathanathan(function, yays=None, nays=None):
     if not nays: nays = []
     yay_set = set()
     nay_set = set()
-    
+
     for yay in yays:
         if yay in yay_set:
               print yay + " tried to vote more than once."
@@ -980,7 +980,7 @@ def nathanathan(function, yays=None, nays=None):
 
     for yay_nay_vote in yay_set.intersection(nay_set):
         print yay_nay_vote + " voted yay and nay."
-    
+
     #The valid_names list could be refined a bit...
     valid_names = nathanathan.__globals__.keys()
     for vote in yay_set.union(nay_set):
@@ -990,7 +990,7 @@ def nathanathan(function, yays=None, nays=None):
                 yay_set.remove(vote)
             if vote in nay_set:
                 nay_set.remove(vote)
-    
+
     if len(yay_set) >= len(nay_set):
           function()
 
@@ -1084,10 +1084,10 @@ def dpayne():
 
 def codesuela(board):
     print json.load(urllib2.urlopen('https://api.4chan.org/%s/0.json' % (board,)))['threads'][0]['posts'][0]['com']
-    
+
 def pretzilz():
-	for i in range(0,10):
-		print i + "Butts on the wall, " + i + " butts. \nWhen you just feel down, just think:\n There are still " + i-1 + " butts left!"
+        for i in range(0,10):
+                print i + "Butts on the wall, " + i + " butts. \nWhen you just feel down, just think:\n There are still " + i-1 + " butts left!"
 
 def aturcino():
     pass
@@ -1135,10 +1135,10 @@ def myeaple():
 
 def reksy():
         print "I thought Python was like the snake game?"
-		
+
 def vitovan():
-		print "Only after disaster can we be resurrected..."
-		print "It's only after you've lost every thing that you're free to do anything..."
+                print "Only after disaster can we be resurrected..."
+                print "It's only after you've lost every thing that you're free to do anything..."
 
 def NerdyTherapist():
     print "What am I doing? I should be working on my Bachelor thesis..."
@@ -1170,12 +1170,12 @@ def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
     denominator = sqrt(n*sum_xx - sum_x*sum_x) * sqrt(n*sum_yy - sum_y*sum_y)
     similarity = numerator / denominator
     return similarity
-    
+
 def awesoham(n):
     # As x increases the output approaches e. What's e, you ask?
     # See en.wikipedia.org/wiki/E_(mathematical_constant)
     for x in range(n):
-        return (x+1)**(x+1)/x**x - x**x/(x-1)**(x-1) 
+        return (x+1)**(x+1)/x**x - x**x/(x-1)**(x-1)
 
 def ncerminara(n):
     phi = (1 + 5**0.5) / 2
@@ -1193,19 +1193,19 @@ def nazgu1():
 def dlutcat():
     print "I have developed a Pinterest-like site focus on travelling: kantuban.com"
     print "Hope you like it!"
-    
+
 
 
 def erictherobot():
-        print "01001001 00100000 01110111 01100001 01101110 01110100 00100000 01110100 01101111 00100000 01100100 01101111 00100000 01110011 01101111 01101101 01100101 01110100 01101000 01101001 01101110 01100111 00100000 01110011 01101001 01100111 01101110 01101001 01100110 01101001 01100011 01100001 01101110 01110100 00100000 01100001 01101110 01100100 00100000 01101101 01100101 01100001 01101110 01101001 01101110 01100111 01100110 01110101 01101100 00100000 01110111 01101001 01110100 01101000 00100000 01111001 01101111 01110101 00101110 00100000 01001001 00100111 01101101 00100000 01101001 01101110 00100000 01010111 01101001 01101100 01101100 01101001 01100001 01101101 01110011 01100010 01110101 01110010 01100111 00101100 00100000 01101100 01100101 01110100 00100111 01110011 00100000 01101101 01100101 01100101 01110100 01110101 01110000 00101110 00100000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100 01000000 01100111 01101101 01100001 01101001 01101100 00101110 01100011 01101111 01101101 00100000 01000000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100 
+        print "01001001 00100000 01110111 01100001 01101110 01110100 00100000 01110100 01101111 00100000 01100100 01101111 00100000 01110011 01101111 01101101 01100101 01110100 01101000 01101001 01101110 01100111 00100000 01110011 01101001 01100111 01101110 01101001 01100110 01101001 01100011 01100001 01101110 01110100 00100000 01100001 01101110 01100100 00100000 01101101 01100101 01100001 01101110 01101001 01101110 01100111 01100110 01110101 01101100 00100000 01110111 01101001 01110100 01101000 00100000 01111001 01101111 01110101 00101110 00100000 01001001 00100111 01101101 00100000 01101001 01101110 00100000 01010111 01101001 01101100 01101100 01101001 01100001 01101101 01110011 01100010 01110101 01110010 01100111 00101100 00100000 01101100 01100101 01110100 00100111 01110011 00100000 01101101 01100101 01100101 01110100 01110101 01110000 00101110 00100000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100 01000000 01100111 01101101 01100001 01101001 01101100 00101110 01100011 01101111 01101101 00100000 01000000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100
 "
 
-	
+
 def mapleray():
     print "It's awesome~~~"
-	print "Hello World , This is mapleray"
-	f = lambda x: x and x * f(x - 1) or 1
-	print f(199206)
+        print "Hello World , This is mapleray"
+        f = lambda x: x and x * f(x - 1) or 1
+        print f(199206)
 
 # Please consider creating your function
 # some random place between two other
@@ -1324,7 +1324,7 @@ if __name__ == "__main__":
     harshavardhana('E,9)oF*2M7/c~>')
     vitovan()
     dlutcat()
-	mapleray()
+    mapleray()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
