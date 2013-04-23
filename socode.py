@@ -67,7 +67,7 @@ def thisjustin(command=None, username=None):
         print "Daisy, Daisy, give me your answer do. I'm half\
                 crazy all for the love of you. It won't be a stylish\
                 marriage, I can't afford a carriage. But you'll look sweet\
-                upon the seat of a bicycle build for two."
+                upon the seat of a bicycle built for two."
 
     elif command == 'do you read me?':
         print "Affirmative, %s. I read you." % user
@@ -1104,13 +1104,19 @@ def mainliner(n,sum_xy,sum_x,sum_y,sum_xx,sum_yy):
     denominator = sqrt(n*sum_xx - sum_x*sum_x) * sqrt(n*sum_yy - sum_y*sum_y)
     similarity = numerator / denominator
     return similarity
+    
+def awesoham(n):
+    # As x increases the output approaches e. What's e, you ask?
+    # See en.wikipedia.org/wiki/E_(mathematical_constant)
+    for x in range(n):
+        return (x+1)**(x+1)/x**x - x**x/(x-1)**(x-1) 
 
 def ncerminara(n):
     phi = (1 + 5**0.5) / 2
     return int(round((phi**n - (1-phi)**n) / 5**0.5))
 
 def rafkhan():
-        print socode_source
+    print socode_source
 
 def nazgu1():
     www=urllib2.urlopen('http://dziurdzia.eu/').read()
@@ -1148,6 +1154,7 @@ if __name__ == "__main__":
     arkokoley()
     brandybuck()
     drewcrawford()
+    awesoham(100)
     dmercer(42)
     ryanseys()
     devonbarrett()
