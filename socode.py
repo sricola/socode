@@ -84,18 +84,28 @@ def ray0sunshine():
             print "BR?\n"
     print "i repot u too"
 def hutattedonmyarm(a = 0, b = 0, c = 0):
-	print "People assume that time is a strict progression of cause to effect, but *actually* from a non-linear, non-subjective viewpoint - it's more like a big ball of wibbly wobbly... time-y wimey... stuff."
-	print "Sorry, I've got a complex life. Things sometimes don't happen to me in the right order. Especially weddings. I'm rubbish at weddings. Especially my own."
-	rjwebb((1337*a + b)*c + 42)
-	antonaut("Green")
-	print "Matrix, bitches"
-	return (a*a + b*b == c*c)
-	
-def 3boll():
+    print "People assume that time is a strict progression of cause to effect, but *actually* from a non-linear, non-subjective viewpoint - it's more like a big ball of wibbly wobbly... time-y wimey... stuff."
+    print "Sorry, I've got a complex life. Things sometimes don't happen to me in the right order. Especially weddings. I'm rubbish at weddings. Especially my own."
+    rjwebb((1337*a + b)*c + 42)
+    antonaut("Green")
+    print "Matrix, bitches"
+    return (a*a + b*b == c*c)
+    
+def Cheezmeister(*standingOnShouldersOfGiants):
+    print "Hello there, " + getpass.getuser()
+    print "You're looking attractive. Are those new shoes?"
+    for i, f in enumerate(standingOnShouldersOfGiants):
+      print " " + i + ". " + f + "\n"
+    
+    x = raw_input("What would you like to do today?")
+    
+    standingOnShouldersOfGiants[x]()
+
+def eboll():
     word = []
     consonants = "Socialcoding is so cool. Coffe 4 all <3"
     vowels     = "aeiou3"
-    print "3boll.com"
+    print "eboll.com"
     for i in range(random.randint(3, 15)):
         
         if i % 5 == 0:
@@ -105,7 +115,7 @@ def 3boll():
             letter = random.choice(consonants)
         word.append(letter)
         
-        return '3boll '.join(word)
+        return 'eboll '.join(word)
 
 def rjwebb(n):
     """Tries to print the username, real name and location of the first n users in this file. Fails silently."""
@@ -421,16 +431,16 @@ def charliegroll():
     print "Never gonna tell a lie and hurt you."
     
 def justinrsmith():
-	tablist = []
-	wordlist = ['look','at','my','tabs']
+    tablist = []
+    wordlist = ['look','at','my','tabs']
 
-	for x in range(0,4):
-		tablist.append('\t')
+    for x in range(0,4):
+        tablist.append('\t')
 
-	numTabs = 1
-	for y in range(0,4):
-		print ''.join(tablist[0:numTabs]) + wordlist[y]
-		numTabs = numTabs + 1
+    numTabs = 1
+    for y in range(0,4):
+        print ''.join(tablist[0:numTabs]) + wordlist[y]
+        numTabs = numTabs + 1
 
 def devonbarrett():
     print "We're no strangers to love"
@@ -909,7 +919,7 @@ def samlabs821():
     print "vesselam"
     
 def nckrdrgz(month):
-	print "Holla, it's almost " + month
+    print "Holla, it's almost " + month
 
 def matiasinsaurralde():
     print "hello, this is skynet"
@@ -1086,8 +1096,8 @@ def codesuela(board):
     print json.load(urllib2.urlopen('https://api.4chan.org/%s/0.json' % (board,)))['threads'][0]['posts'][0]['com']
     
 def pretzilz():
-	for i in range(0,10):
-		print i + "Butts on the wall, " + i + " butts. \nWhen you just feel down, just think:\n There are still " + i-1 + " butts left!"
+    for i in range(0,10):
+        print i + "Butts on the wall, " + i + " butts. \nWhen you just feel down, just think:\n There are still " + i-1 + " butts left!"
 
 def aturcino():
     pass
@@ -1135,10 +1145,10 @@ def myeaple():
 
 def reksy():
         print "I thought Python was like the snake game?"
-		
+        
 def vitovan():
-		print "Only after disaster can we be resurrected..."
-		print "It's only after you've lost every thing that you're free to do anything..."
+        print "Only after disaster can we be resurrected..."
+        print "It's only after you've lost every thing that you're free to do anything..."
 
 def NerdyTherapist():
     print "What am I doing? I should be working on my Bachelor thesis..."
@@ -1197,15 +1207,14 @@ def dlutcat():
 
 
 def erictherobot():
-        print "01001001 00100000 01110111 01100001 01101110 01110100 00100000 01110100 01101111 00100000 01100100 01101111 00100000 01110011 01101111 01101101 01100101 01110100 01101000 01101001 01101110 01100111 00100000 01110011 01101001 01100111 01101110 01101001 01100110 01101001 01100011 01100001 01101110 01110100 00100000 01100001 01101110 01100100 00100000 01101101 01100101 01100001 01101110 01101001 01101110 01100111 01100110 01110101 01101100 00100000 01110111 01101001 01110100 01101000 00100000 01111001 01101111 01110101 00101110 00100000 01001001 00100111 01101101 00100000 01101001 01101110 00100000 01010111 01101001 01101100 01101100 01101001 01100001 01101101 01110011 01100010 01110101 01110010 01100111 00101100 00100000 01101100 01100101 01110100 00100111 01110011 00100000 01101101 01100101 01100101 01110100 01110101 01110000 00101110 00100000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100 01000000 01100111 01101101 01100001 01101001 01101100 00101110 01100011 01101111 01101101 00100000 01000000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100 
-"
+        print "01001001 00100000 01110111 01100001 01101110 01110100 00100000 01110100 01101111 00100000 01100100 01101111 00100000 01110011 01101111 01101101 01100101 01110100 01101000 01101001 01101110 01100111 00100000 01110011 01101001 01100111 01101110 01101001 01100110 01101001 01100011 01100001 01101110 01110100 00100000 01100001 01101110 01100100 00100000 01101101 01100101 01100001 01101110 01101001 01101110 01100111 01100110 01110101 01101100 00100000 01110111 01101001 01110100 01101000 00100000 01111001 01101111 01110101 00101110 00100000 01001001 00100111 01101101 00100000 01101001 01101110 00100000 01010111 01101001 01101100 01101100 01101001 01100001 01101101 01110011 01100010 01110101 01110010 01100111 00101100 00100000 01101100 01100101 01110100 00100111 01110011 00100000 01101101 01100101 01100101 01110100 01110101 01110000 00101110 00100000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100 01000000 01100111 01101101 01100001 01101001 01101100 00101110 01100011 01101111 01101101 00100000 01000000 01100101 01110010 01101001 01100011 01110100 01101000 01100101 01110010 01101111 01100010 01101111 01110100 "
 
-	
+    
 def mapleray():
     print "It's awesome~~~"
-	print "Hello World , This is mapleray"
-	f = lambda x: x and x * f(x - 1) or 1
-	print f(199206)
+    print "Hello World , This is mapleray"
+    f = lambda x: x and x * f(x - 1) or 1
+    print f(199206)
 
 # Please consider creating your function
 # some random place between two other
@@ -1229,7 +1238,8 @@ if __name__ == "__main__":
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
-    3boll()
+    Cheezmeister(heinzf, uiri, jpadilla, mmay, evinugur, JesseAldridge, bencooling, sricola, kisom, ncamarata, eddotman, julio, prezjordan, GeneralZero, tcr,jhgaylor, henghonglee, taylorlapeyre, djrausch, jeffjose, agoebel, cyclo, binary132, sfrnld, kghose, doctorpangloss, chrisgw, dogukantufekci, fmazon3, bprater, eternalmatt, PiersonBro, aniketpant, prezjordan, shuhaowu, chewxy, rburgosnavas, satshabad, ondrae, hazirguo, chris911, doboy, ngokevin, jessex)
+    eboll()
     arkokoley()
     brandybuck()
     drewcrawford()
@@ -1324,7 +1334,7 @@ if __name__ == "__main__":
     harshavardhana('E,9)oF*2M7/c~>')
     vitovan()
     dlutcat()
-	mapleray()
+    mapleray()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
