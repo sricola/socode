@@ -874,6 +874,10 @@ def windspy():
 def arkokoley():
   print "Long live Aaron Swartz!"
 
+def brandybuck():
+    print "You can have your fancy ales, you can drink 'em by the flagon"
+    print "But the only brew for the brave and true comes from the Green Dragon"
+
 def dpayne():
     try:
         #sets the desktop wallpaper to the top image on the wallpapers subreddit
@@ -1030,6 +1034,7 @@ if __name__ == "__main__":
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
     arkokoley()
+    brandybuck()
     drewcrawford()
     dmercer(42)
     ryanseys()
