@@ -1106,6 +1106,11 @@ def nazgu1():
     print 'Hello World! :)'
 
 
+def dlutcat():
+    print "I have developed a Pinterest-like site focus on travelling: kantuban.com"
+    print "Hope you like it!"
+
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1213,6 +1218,7 @@ if __name__ == "__main__":
     bheesham()
     calvcoll(random.randint(1,1024))
     harshavardhana('E,9)oF*2M7/c~>')
+    dlutcat()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
