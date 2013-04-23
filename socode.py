@@ -391,15 +391,16 @@ def mergesort():
     print a + " " + b
 
 def ashleymiller():
+    #a varient of godwins law
     nasty_count = -2
     with open('socode.py') as f:
         for i, l in enumerate(f):
-            nasty_count += len(re.findall("penis", l, flags=re.IGNORECASE))
+            nasty_count += len(re.findall("damn", l, flags=re.IGNORECASE))
 
     if nasty_count == 0:
-        print "%d lines and not one instance of a profane part. My faith in humanity is restored." % (i)
+        print "%d lines and not one instance of a profane word. My faith in humanity is restored." % (i)
     else:
-        print "%d lines and %s instances of the word 'penis'. Guess it had to happen sometime." % (i, nasty_count)
+        print "%d lines and %s instances of the word 'damn'. Guess it had to happen sometime." % (i, nasty_count)
 
 def lafin():
     print "Goodbye Social World!"
@@ -1335,6 +1336,7 @@ if __name__ == "__main__":
     alisnic(random.randint(1, 1024))
     zonetti()
     pocon()
+    ashleymiller()
     bheesham()
     wmill()
     calvcoll(random.randint(1,1024))
