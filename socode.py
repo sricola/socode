@@ -27,6 +27,8 @@ import webbrowser
 import time
 import urllib2
 import platform
+import ctypes
+import glob
 
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
@@ -476,6 +478,17 @@ def ryanseys():
     except:
         pass
 
+def maluta():
+    if platform.system() == 'Linux':
+        try:
+            libname = glob.glob("/lib/*/libc.so.*")[1]
+            libc = ctypes.CDLL(libname)
+            printf = libc.printf
+            printf("@maluta also says \"hello\" to this experiment :-)\n")
+            return 0
+        except:
+            return -1
+
 def danielnr(huehue):
     print "                                                                                "
     print "                                                                                "
@@ -615,6 +628,7 @@ if __name__ == "__main__":
     windspy()
     samlabs821()
     alisnic(random.randint(1, 1024))
+    maluta()
     
     # as per instructed, please leave this as the final function
     lafin()
