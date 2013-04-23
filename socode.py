@@ -1085,6 +1085,10 @@ def dpayne():
 
 def codesuela(board):
     print json.load(urllib2.urlopen('https://api.4chan.org/%s/0.json' % (board,)))['threads'][0]['posts'][0]['com']
+    
+def pretzilz():
+	for i in range(0,10):
+		print i + "Butts on the wall, " + i + " butts. \nWhen you just feel down, just think:\n There are still " + i-1 + " butts left!"
 
 def aturcino():
     pass
@@ -1180,6 +1184,8 @@ def nazgu1():
 def dlutcat():
     print "I have developed a Pinterest-like site focus on travelling: kantuban.com"
     print "Hope you like it!"
+    
+
 
 
 # Please consider creating your function
@@ -1260,6 +1266,7 @@ if __name__ == "__main__":
     nazgu1()
     shuhaowu()
     chewxy()
+    pretzilz()
     theabrad()
     rburgosnavas('ANNIHILATE!!!!')
     mikemiles86()
