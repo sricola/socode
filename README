@@ -3,7 +3,7 @@ Welcome to soCode, the social coding experiment.
 Four steps, fork -> edit -> open a pull -> merge
 
 Here are the rules!
-      - Add a function with your github name as its name.
+      - Add a function in socode.py with your github name as its name.
       - Your function can do anything and everything, as long as it
         finishes in a reasonable amount of time. No infinite loops, please.
       - Once your function is written, you can call it from anywhere else in the 
