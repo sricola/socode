@@ -34,6 +34,11 @@ import struct
 
 socode_source = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
 
+def rixx():
+    # I wish I could contribute anything funny or useful.
+    print "Oh, you guys!"
+    eternalmatt()
+
 def thekarangoel():
     print "I don't get it"
     print "What's happening here?"
@@ -1288,6 +1293,7 @@ if __name__ == "__main__":
     perimosocordiae()
     sricola()
     kisom()
+    rixx()
     ncammarata()
     eddotman()
     mergesort()
