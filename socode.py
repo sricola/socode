@@ -1032,6 +1032,19 @@ def danielnr(huehue):
 def spratt():
     print "Simon was here"
 
+def mufid(num=10, firstTime=True):
+    if (firstTime==True):
+        print "Do nothing, how about factorial?"
+        print "Okay, do something easy factorial"
+        print "Here is factorial, without using lambda"
+        n = mufid(10, False)
+        print n
+    if (firstTime==False):
+        if (num == 0 or num == 1):
+            return 1
+        else:
+            return mufid(num - 1, False) * num
+
 def windspy():
   print "'cross the GREAT WALL, we can reach every corner of the world' is just a big joke."
 
@@ -1310,6 +1323,7 @@ if __name__ == "__main__":
     danielnr()
     ncerminara(3)
     spratt()
+    mufid()
     aturcino()
     windspy()
     samlabs821()
