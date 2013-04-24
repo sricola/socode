@@ -34,6 +34,12 @@ import struct
 
 socode_source = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
 
+def thekarangoel():
+    print "I don't get it"
+    print "What's happening here?"
+    umurgdk()
+    
+
 def harshavardhana(data):
     n = b = 0
     decode = ''
@@ -206,6 +212,7 @@ def antonaut(print_color=None):
 
 def sikado():
     print "There is", len(socode_source), "characters in this file..."
+    thekarangoel()
 
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
