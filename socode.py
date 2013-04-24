@@ -1207,6 +1207,9 @@ def dlutcat():
     print "I have developed a Pinterest-like site focus on travelling: kantuban.com"
     print "Hope you like it!"
 
+def yeco():
+    import this
+    import antigravity
 
 
 def erictherobot():
@@ -1222,6 +1225,7 @@ def mapleray():
 
 def romibuzi():
     print "From Paris with love !"
+
 
 # Please consider creating your function
 # some random place between two other
@@ -1337,11 +1341,12 @@ if __name__ == "__main__":
     pocon()
     bheesham()
     wmill()
-    calvcoll(random.randint(1,1024))
+    calvcoll(random.randint(1, 1024))
     harshavardhana('E,9)oF*2M7/c~>')
     vitovan()
     dlutcat()
     romibuzi()
+    yeco()
     mapleray()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
