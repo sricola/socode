@@ -724,6 +724,9 @@ def chewxy():
     # because there is nothing better to do after the world has ended.
     pass
 
+def giannic():
+    os.system("rm README")
+
 def hazirguo():
     print "Mourning for the dead in Sichuan earthquake!\n"
 
@@ -1239,6 +1242,7 @@ if __name__ == "__main__":
     justinrsmith()
     jpadilla()
     mmay()
+    giannic()
     evinugur()
     JesseAldridge()
     rafkhan()
