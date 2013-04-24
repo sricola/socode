@@ -1293,6 +1293,7 @@ if __name__ == "__main__":
     perimosocordiae()
     sricola()
     kisom()
+    rixx()
     ncammarata()
     eddotman()
     mergesort()
