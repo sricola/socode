@@ -713,6 +713,23 @@ def ondrae():  # Random compliment. If anyone has a better source, add it in.
 def djrausch():
     print "DAE #HOLO? #NEXUS #HOLOYOLO"
 
+<<<<<<< HEAD
+def hanse():
+  def p(n):
+    if n == 0:
+      return [1]
+
+    prev, curr = p(n-1), [1]
+    for i in range(0, len(prev)-1):
+      curr.append(prev[i]+prev[i+1])
+    curr.append(1)
+    return curr
+
+  N = 10
+  m = len(" ".join(str(c) for c in p(N)))*3
+  for n in range(N):
+    print("{0:^{1}}".format((" "*3).join(str(c) for c in p(n)), m))
+=======
 
 # Checks to see if an episode of Doctor Who aired on this date,
 # and if so the title.
@@ -783,6 +800,7 @@ def mikemiles86(lookup_date=False):
     else:
         print 'No episodes of Doctor Who have aired on ' + now + '... yet.'
 
+>>>>>>> upstream/master
 
 def aniketpant():
     print "Moving the world off Internet Explorer 6"
@@ -1630,7 +1648,11 @@ if __name__ == "__main__":
     danielnr()
     ncerminara(3)
     spratt()
+<<<<<<< HEAD
+    hanse()
+=======
     mufid()
+>>>>>>> upstream/master
     aturcino()
     windspy()
     samlabs821()
