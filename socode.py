@@ -1282,6 +1282,8 @@ def mapleray():
 def romibuzi():
     print "From Paris with love !"
 
+def avalanchy():
+    print ') Hello from avalanchy )'
 
 # Please consider creating your function
 # some random place between two other
