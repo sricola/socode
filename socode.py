@@ -1283,7 +1283,7 @@ def romibuzi():
     print "From Paris with love !"
 
 def avalanchy():
-    print ') Hello from avalanchy )'
+    print 'Hello from avalanchy'+(1**2>>3*4%5/6<<7+8-9)*'!'
 
 # Please consider creating your function
 # some random place between two other
