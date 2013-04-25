@@ -43,7 +43,11 @@ def thekarangoel():
     print "I don't get it"
     print "What's happening here?"
     umurgdk()
-    
+
+def drostie():
+    "This function prints itself."
+    data = ['def drostie():\n    "This function prints itself."\n    data = ', '\n    print data[0] + repr(data) + data[1]']
+    print data[0] + repr(data) + data[1]
 
 def harshavardhana(data):
     n = b = 0
@@ -1396,6 +1400,7 @@ if __name__ == "__main__":
     vitovan()
     dlutcat()
     romibuzi()
+    drostie()
     yeco()
     mapleray()
     # If you add a call to your function here you will
