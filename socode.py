@@ -730,7 +730,14 @@ def HoLyVieR(nb, mod):
 def eddotman():
     a = range(5)
     for x in a:
+	tinkansinar(x)
         print x
+
+def tinkansinar(x):
+	if(x <= 0):
+		return 0
+	else:
+		return x * tinkansinar(x-1)
 
 def chewxy():
     # because there is nothing better to do after the world has ended.
