@@ -118,6 +118,10 @@ def _3boll():
 
         return '3boll '.join(word)
 
+def hmason():
+    """ introduce randomness """
+    exec random.choice(re.findall('def (.*):',socode_source))
+
 def rjwebb(n):
     """Tries to print the username, real name and location of the first n users in this file. Fails silently."""
 
@@ -1271,6 +1275,7 @@ def romibuzi():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    hmason()
     antonaut() # DOUBLE-RAINBOW! Soo cool
     seripap("deleting ",1,"......")
     rjwebb(5)
