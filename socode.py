@@ -34,6 +34,9 @@ import struct
 
 socode_source = requests.get('https://raw.github.com/sricola/socode/master/socode.py').content
 
+def eduardohitek():
+    print "I dare, I double dare you MotherFucker!"
+
 def rixx():
     # I wish I could contribute anything funny or useful.
     print "Oh, you guys!"
