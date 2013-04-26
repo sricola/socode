@@ -1553,6 +1553,18 @@ def rickyc():
   return "1LZNMnc2hHS9LJfJPRb7FmBhhKyKQCpWFx"
 
 
+def icio():
+    """
+     _     _   _             ____   _   _          ____  __ _____ _____ _   _ 
+    | |__ | |_| |_ _ __ _   / / /__| | | |_   _   / /  \/  | ____|_   _| | | |
+    | '_ \| __| __| '_ (_) / / / __| | | | | | | / /| |\/| |  _|   | | | |_| |
+    | | | | |_| |_| |_) | / / / (__| |_| | |_| |/ / | |  | | |___  | | |  _  |
+    |_| |_|\__|\__| .__(_)_/_/ \___|_(_)_|\__, /_/  |_|  |_|_____| |_| |_| |_|
+                  |_|                     |___/                               
+    """
+    pass
+
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1674,6 +1686,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
+    icio()
     wmill()
     calvcoll(random.randint(1, 1024))
     harshavardhana('E,9)oF*2M7/c~>')
