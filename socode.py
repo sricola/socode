@@ -175,6 +175,12 @@ def phooky():
     print('phooky is now {0}!'.format(phooky.func_code.co_name))
         
 
+# Let's see if you can guess what it does without executing it! (Does no harm, just some list operations)
+# Works on both Python 2 and Python 3 (and on PyPy I guess?).
+# :param l: A list (o.0)
+rubik=lambda l:(lambda n,f,u,m:m(lambda i:f(u,i,u[n-i-1],n-i-1,u[i],m),range(n//2)))(len(l),(lambda n,i,l,o,u,m:m(lambda f:n.__setitem__(f[0],f[1]),((i,l),(o,u)))),l,(lambda p,q:list(map(p,q))))
+
+
 def rjwebb(n):
     """
     Tries to print the username,
@@ -1128,8 +1134,8 @@ def matiasinsaurralde():
 
 def drewcrawford():
     print "Let's see that again..."
-    functions = filter(lambda l: hasattr(l, '__call__') and
-                       l.func_code.co_argcount == 0, globals().values())
+    functions = rubik(filter(lambda l: hasattr(l, '__call__') and
+                       l.func_code.co_argcount == 0, globals().values()))
     from random import choice
     f = choice(functions)
     try:
