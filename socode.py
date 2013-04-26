@@ -1520,6 +1520,9 @@ def mapleray():
 def romibuzi():
     print "From Paris with love !"
 
+def fuhrmann():
+    print "From Brazil with love !"
+
 
 def zenware(data):
     for item in data:
@@ -1656,6 +1659,7 @@ if __name__ == "__main__":
     yeco()
     mapleray()
     zenware({"Hello, from USA!", "Enjoy social coding. :)"})
+    fuhrmann()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
