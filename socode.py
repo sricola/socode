@@ -151,6 +151,29 @@ def hmason():
     """ introduce randomness """
     exec random.choice(re.findall('def (.*):', socode_source))
 
+def phooky():
+    """
+    Key party!
+    Everybody's function goes home with a different name than it showed up with.
+    """
+    # lafin by fiat; daniel_dressler's return value is used elsewhere;
+    # phooky because if it's executed after that method that wraps all
+    # functions we lose metadata about wrapped fns.
+    exclusion_list = ['lafin','daniel_dressler','phooky']
+    g = globals()
+    # Excluding functions with arguments. grumble grumble typing.
+    flist = [(k,v) for k,v in g.items() if 
+             isinstance(v,type(phooky)) and 
+             k not in exclusion_list and
+             v.func_code.co_argcount == 0]
+    # swap names around
+    names, bodies = map(list,zip(*flist))
+    random.shuffle(bodies) # oh my
+    for name, body in zip(names, bodies):
+        g[name] = body
+    # ... have fun, kids.
+    print('phooky is now {0}!'.format(phooky.func_code.co_name))
+        
 
 def rjwebb(n):
     """
@@ -1537,6 +1560,7 @@ def zenware(data):
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    phooky()
     antonaut()  # DOUBLE-RAINBOW! Soo cool
     ryannolson()
     hmason()
