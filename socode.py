@@ -399,7 +399,7 @@ def evinugur():
 
 
 def ncammarata():
-    tweets = requests.get("https://search.twitter.com/search.json?q=a").json()
+    tweets = requests.get("https://search.twitter.com/search.json?q=a").json
     tweet = tweets['results'][0]['text']
     print "Random Tweet:", tweet.encode('utf-8')
 
@@ -1514,7 +1514,7 @@ def mapleray():
     print "It's awesome~~~"
     print "Hello World , This is mapleray"
     f = lambda x: x and x * f(x - 1) or 1
-    print f(199206)
+    print f(199)
 
 
 def romibuzi():
@@ -1523,7 +1523,7 @@ def romibuzi():
 
 def zenware(data):
     for item in data:
-    	print(item)
+        print(item)
 
 
 # Please consider creating your function
@@ -1537,9 +1537,9 @@ def zenware(data):
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    antonaut()  # DOUBLE-RAINBOW! Soo cool
     ryannolson()
     hmason()
-    antonaut()  # DOUBLE-RAINBOW! Soo cool
     seripap("deleting ", 1, "......")
     rjwebb(5)
     erictherobot()
