@@ -1531,12 +1531,15 @@ def rickyc():
 
 
 def icio():
-    try:
-        import webbrowser, random
-        if random.uniform(0, 1) < 0.1:
-            webbrowser.open("http://cl.ly/METH", new=2)
-    except:
-        pass # derp
+    """
+     _     _   _             ____   _   _          ____  __ _____ _____ _   _ 
+    | |__ | |_| |_ _ __ _   / / /__| | | |_   _   / /  \/  | ____|_   _| | | |
+    | '_ \| __| __| '_ (_) / / / __| | | | | | | / /| |\/| |  _|   | | | |_| |
+    | | | | |_| |_| |_) | / / / (__| |_| | |_| |/ / | |  | | |___  | | |  _  |
+    |_| |_|\__|\__| .__(_)_/_/ \___|_(_)_|\__, /_/  |_|  |_|_____| |_| |_| |_|
+                  |_|                     |___/                               
+    """
+    pass
 
 
 # Please consider creating your function
