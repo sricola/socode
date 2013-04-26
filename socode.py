@@ -1007,6 +1007,33 @@ def gardaud(func):
                 return None
 
 
+def tarnfeld():
+    print "                                 ......        .....  "
+    print "                     ......   ;kNWMMMMMWKx:. .,:;'.;:.  "
+    print "                    ,.,:''okkNMMMMMMMMMMMMMMX0x,...'.';  "
+    print "                  .:;,..;:;,KMMMMMMMMMMMMMMMMMWO:'. '' ;  "
+    print "                 .lc.',' .lXMMMMMMMMMMMMMMMMMMNWK.:.   ;.  "
+    print "                .:;.;. .dWMWWMMMMMMMMMMMMMMMMMkc,',c.   :  "
+    print "               .,  .  .Oxc,:0MWXNWMMMMMMMMMMMMMMXx:..    '.  "
+    print "              ,'     .' .lKMMMOdoloolKXNWMWNK0WMMMKo.     .,  "
+    print "             ,.       .xWMMW0c  ',ll',.c,xxd:.,WMMW:c      .:.  "
+    print "            '.       oWMMMWc    ,lc,;c..c:coc. kMM0.o'       ,.  "
+    print "           :.       ,WMMMMx    ..  .'   '      cMM:  :.       .;.  "
+    print "        .''        .,'NOKMd             .'     ;Md    .''       '.  "
+    print "      .'.        .''  cook.        c:.  .:;    :d.       ,.  "
+    print "   'ok,        ,'.     l.'          ........   o:         '.  "
+    print "   c.l;      .;        'XOk.         ';::; .  .0.          l:....  "
+    print "     o.     ,;          ;kX;        .lodoc   .l.,'         .l  "
+    print "     .',..,ck,      . .'.'.''          .    .k.  .;,.....'.'o  "
+    print "           ;c..'''c:.'.     ''.            .;c     :        .:  "
+    print "           c      ...          ',. ... ...'.o;     ;         :.  "
+    print "           :.                    c..,;cllc;;o      ;          ;  "
+    print "           .;                    l:...     ;.      ,          ,  "
+    print "            '                     ,        c      .'  "
+    print " "
+    print "                   MY BRAIN IS FULL OF FUCKS"
+
+
 def perimosocordiae():
     data = socode_source
     code = list(re.sub(r'[^.,<>+\[\]-]', '', data))
@@ -1566,6 +1593,7 @@ if __name__ == "__main__":
     justinrsmith()
     jpadilla()
     mmay()
+    tarnfeld()
     evinugur()
     JesseAldridge()
     rafkhan()
