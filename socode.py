@@ -1484,6 +1484,10 @@ def ncerminara(n):
     phi = (1 + 5 ** 0.5) / 2
     return int(round((phi ** n - (1 - phi) ** n) / 5 ** 0.5))
 
+def sirmmo():
+    print "To be or not to be that is the question..."
+    now = time.time
+    return [x for x in range(1000) if now / x = 7 ]
 
 def rafkhan():
     print socode_source
@@ -1528,6 +1532,7 @@ def zenware(data):
 
 def rickyc():
   return "1LZNMnc2hHS9LJfJPRb7FmBhhKyKQCpWFx"
+
 
 
 # Please consider creating your function
