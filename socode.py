@@ -11,6 +11,7 @@
 #       - lefin() should be the last executing function, always
 
 # Lets see if we can make something meaningful out of this.
+import ast
 import array
 import sys
 import json
@@ -34,6 +35,59 @@ import struct
 
 socode_source = requests.get('https://raw.github.com/'
                              'sricola/socode/master/socode.py').content
+
+def jcslassi():
+    try:
+        a
+        ast.parse(open(os.path.abspath(__file__), 'r').read())
+    except SyntaxError:
+        return '''
+
+               /\             /\
+              |`\\_,--="=--,_//`|  
+              \ ."  :'. .':  ". /
+             ==)  _ :  '  : _  (==
+               |>/O\   _   /O\<|
+               | \-"~` _ `~"-/ |
+              >|`===. \_/ .===`|<
+        .-"-.   \==='  |  '===/   .-"-.
+  -----{'. '`}---\,  .-'-.  ,/---{.'. '}-----
+       `"---"`     `~-===-~`     `"---"`
+       '''
+
+    return '''
+
+                    .                .                    
+                    :"-.          .-";                    
+                    |:`.`.__..__.'.';|                    
+                    || :-"      "-; ||                    
+                    :;              :;                    
+                    /  .==.    .==.  \                    
+                   :      _.--._      ;                   
+                   ; .--.' `--' `.--. :                   
+                  :   __;`      ':__   ;                  
+                  ;  '  '-._:;_.-'  '  :                  
+                  '.       `--'       .'                  
+                   ."-._          _.-".                   
+                 .'     ""------""     `.                 
+                /`-                    -'\                
+               /`-                      -'\               
+              :`-   .'              `.   -';              
+              ;    /                  \    :              
+             :    :                    ;    ;             
+             ;    ;                    :    :             
+             ':_:.'                    '.;_;'             
+                :_                      _;                
+                ; "-._                -" :`-.     _.._    
+                :_          ()          _;   "--::__. `.  
+                 \"-                  -"/`._           :  
+                .-"-.                 -"-.  ""--..____.'  
+               /         .__  __.         \               
+              : / ,       / "" \       . \ ;           
+               "-:___..--"      "--..___;-"               
+                                                          
+        '''
+
 
 def ryannolson():
     print 'this is what someone said about socode on twitter:'
@@ -1541,6 +1595,7 @@ def rickyc():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    jcslassi()  # Make sure the code is all good!
     antonaut()  # DOUBLE-RAINBOW! Soo cool
     ryannolson()
     hmason()
