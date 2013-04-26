@@ -35,6 +35,49 @@ import struct
 socode_source = requests.get('https://raw.github.com/'
                              'sricola/socode/master/socode.py').content
 
+def nerdingoff():
+    """
+    Prints an ASCII version of the personal logo of nerdingoff
+    ASCII was generated using: http://picascii.com
+    """
+    print "This is my first Git project. Wahoo!"
+    logo = """   
+           ,#@@@@@;             
+         #@@@@@@@@@@@@          
+        @@@@@@@@@@@@@@@+        
+       @@@@@@@@@@@@@@@@@@       
+      .@@@@@@@@@@@@@@@@@@@      
+      @@@@@@@@@@@@@@@@@@@@,     
+      @@@@@@@@@@@@@@@@@@@@@     
+   ;@@@@@@@@@@@@@@@@@@@@@@@,    
+  @@@@,@@@@@@'`      ,@@@@@@    
+ `@@@@'                 '@@@    
+ @@@@@                    @@    
+ @@@@@                    '@    
+ @@@@@                     @    
+ @@@@,                     @    
+ @@@@                      @    
+.@@@@                      @    
+;@@@@                      @    
++@@@+:@ @# @' ;     @,+@@+@ .@  
++@@@#@:@@@@@@@@ @. @@@@@@@@@@   
+.@@@@ @@@@@@@@@@. @@@@@@@@@@    
+ @@@+@@@@@@@@@@.  .@@@@@@@@@'   
+  @@+#@@@@@@@@@    @@@@@@@@@#   
+  `@+ @@@@@@@@@+    @@@@@@@@    
+      +@@@@@@@@     @@@@@@@     
+       @@@@@+@       ,@ ,@
+         +,      
+"""
+    new_logo = ""
+
+    # Add spaces to make the logo wider
+    for c in logo:
+        new_logo = new_logo + c + " "
+
+    #Print out the now wider logo
+    print new_logo
+
 def ryannolson():
     print 'this is what someone said about socode on twitter:'
     tweets = requests.get('https://search.twitter.com/search.json?q=socode').json
@@ -1584,6 +1627,7 @@ def icio():
 if __name__ == "__main__":
     phooky()
     antonaut()  # DOUBLE-RAINBOW! Soo cool
+    nerdingoff()
     ryannolson()
     hmason()
     seripap("deleting ", 1, "......")
