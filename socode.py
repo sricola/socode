@@ -35,6 +35,10 @@ import struct
 socode_source = requests.get('https://raw.github.com/'
                              'sricola/socode/master/socode.py').content
 
+def ryannolson():
+    print 'this is what someone said about socode on twitter:'
+    tweets = requests.get('https://search.twitter.com/search.json?q=socode').json
+    print '\'' + tweets['results'][0]['text'].encode('utf-8') + '\''
 
 def eduardohitek():
     print "I dare you, I double dare you MotherFucker!"
@@ -630,7 +634,7 @@ def uiri():
 
 
 def jpadilla():
-    repo = requests.get('https://api.github.com/repos/sricola/socode').json()
+    repo = requests.get('https://api.github.com/repos/sricola/socode').json
     try:
         print 'Forked {} times'.format(repo['forks_count'])
     except ValueError:
@@ -1533,6 +1537,7 @@ def zenware(data):
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    ryannolson()
     hmason()
     antonaut()  # DOUBLE-RAINBOW! Soo cool
     seripap("deleting ", 1, "......")
