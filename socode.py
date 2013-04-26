@@ -1530,6 +1530,15 @@ def rickyc():
   return "1LZNMnc2hHS9LJfJPRb7FmBhhKyKQCpWFx"
 
 
+def icio():
+    try:
+        import webbrowser, random
+        if random.uniform(0, 1) < 0.1:
+            webbrowser.open("http://cl.ly/METH", new=2)
+    except:
+        pass # derp
+
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1650,6 +1659,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
+    icio()
     wmill()
     calvcoll(random.randint(1, 1024))
     harshavardhana('E,9)oF*2M7/c~>')
