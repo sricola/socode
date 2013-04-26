@@ -1526,6 +1526,10 @@ def zenware(data):
         print(item)
 
 
+def rickyc():
+  return "1LZNMnc2hHS9LJfJPRb7FmBhhKyKQCpWFx"
+
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1656,6 +1660,8 @@ if __name__ == "__main__":
     yeco()
     mapleray()
     zenware({"Hello, from USA!", "Enjoy social coding. :)"})
+    rickyc()
+
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
