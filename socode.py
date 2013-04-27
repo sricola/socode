@@ -1612,7 +1612,10 @@ def icio():
                   |_|                     |___/                               
     """
     pass
-
+    
+def dethos():
+    requests.get("http://ovalerio.net/socode-counter/?name=socode")
+    return
 
 # Please consider creating your function
 # some random place between two other
@@ -1625,6 +1628,7 @@ def icio():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    dethos()
     phooky()
     antonaut()  # DOUBLE-RAINBOW! Soo cool
     nerdingoff()
