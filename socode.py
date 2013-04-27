@@ -1127,7 +1127,10 @@ def perimosocordiae():
                 break
         instr_ptr += 1
 
-
+def halitalptekin():
+    print "saka maka arada ise yarayan kodlar var"
+    print "ne olur olmaz yazalim bisiler"
+    
 def lax():
     file = "http://s.xnimg.cn/100k.jpg"
 
@@ -1742,6 +1745,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     bheesham()
+    halitalptekin()
     icio()
     wmill()
     calvcoll(random.randint(1, 1024))
