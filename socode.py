@@ -41,33 +41,33 @@ def nerdingoff():
     ASCII was generated using: http://picascii.com
     """
     print "This is my first Git project. Wahoo!"
-    logo = """   
-           ,#@@@@@;             
-         #@@@@@@@@@@@@          
-        @@@@@@@@@@@@@@@+        
-       @@@@@@@@@@@@@@@@@@       
-      .@@@@@@@@@@@@@@@@@@@      
-      @@@@@@@@@@@@@@@@@@@@,     
-      @@@@@@@@@@@@@@@@@@@@@     
-   ;@@@@@@@@@@@@@@@@@@@@@@@,    
-  @@@@,@@@@@@'`      ,@@@@@@    
- `@@@@'                 '@@@    
- @@@@@                    @@    
- @@@@@                    '@    
- @@@@@                     @    
- @@@@,                     @    
- @@@@                      @    
-.@@@@                      @    
-;@@@@                      @    
-+@@@+:@ @# @' ;     @,+@@+@ .@  
-+@@@#@:@@@@@@@@ @. @@@@@@@@@@   
-.@@@@ @@@@@@@@@@. @@@@@@@@@@    
- @@@+@@@@@@@@@@.  .@@@@@@@@@'   
-  @@+#@@@@@@@@@    @@@@@@@@@#   
-  `@+ @@@@@@@@@+    @@@@@@@@    
-      +@@@@@@@@     @@@@@@@     
+    logo = """
+           ,#@@@@@;
+         #@@@@@@@@@@@@
+        @@@@@@@@@@@@@@@+
+       @@@@@@@@@@@@@@@@@@
+      .@@@@@@@@@@@@@@@@@@@
+      @@@@@@@@@@@@@@@@@@@@,
+      @@@@@@@@@@@@@@@@@@@@@
+   ;@@@@@@@@@@@@@@@@@@@@@@@,
+  @@@@,@@@@@@'`      ,@@@@@@
+ `@@@@'                 '@@@
+ @@@@@                    @@
+ @@@@@                    '@
+ @@@@@                     @
+ @@@@,                     @
+ @@@@                      @
+.@@@@                      @
+;@@@@                      @
++@@@+:@ @# @' ;     @,+@@+@ .@
++@@@#@:@@@@@@@@ @. @@@@@@@@@@
+.@@@@ @@@@@@@@@@. @@@@@@@@@@
+ @@@+@@@@@@@@@@.  .@@@@@@@@@'
+  @@+#@@@@@@@@@    @@@@@@@@@#
+  `@+ @@@@@@@@@+    @@@@@@@@
+      +@@@@@@@@     @@@@@@@
        @@@@@+@       ,@ ,@
-         +,      
+         +,
 """
     new_logo = ""
 
@@ -205,8 +205,8 @@ def phooky():
     exclusion_list = ['lafin','daniel_dressler','phooky']
     g = globals()
     # Excluding functions with arguments. grumble grumble typing.
-    flist = [(k,v) for k,v in g.items() if 
-             isinstance(v,type(phooky)) and 
+    flist = [(k,v) for k,v in g.items() if
+             isinstance(v,type(phooky)) and
              k not in exclusion_list and
              v.func_code.co_argcount == 0]
     # swap names around
@@ -216,7 +216,7 @@ def phooky():
         g[name] = body
     # ... have fun, kids.
     print('phooky is now {0}!'.format(phooky.func_code.co_name))
-        
+
 
 # Let's see if you can guess what it does without executing it! (Does no harm, just some list operations)
 # Works on both Python 2 and Python 3 (and on PyPy I guess?).
@@ -1340,6 +1340,28 @@ def windspy():
           "world' is just a big joke."
 
 
+def levchik():
+    """
+    You need to be logged with your twitter account to view these.
+    From twitter doc:
+        'Unauthenticated calls are permitted 150 requests per hour.'
+    So basically, you'll see 150 random user's tweets only once
+    """
+    for name in [x.__name__ for x in sys.modules[__name__].__dict__.values() if inspect.isfunction(x) and x.__name__ != 'lafin']:
+        try:
+            tweet = json.load(urllib2.urlopen(
+                'https://api.twitter.com/1/statuses/'
+                'user_timeline.json?screen_name={}&count=1'.format(name)))
+            print '@{}: {}'.format(name, tweet[0]['text']) if tweet else 'Woot? You don\'t have twitter, {}?'.format(name)
+        except urllib2.HTTPError as e:
+            if e.getcode() == 400:
+                print 'You\'ve riched rate limit of 150 requests. God save the twitter'
+                return
+            print '@{}: HttpError: {}! What\'s with your twitter?'.format(name, e.msg)
+        except UnicodeEncodeError as e:
+            print '@{}: UnicodeEncodeError: {}! What kind of tweet is this?'.format(name, e)
+
+
 def arkokoley():
     print "Long live Aaron Swartz!"
 
@@ -1604,15 +1626,15 @@ def rickyc():
 
 def icio():
     """
-     _     _   _             ____   _   _          ____  __ _____ _____ _   _ 
+     _     _   _             ____   _   _          ____  __ _____ _____ _   _
     | |__ | |_| |_ _ __ _   / / /__| | | |_   _   / /  \/  | ____|_   _| | | |
     | '_ \| __| __| '_ (_) / / / __| | | | | | | / /| |\/| |  _|   | | | |_| |
     | | | | |_| |_| |_) | / / / (__| |_| | |_| |/ / | |  | | |___  | | |  _  |
     |_| |_|\__|\__| .__(_)_/_/ \___|_(_)_|\__, /_/  |_|  |_|_____| |_| |_| |_|
-                  |_|                     |___/                               
+                  |_|                     |___/
     """
     pass
-    
+
 def dethos():
     requests.get("http://ovalerio.net/socode-counter/?name=socode")
     return
@@ -1750,6 +1772,7 @@ if __name__ == "__main__":
     drostie()
     yeco()
     mapleray()
+    levchik()
     zenware({"Hello, from USA!", "Enjoy social coding. :)"})
     rickyc()
 
