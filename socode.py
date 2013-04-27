@@ -1511,7 +1511,7 @@ def vitovan():
 
 def NerdyTherapist():
     print "What am I doing? I should be working on my Bachelor thesis..."
-
+    
 
 def calvcoll(rs):
     if rs == 1024:
@@ -1568,6 +1568,11 @@ def nazgu1():
     urllib2.urlopen('https://cycloo.pl').read()
     print 'Hello World! :)'
 
+def rawdreeg():
+    print "Howdy people, what are we building here ?"
+    now = date.today()
+    print now
+    print now.strftime("%m-%d-%y or %d%b %Y is a %A on the %d day of %B")
 
 def dlutcat():
     print "I have developed a Pinterest-like site focus " \
@@ -1718,6 +1723,7 @@ if __name__ == "__main__":
     markembling()
     satshabad()
     ondrae()
+    rawdreeg()
     hazirguo()
     chris911()
     doboy(doboy)
