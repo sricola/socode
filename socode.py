@@ -1619,6 +1619,9 @@ def dethos():
     requests.get("http://ovalerio.net/socode-counter/?name=socode")
     return
 
+def sente():
+    return "hello from sente!"
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1752,7 +1755,8 @@ if __name__ == "__main__":
     drostie()
     yeco()
     mapleray()
-    zenware({"Hello, from USA!", "Enjoy social coding. :)"})
+    zenware({"Hello, from USA!": "Enjoy social coding. :)"})
+    sente()
     rickyc()
 
     # If you add a call to your function here you will
