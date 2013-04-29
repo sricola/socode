@@ -345,6 +345,9 @@ def payomdousti():
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
     codesuela('b')
+    
+def caffeinewriter():
+    print "My name is Brandon Anzaldi.\nI may not be the best coder (yet), but I'm working on it.\nI'm what some people would call a hacker, and what some others would call a geek.\nBut there's one thing I'm sure of.\nI'd like to make stuff.\nThis is more or less a placeholder, until this can be the place where cool stuff is.\nMaybe you'll be able to make your own spaceship just by putting a few datapoints in, but until that day comes, this is just me.\n\n-Brandon"
 
 
 def ozdemircili():
