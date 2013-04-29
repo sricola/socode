@@ -1755,7 +1755,7 @@ if __name__ == "__main__":
     drostie()
     yeco()
     mapleray()
-    zenware({"Hello, from USA!", "Enjoy social coding. :)"})
+    zenware({"Hello, from USA!": "Enjoy social coding. :)"})
     sente()
     rickyc()
 
