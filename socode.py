@@ -1633,6 +1633,14 @@ def dethos():
 def sente():
     return "hello from sente!"
 
+def sluu99(n):
+    "This function checks if a number is odd or even, the shitty way"
+    if n < 0:
+        n = n * -1
+    while n > 0:
+        n = n - 2
+    return n == 0
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1771,6 +1779,7 @@ if __name__ == "__main__":
     zenware({"Hello, from USA!": "Enjoy social coding. :)"})
     sente()
     rickyc()
+    sluu99(random.randint(1, 1024))
 
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
