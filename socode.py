@@ -556,9 +556,15 @@ def dpayne():
         print 'There was an error'
     
     return False
-  
+
+def lsauer():
+    print 'But will it blend?'
+    return daniel_dressler() if (random.random()*daniel_dressler()) > (math.pi * 5)\
+      else print requests.get('http://lsauer.github.com/Readme.md').content
+
 if __name__ == "__main__":
     starefossen()
+    lsauer()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
     dpayne()
