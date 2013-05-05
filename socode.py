@@ -1354,6 +1354,20 @@ def arkokoley():
     print "Long live Aaron Swartz!"
 
 
+def smithbr():
+    """ Suggests a new TV show to watch. Sorry if you already watch
+        it...
+    """
+    try:
+        show_list = requests.get('https://raw.github.com/svendahlstrand/couchpotato/master/shows.json').json()
+        random_show = random.randint(0, len(show_list))
+        print "Do you have %s of free time today? Check out an episode of %s!" % \
+                (show_list[random_show]['run time'],
+                 show_list[random_show]['title'].split(' (')[0])
+    except Exception as e:
+        print 'Something went wrong. %s' % str(e)
+
+
 def brandybuck():
     print "You can have your fancy ales, you can drink 'em by the flagon"
     print "But the only brew for the brave and true comes from the Green " \
@@ -1709,6 +1723,7 @@ if __name__ == "__main__":
     GeneralZero()
     tcr()
     mrjaeger()
+    smithbr()
     jhgaylor()
     henghonglee()
     taylorlapeyre()
