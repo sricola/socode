@@ -1650,7 +1650,12 @@ def icio():
                   |_|                     |___/                               
     """
     pass
-    
+
+
+def gregimba():
+    print "Hi!, I like long pair programming sessions and long walks around silicon valley."
+
+
 def dethos():
     requests.get("http://ovalerio.net/socode-counter/?name=socode")
     return
