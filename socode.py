@@ -28,6 +28,8 @@ import urllib2
 import platform
 import time
 import struct
+import ctypes
+import glob
 
 # IF ANY OF YOU GUYS WANT THE SOURCE OF THIS FILE USE THIS VARIABLE
 ###################################################################
@@ -1487,7 +1489,16 @@ def pocon():
     import __hello__
     print "And with that, @pocon chimes in late"
 
-
+def maluta():
+    if platform.system() == 'Linux':
+        try:
+            libname = glob.glob("/lib/*/libc.so.*")[1]
+            libc = ctypes.CDLL(libname)
+            printf = libc.printf
+            printf("@maluta also says \"hello\" to this experiment :-)\n")
+            return 0
+        except:
+            return -1
 
 def myusuf3():
     module = sys.modules[__name__]
@@ -1796,6 +1807,7 @@ if __name__ == "__main__":
     sente()
     rickyc()
     sluu99(random.randint(1, 1024))
+    maluta()
 
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
