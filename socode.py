@@ -1668,6 +1668,10 @@ def sluu99(n):
     while n > 0:
         n = n - 2
     return n == 0
+    
+def Caneco():
+    return "I'm a, mother father gentleman!"
+                             
 
 # Please consider creating your function
 # some random place between two other
