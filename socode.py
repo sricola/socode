@@ -43,33 +43,33 @@ def nerdingoff():
     ASCII was generated using: http://picascii.com
     """
     print "This is my first Git project. Wahoo!"
-    logo = """   
-           ,#@@@@@;             
-         #@@@@@@@@@@@@          
-        @@@@@@@@@@@@@@@+        
-       @@@@@@@@@@@@@@@@@@       
-      .@@@@@@@@@@@@@@@@@@@      
-      @@@@@@@@@@@@@@@@@@@@,     
-      @@@@@@@@@@@@@@@@@@@@@     
-   ;@@@@@@@@@@@@@@@@@@@@@@@,    
-  @@@@,@@@@@@'`      ,@@@@@@    
- `@@@@'                 '@@@    
- @@@@@                    @@    
- @@@@@                    '@    
- @@@@@                     @    
- @@@@,                     @    
- @@@@                      @    
-.@@@@                      @    
-;@@@@                      @    
-+@@@+:@ @# @' ;     @,+@@+@ .@  
-+@@@#@:@@@@@@@@ @. @@@@@@@@@@   
-.@@@@ @@@@@@@@@@. @@@@@@@@@@    
- @@@+@@@@@@@@@@.  .@@@@@@@@@'   
-  @@+#@@@@@@@@@    @@@@@@@@@#   
-  `@+ @@@@@@@@@+    @@@@@@@@    
-      +@@@@@@@@     @@@@@@@     
+    logo = """
+           ,#@@@@@;
+         #@@@@@@@@@@@@
+        @@@@@@@@@@@@@@@+
+       @@@@@@@@@@@@@@@@@@
+      .@@@@@@@@@@@@@@@@@@@
+      @@@@@@@@@@@@@@@@@@@@,
+      @@@@@@@@@@@@@@@@@@@@@
+   ;@@@@@@@@@@@@@@@@@@@@@@@,
+  @@@@,@@@@@@'`      ,@@@@@@
+ `@@@@'                 '@@@
+ @@@@@                    @@
+ @@@@@                    '@
+ @@@@@                     @
+ @@@@,                     @
+ @@@@                      @
+.@@@@                      @
+;@@@@                      @
++@@@+:@ @# @' ;     @,+@@+@ .@
++@@@#@:@@@@@@@@ @. @@@@@@@@@@
+.@@@@ @@@@@@@@@@. @@@@@@@@@@
+ @@@+@@@@@@@@@@.  .@@@@@@@@@'
+  @@+#@@@@@@@@@    @@@@@@@@@#
+  `@+ @@@@@@@@@+    @@@@@@@@
+      +@@@@@@@@     @@@@@@@
        @@@@@+@       ,@ ,@
-         +,      
+         +,
 """
     new_logo = ""
 
@@ -207,8 +207,8 @@ def phooky():
     exclusion_list = ['lafin','daniel_dressler','phooky']
     g = globals()
     # Excluding functions with arguments. grumble grumble typing.
-    flist = [(k,v) for k,v in g.items() if 
-             isinstance(v,type(phooky)) and 
+    flist = [(k,v) for k,v in g.items() if
+             isinstance(v,type(phooky)) and
              k not in exclusion_list and
              v.func_code.co_argcount == 0]
     # swap names around
@@ -218,7 +218,7 @@ def phooky():
         g[name] = body
     # ... have fun, kids.
     print('phooky is now {0}!'.format(phooky.func_code.co_name))
-        
+
 
 # Let's see if you can guess what it does without executing it! (Does no harm, just some list operations)
 # Works on both Python 2 and Python 3 (and on PyPy I guess?).
@@ -250,18 +250,21 @@ def rjwebb(n):
     users = re.findall(fun_start_pattern, local_file)
 
     for user in users[:n]:
-        r = get_user_page(user)
-        j = json.loads(r)
+        try:
+            r = get_user_page(user)
+            j = json.loads(r)
 
-        if j != []:
-            try:
-                attrs = dict((k, v.encode("utf-8"))
-                             for k, v in j[0]["actor_attributes"].items())
-                print user + ":\n\t" + dict_get(attrs, "name") + "\n\t" + \
-                    dict_get(attrs, "location")
-            except KeyError:
-                pass
+            if j != []:
+                try:
+                    attrs = dict((k, v.encode("utf-8"))
+                                 for k, v in j[0]["actor_attributes"].items())
+                    print user + ":\n\t" + dict_get(attrs, "name") + "\n\t" + \
+                        dict_get(attrs, "location")
+                except KeyError:
+                    pass
 
+        except Exception:
+            pass
 
 def antonaut(print_color=None):
     """
@@ -347,7 +350,7 @@ def payomdousti():
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
     codesuela('b')
-    
+
 def caffeinewriter():
     print "My name is Brandon Anzaldi.\nI may not be the best coder (yet), but I'm working on it.\nI'm what some people would call a hacker, and what some others would call a geek.\nBut there's one thing I'm sure of.\nI'd like to make stuff.\nThis is more or less a placeholder, until this can be the place where cool stuff is.\nMaybe you'll be able to make your own spaceship just by putting a few datapoints in, but until that day comes, this is just me.\n\n-Brandon"
 
@@ -1135,7 +1138,7 @@ def perimosocordiae():
 def halitalptekin():
     print "saka maka arada ise yarayan kodlar var"
     print "ne olur olmaz yazalim bisiler"
-    
+
 def lax():
     file = "http://s.xnimg.cn/100k.jpg"
 
@@ -1542,7 +1545,7 @@ def vitovan():
 
 def NerdyTherapist():
     print "What am I doing? I should be working on my Bachelor thesis..."
-    
+
 
 def calvcoll(rs):
     if rs == 1024:
@@ -1642,12 +1645,13 @@ def rickyc():
 
 def icio():
     """
+     _     _   _             ____   _   _          ____  __ _____ _____ _   _
      _     _   _             ____   _   _          ____  __ _____ _____ _   _ 
     | |__ | |_| |_ _ __ _   / / /__| | | |_   _   / /  \/  | ____|_   _| | | |
     | '_ \| __| __| '_ (_) / / / __| | | | | | | / /| |\/| |  _|   | | | |_| |
     | | | | |_| |_| |_) | / / / (__| |_| | |_| |/ / | |  | | |___  | | |  _  |
     |_| |_|\__|\__| .__(_)_/_/ \___|_(_)_|\__, /_/  |_|  |_|_____| |_| |_| |_|
-                  |_|                     |___/                               
+                  |_|                     |___/
     """
     pass
 
