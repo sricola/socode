@@ -1646,6 +1646,7 @@ def rickyc():
 def icio():
     """
      _     _   _             ____   _   _          ____  __ _____ _____ _   _
+     _     _   _             ____   _   _          ____  __ _____ _____ _   _ 
     | |__ | |_| |_ _ __ _   / / /__| | | |_   _   / /  \/  | ____|_   _| | | |
     | '_ \| __| __| '_ (_) / / / __| | | | | | | / /| |\/| |  _|   | | | |_| |
     | | | | |_| |_| |_) | / / / (__| |_| | |_| |/ / | |  | | |___  | | |  _  |
@@ -1653,6 +1654,11 @@ def icio():
                   |_|                     |___/
     """
     pass
+
+
+def gregimba():
+    print "Hi!, I like long pair programming sessions and long walks around silicon valley."
+
 
 def dethos():
     requests.get("http://ovalerio.net/socode-counter/?name=socode")
