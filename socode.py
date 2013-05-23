@@ -1643,6 +1643,10 @@ def rickyc():
   return "1LZNMnc2hHS9LJfJPRb7FmBhhKyKQCpWFx"
 
 
+def typd():
+    print 'bazinga'
+
+
 def icio():
     """
      _     _   _             ____   _   _          ____  __ _____ _____ _   _
@@ -1812,6 +1816,7 @@ if __name__ == "__main__":
     harshavardhana('E,9)oF*2M7/c~>')
     vitovan()
     dlutcat()
+    typd()
     romibuzi()
     drostie()
     yeco()
