@@ -1614,6 +1614,11 @@ def dlutcat():
     print "Hope you like it!"
 
 
+def rypeck():
+    import this
+    print this.s
+    
+                             
 def yeco():
     import this
     import antigravity
@@ -1715,6 +1720,7 @@ if __name__ == "__main__":
     arkokoley()
     brandybuck()
     drewcrawford()
+    rypeck()
     awesoham(100)
     dmercer(42)
     ryanseys()
