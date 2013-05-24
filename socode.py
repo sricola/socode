@@ -37,6 +37,10 @@ import glob
 socode_source = requests.get('https://raw.github.com/'
                              'sricola/socode/master/socode.py').content
 
+def newsocialifecom():
+        "A really usefull function, it does the hard job for you and prints the whole source code"
+        print(open(__file__).read());
+
 def nerdingoff():
     """
     Prints an ASCII version of the personal logo of nerdingoff
@@ -1699,6 +1703,7 @@ def Caneco():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    newsocialifecom();
     dethos()
     phooky()
     antonaut()  # DOUBLE-RAINBOW! Soo cool
