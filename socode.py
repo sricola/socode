@@ -1691,6 +1691,13 @@ def sluu99(n):
 def Caneco():
     return "I'm a, mother father gentleman!"
                              
+def alpertayfun():
+    count = 0
+    while (count < 999999999999):
+    print 'The count is:', count
+    count = count + 1
+
+    print "Good bye my friend!"
 
 # Please consider creating your function
 # some random place between two other
@@ -1837,7 +1844,7 @@ if __name__ == "__main__":
     rickyc()
     sluu99(random.randint(1, 1024))
     maluta()
-
+    alpertayfun()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
