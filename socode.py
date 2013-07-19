@@ -1654,6 +1654,7 @@ def rickyc():
 
 def typd():
     print 'bazinga'
+    nands()
 
 
 def icio():
@@ -1690,6 +1691,11 @@ def sluu99(n):
     
 def Caneco():
     return "I'm a, mother father gentleman!"
+    
+    
+def nands():
+    """ Dennis Ritchie was the first person to create a Hello World program """
+    print "Hello World"
                              
 
 # Please consider creating your function
