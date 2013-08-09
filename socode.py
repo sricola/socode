@@ -1708,6 +1708,12 @@ def Caneco():
 def nands():
     """ Dennis Ritchie was the first person to create a Hello World program """
     print "Hello World"
+    
+def papachan():
+    """ Is there a duck? """
+    animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
+    if "duck" in animals:
+        print "OK there is a duck!"
                              
 
 # Please consider creating your function
@@ -1856,6 +1862,7 @@ if __name__ == "__main__":
     rickyc()
     sluu99(random.randint(1, 1024))
     maluta()
+    papachan()
 
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
