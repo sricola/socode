@@ -343,6 +343,18 @@ def sikado():
     thekarangoel()
 
 
+def jatinpandey():
+    enough = False
+    nugget_count = random.randint(0, 80)
+    if nugget_count >= 40:
+        enough = True
+    if enough:
+        response = "Lunch, ye ask? I'll have " + nugget_count + " chicken nuggets or wateva"
+    else:
+        response = "Oh sheesh y'all, I need more McDs"
+    print response
+
+
 def alisnic(number):
     print 'fizz' * (number % 3 == 0) + 'buzz' * (number % 5 == 0)
 
@@ -1838,6 +1850,7 @@ if __name__ == "__main__":
     drostie()
     yeco()
     mapleray()
+    jatinpandey()
     zenware({"Hello, from USA!": "Enjoy social coding. :)"})
     sente()
     rickyc()
