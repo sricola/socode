@@ -30,6 +30,17 @@ import time
 import struct
 import ctypes
 import glob
+import logging
+
+
+# Logging Support
+#################
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s : %(levelname)s : %(message)s',
+    filename='socode.log',
+    filemode='w',
+)
 
 # IF ANY OF YOU GUYS WANT THE SOURCE OF THIS FILE USE THIS VARIABLE
 ###################################################################
@@ -40,6 +51,13 @@ socode_source = requests.get('https://raw.github.com/'
 def newsocialifecom():
         "A really usefull function, it does the hard job for you and prints the whole source code"
         print(open(__file__).read());
+
+def abhirajbutala():
+    """
+    Wait Waa!!
+    """
+    logging.info("I just added logging support for this important project!")
+    return
 
 def nerdingoff():
     """
@@ -1727,6 +1745,7 @@ def papachan():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    abhirajbutala()
     newsocialifecom();
     dethos()
     phooky()
