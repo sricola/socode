@@ -716,6 +716,9 @@ def chrisgw():
 def yuvadm():
     print socode_source
 
+def spectralshadow514():
+   print "Hello Social Coding World!"
+
 
 def maxmackie(crypt_me):
     """Just try and crack this cipher."""
@@ -1843,6 +1846,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     caffeinewriter()
+    spectralshadow514()
     bheesham()
     halitalptekin()
     icio()
