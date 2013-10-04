@@ -1735,6 +1735,10 @@ def papachan():
     animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
     if "duck" in animals:
         print "OK there is a duck!"
+        
+def akkatracker():
+    print "I'm glad this isn't in Python 3.2 this much (" + 1000 * "*" + ")"
+    print "Follow @akkatracker on pretty much every social media site imaginable :)"
                              
 
 # Please consider creating your function
@@ -1886,7 +1890,7 @@ if __name__ == "__main__":
     sluu99(random.randint(1, 1024))
     maluta()
     papachan()
-
+    akkatracker()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
