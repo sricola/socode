@@ -1309,7 +1309,7 @@ def nathanathan(function, yays=[], nays=[]):
 
 def antoin_m():
     print "Hello nathanathan, you owe me one dollar! =)"
-    nathanathan(lambda: danielnr(), yays["antoin_m"])
+    nathanathan(lambda: danielnr(), ["antoin_m"])
 
 def danielnr():
     print "                                                                   "
