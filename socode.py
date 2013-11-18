@@ -1307,6 +1307,9 @@ def nathanathan(function, yays=[], nays=[]):
     if len(yay_set) >= len(nay_set):
         function()
 
+def antoin_m():
+    print "Hello nathanathan, you owe me one dollar! =)"
+    nathanathan(lambda: danielnr(), ["antoin_m"])
 
 def danielnr():
     print "                                                                   "
@@ -1886,6 +1889,7 @@ if __name__ == "__main__":
     jatinpandey()
     zenware({"Hello, from USA!": "Enjoy social coding. :)"})
     sente()
+    antoin_m()
     rickyc()
     sluu99(random.randint(1, 1024))
     maluta()
