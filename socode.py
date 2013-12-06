@@ -1744,6 +1744,11 @@ def akkatracker():
     print "Follow @akkatracker on pretty much every social media site imaginable :)"
                              
 
+def nikitachernov():
+    print requests.get(
+        'http://numbersapi.com/%(number)d' % {"number": random.randint(0, 9999) }
+    ).content
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1895,6 +1900,7 @@ if __name__ == "__main__":
     maluta()
     papachan()
     akkatracker()
+    nikitachernov()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
