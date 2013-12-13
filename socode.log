@@ -1,0 +1,4 @@
+2013-12-12 22:42:24,548 : INFO : Starting new HTTPS connection (1): raw.github.com
+2013-12-12 22:42:24,730 : DEBUG : "GET /sricola/socode/master/socode.py HTTP/1.1" 200 21895
+2013-12-12 22:42:25,197 : INFO : Starting new HTTPS connection (1): api.twitter.com
+2013-12-12 22:42:25,445 : DEBUG : "GET /1.1/search/tweets.json HTTP/1.1" 400 86
