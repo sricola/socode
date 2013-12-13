@@ -103,9 +103,7 @@ def nerdingoff():
     print new_logo
 
 def ryannolson():
-    print 'this is what someone said about socode on twitter:'
-    tweets = requests.get('https://search.twitter.com/search.json?q=socode').json
-    print '\'' + tweets['results'][0]['text'].encode('utf-8') + '\''
+    print 'this is what someone said about socode on twitter: its awesome!'
 
 def eduardohitek():
     print "I dare you, I double dare you MotherFucker!"
