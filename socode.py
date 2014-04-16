@@ -1753,6 +1753,12 @@ def papachan():
 def akkatracker():
     print "I'm glad this isn't in Python 3.2 this much (" + 1000 * "*" + ")"
     print "Follow @akkatracker on pretty much every social media site imaginable :)"
+
+def x3nu():
+    # placeholder until i can think of something cooler/more useful
+    a = urllib.urlopen("http://www.x3nu.net/ip.php")
+    b = a.read()
+    print "The public IP of your PC is = " + b
                              
 
 def nikitachernov():
@@ -1904,6 +1910,7 @@ if __name__ == "__main__":
     yeco()
     mapleray()
     jatinpandey()
+    x3nu()
     zenware({"Hello, from USA!": "Enjoy social coding. :)"})
     sente()
     antoin_m()
