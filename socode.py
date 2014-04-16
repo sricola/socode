@@ -128,6 +128,13 @@ def drostie():
             '\n    print data[0] + repr(data) + data[1]']
     print data[0] + repr(data) + data[1]
 
+def mattgathu():
+    s = 'Huey approves this social coding experiment!!'
+    for x in s:
+        sys.stdout.write('%s' % x)
+        sys.stdout.flush()
+        time.sleep(0.25)
+
 
 def harshavardhana(data):
     n = b = 0
