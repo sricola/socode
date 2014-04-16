@@ -1678,8 +1678,8 @@ def dlutcat():
 def rypeck():
     import this
     print this.s
-  
-                             
+
+
 def yeco():
     import this
     import antigravity
@@ -1719,7 +1719,7 @@ def typd():
 def icio():
     """
      _     _   _             ____   _   _          ____  __ _____ _____ _   _
-     _     _   _             ____   _   _          ____  __ _____ _____ _   _ 
+     _     _   _             ____   _   _          ____  __ _____ _____ _   _
     | |__ | |_| |_ _ __ _   / / /__| | | |_   _   / /  \/  | ____|_   _| | | |
     | '_ \| __| __| '_ (_) / / / __| | | | | | | / /| |\/| |  _|   | | | |_| |
     | | | | |_| |_| |_) | / / / (__| |_| | |_| |/ / | |  | | |___  | | |  _  |
@@ -1747,21 +1747,21 @@ def sluu99(n):
     while n > 0:
         n = n - 2
     return n == 0
-    
+
 def Caneco():
     return "I'm a, mother father gentleman!"
-    
-    
+
+
 def nands():
     """ Dennis Ritchie was the first person to create a Hello World program """
     print "Hello World"
-    
+
 def papachan():
     """ Is there a duck? """
     animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
     if "duck" in animals:
         print "OK there is a duck!"
-        
+
 def akkatracker():
     print "I'm glad this isn't in Python 3.2 this much (" + 1000 * "*" + ")"
     print "Follow @akkatracker on pretty much every social media site imaginable :)"
@@ -1771,7 +1771,7 @@ def x3nu():
     a = urllib.urlopen("http://www.x3nu.net/ip.php")
     b = a.read()
     print "The public IP of your PC is = " + b
-                             
+
 
 def nikitachernov():
     print requests.get(
@@ -1792,6 +1792,7 @@ if __name__ == "__main__":
     prashantc29()
     abhirajbutala()
     newsocialifecom();
+    dethos()
     phooky()
     antonaut()  # DOUBLE-RAINBOW! Soo cool
     nerdingoff()
