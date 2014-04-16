@@ -1685,6 +1685,8 @@ def mapleray():
 def romibuzi():
     print "From Paris with love !"
 
+def avalanchy():
+    print 'Hello from avalanchy'+(1**2>>3*4%5/6<<7+8-9)*'!'
 
 def zenware(data):
     for item in data:
