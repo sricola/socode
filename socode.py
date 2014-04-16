@@ -291,7 +291,7 @@ def henghonglee():
 def jhgaylor():
     print "Signing in from Starkville, Mississippi."
 
-def klebsh():
+def hklebs():
     print "000000000000000000000000000000"
     print "0000    0000    000000    0000"
     print "0000    0000    000000    0000"
@@ -598,7 +598,7 @@ def pocon():
 
 
 if __name__ == "__main__":
-    klebsh()
+    hklebs()
     starefossen()
     heinzf(False) # this thing makes it hard to make sure stuff works, doesn't it?
     uiri() # Can I go first unless you're going to modify the file?
