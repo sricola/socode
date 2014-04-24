@@ -1610,7 +1610,8 @@ def joshryandavis():
         print 'Around the world, around the world'
 
 def prashantc29():
-    print 'Stairway to Heaven!'
+    print "Hi" + " " + os.getenv('USERNAME')
+    print 'Have a great day!!!\n'
 
 def mainliner(n, sum_xy, sum_x, sum_y, sum_xx, sum_yy):
     numerator = (n * sum_xy - sum_x * sum_y)
