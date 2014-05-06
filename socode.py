@@ -1740,6 +1740,10 @@ def dethos():
 def sente():
     return "hello from sente!"
 
+def thibaudrohmer(n):
+    print "\n".join(["*"*i for i in range(1,n+1)])
+
+
 def sluu99(n):
     "This function checks if a number is odd or even, the shitty way"
     if n < 0:
