@@ -1772,6 +1772,30 @@ def x3nu():
     b = a.read()
     print "The public IP of your PC is = " + b
 
+def rdtorres():
+    """
+        Code inspired by : 
+        http://code.activestate.com/recipes/577537-banner/
+    """
+    letterforms = '''\
+           | XXXXX | X    X| X    X| X    X| X    X| XXXXX |d|
+           | XXXXXX| X     | XXXXX | X     | X     | XXXXXX|e|
+           |  XXXX | X    X| X    X| X    X| X    X|  XXXX |o|
+           | XXXXX | X    X| X    X| XXXXX | X   X | X    X|r|
+           |  XXXX | X     |  XXXX |      X| X    X|  XXXX |s|
+           |  XXXXX|    X  |    X  |    X  |    X  |    X  |t|
+    '''.splitlines()
+    
+    table = {}
+    for form in letterforms:
+        if '|' in form:
+            table[form[-2]] = form[:-3].split('|')
+    ROWS = len(table.values()[0])
+    for row in range(ROWS):
+        for c in sys._getframe().f_code.co_name:
+            print table[c][row],
+        print
+    print
 
 def nikitachernov():
     print requests.get(
@@ -1933,6 +1957,7 @@ if __name__ == "__main__":
     papachan()
     akkatracker()
     nikitachernov()
+    rdtorres()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
