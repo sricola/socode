@@ -48,6 +48,20 @@ logging.basicConfig(
 socode_source = requests.get('https://raw.github.com/'
                              'sricola/socode/master/socode.py').content
 
+def zcdziura():
+  banner = """
+   _    _      _ _                             _     _ _ 
+   | |  | |    | | |                           | |   | | |
+   | |__| | ___| | | ___    __      _____  _ __| | __| | |
+   |  __  |/ _ \ | |/ _ \   \ \ /\ / / _ \| '__| |/ _` | |
+   | |  | |  __/ | | (_) |   \ V  V / (_) | |  | | (_| |_|
+   |_|  |_|\___|_|_|\___( )   \_/\_/ \___/|_|  |_|\__,_(_)
+                       |/
+
+  """
+
+  print banner
+
 def newsocialifecom():
         "A really usefull function, it does the hard job for you and prints the whole source code"
         print(open(__file__).read());
@@ -1789,9 +1803,10 @@ def nikitachernov():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    zcdziura() # Hello, world!
     prashantc29()
     abhirajbutala()
-    newsocialifecom();
+    newsocialifecom()
     dethos()
     phooky()
     antonaut()  # DOUBLE-RAINBOW! Soo cool
