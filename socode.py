@@ -1778,6 +1778,10 @@ def nikitachernov():
         'http://numbersapi.com/%(number)d' % {"number": random.randint(0, 9999) }
     ).content
 
+
+def greghilston():
+    return 42 # The answer.
+    
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1906,6 +1910,7 @@ if __name__ == "__main__":
     vellamike(10)
     alisnic(random.randint(1, 1024))
     zonetti()
+    greghilston()
     pocon()
     caffeinewriter()
     spectralshadow514()
