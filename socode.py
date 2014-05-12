@@ -1698,7 +1698,10 @@ def mapleray():
 
 def romibuzi():
     print "From Paris with love !"
-
+    
+def trommel():
+    print "ogres are like onions"
+    
 def avalanchy():
     print 'Hello from avalanchy'+(1**2>>3*4%5/6<<7+8-9)*'!'
 
@@ -1933,6 +1936,7 @@ if __name__ == "__main__":
     papachan()
     akkatracker()
     nikitachernov()
+    trommel()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
