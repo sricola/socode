@@ -1791,6 +1791,7 @@ def nikitachernov():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    bluehatbrit()
     prashantc29()
     abhirajbutala()
     newsocialifecom();
