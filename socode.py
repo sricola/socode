@@ -388,6 +388,19 @@ def payomdousti():
     print "There is no spoon."
 
 
+def _return():
+   print " ,dPYb,              ,dPYb, ,dPYb,             "
+   print " IP'`Yb              IP'`Yb IP'`Yb             "
+   print " I8  8I              I8  8I I8  8I             "
+   print " I8  8'              I8  8' I8  8'             "
+   print " I8 dPgg,    ,ggg,   I8 dP  I8 dP    ,ggggg,   "
+   print " I8P    I8  I8, ,8I  I8P    I8P    i8'    ,8I  "
+   print ",d8     I8, `YbadP' ,d8b,_ ,d8b,_ ,d8,   ,d8'  "
+   print " 88P     `Y8888P`Y8888P'`Y888P'`Y88P*Y8888P'   "
+   print "                                               "
+   print "			===== From @return =====             "
+
+
 def starefossen():
     print requests.get('http://kdd2.1337fire.com/').content
     codesuela('b')
@@ -1908,6 +1921,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     caffeinewriter()
+    _return()
     spectralshadow514()
     bheesham()
     halitalptekin()
