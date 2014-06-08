@@ -398,7 +398,7 @@ def _return():
    print ",d8     I8, `YbadP' ,d8b,_ ,d8b,_ ,d8,   ,d8'  "
    print " 88P     `Y8888P`Y8888P'`Y888P'`Y88P*Y8888P'   "
    print "                                               "
-   print "			===== From @return =====             "
+   print "===== From @return =====                       "
 
 
 def starefossen():
