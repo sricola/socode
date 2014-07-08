@@ -47,6 +47,8 @@ logging.basicConfig(
 
 socode_source = requests.get('https://raw.github.com/'
                              'sricola/socode/master/socode.py').content
+def bluehatbrit():
+    print"This is a cool project, not sure where it'll go though!"
 
 def newsocialifecom():
         "A really usefull function, it does the hard job for you and prints the whole source code"
@@ -1802,6 +1804,7 @@ def nikitachernov():
 # resolve merge conflicts :P - pocon
 # Sorry - daniel-dressler
 if __name__ == "__main__":
+    bluehatbrit()
     prashantc29()
     abhirajbutala()
     newsocialifecom();
