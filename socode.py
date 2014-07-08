@@ -417,6 +417,17 @@ def ozdemircili():
              ("Don`t you think?"), range(1))
 
 
+def auxiliary_character():
+    def abusive_decorator(f):
+        return f()
+
+    @abusive_decorator
+    def abused_function():
+        return "This is how not to use decorators."
+
+    print abused_function
+
+
 def jontonsoup():
     print "There's always one more bug."
 
@@ -1908,6 +1919,7 @@ if __name__ == "__main__":
     aniketpant()
     umurgdk()
     NerdyTherapist()
+    auxiliary_character()
     jontonsoup()
     prezjordan()
     joshryandavis()
