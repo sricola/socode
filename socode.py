@@ -1679,6 +1679,8 @@ def nazgu1():
     print 'Hello World! :)'
 
 def rawdreeg():
+    # y do dis
+    from datetime import date
     print "Howdy people, what are we building here ?"
     now = date.today()
     print now
@@ -1781,12 +1783,25 @@ def akkatracker():
     print "I'm glad this isn't in Python 3.2 this much (" + 1000 * "*" + ")"
     print "Follow @akkatracker on pretty much every social media site imaginable :)"
 
+def RBRBRBR():
+    print "404 This was not the page you were looking for"
+
 def x3nu():
     # placeholder until i can think of something cooler/more useful
     a = urllib.urlopen("http://www.x3nu.net/ip.php")
     b = a.read()
     print "The public IP of your PC is = " + b
 
+
+def dirkyjerky():
+    print "If it acts like a human, talks like a human, and counts 'Hello World!' as a single word in the english dictionary;"
+    print "Then its probably a mentally insane digital guru"
+    persons_that_quack_imean_say_hello = 0
+    greetings = ["Hello", "hello", "hi", "Hi"]
+    for teh_greeting in greetings:
+        persons_that_quack_imean_say_hello += socode_source.count(teh_greeting)
+
+    print "Hello from persons #753000-#753" + persons_that_quack_imean_say_hello
 
 def nikitachernov():
     print requests.get(
@@ -1951,6 +1966,7 @@ if __name__ == "__main__":
     rickyc()
     sluu99(random.randint(1, 1024))
     maluta()
+    dirkyjerky()
     papachan()
     akkatracker()
     nikitachernov()
