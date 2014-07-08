@@ -1793,6 +1793,10 @@ def nikitachernov():
         'http://numbersapi.com/%(number)d' % {"number": random.randint(0, 9999) }
     ).content
 
+
+def AtheistCat():
+    print "Meow meow meow!"
+
 # Please consider creating your function
 # some random place between two other
 # functions instead of right here.
@@ -1950,6 +1954,7 @@ if __name__ == "__main__":
     papachan()
     akkatracker()
     nikitachernov()
+    AtheistCat()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
