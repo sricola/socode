@@ -1981,3 +1981,6 @@ if __name__ == "__main__":
     # ---------------------------------------------
     # as per instructed, please leave this as the final function
     lafin()
+
+def elebumm():
+    print "I am new to this."
