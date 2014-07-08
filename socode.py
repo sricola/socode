@@ -1757,6 +1757,9 @@ def dethos():
 def sente():
     return "hello from sente!"
 
+def marsman12019():
+    print open(__file__).read()
+
 def sluu99(n):
     "This function checks if a number is odd or even, the shitty way"
     if n < 0:
@@ -1848,6 +1851,7 @@ if __name__ == "__main__":
     arkokoley()
     brandybuck()
     drewcrawford()
+    marsman12019()
     rypeck()
     awesoham(100)
     dmercer(42)
