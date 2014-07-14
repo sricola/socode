@@ -1807,8 +1807,26 @@ def dirkyjerky():
     print "Hello from persons #753000-#753" + persons_that_quack_imean_say_hello
 
 def cjwelborn():
-    """ Anyone believe in documentaion? """
+    """ Anyone believe in documentation? """
     print('\n\n...so much for "meaningful". -Cj\n\n')
+
+    rawattrs = {a: v for a, v in globals().items()}
+    funcs = {k: v for k, v in rawattrs.items() if callable(v)}
+    offenders = []
+    for funcname, func in funcs.items():
+        try:
+            docs = func.__doc__
+        except AttributeError:
+            continue
+        if not docs:
+            offenders.append(funcname)
+
+    if offenders:
+        print('\nThese people don\'t like to document their functions:')
+        print('    {}'.format('\n    '.join(sorted(offenders))))
+    else:
+        print('\nEveryone documented their functions!')
+    return offenders
 
 def nikitachernov():
     print requests.get(
