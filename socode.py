@@ -1806,6 +1806,10 @@ def dirkyjerky():
 
     print "Hello from persons #753000-#753" + persons_that_quack_imean_say_hello
 
+def cjwelborn():
+    """ Anyone believe in documentaion? """
+    print('\n\n...so much for "meaningful". -Cj\n\n')
+
 def nikitachernov():
     print requests.get(
         'http://numbersapi.com/%(number)d' % {"number": random.randint(0, 9999) }
@@ -1974,6 +1978,7 @@ if __name__ == "__main__":
     papachan()
     akkatracker()
     nikitachernov()
+    cjwelborn()
     AtheistCat()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
