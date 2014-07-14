@@ -1849,6 +1849,7 @@ def AtheistCat():
 # Sorry - daniel-dressler
 if __name__ == "__main__":
     bluehatbrit()
+    cjwelborn()
     prashantc29()
     abhirajbutala()
     newsocialifecom();
@@ -1996,7 +1997,6 @@ if __name__ == "__main__":
     papachan()
     akkatracker()
     nikitachernov()
-    cjwelborn()
     AtheistCat()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
