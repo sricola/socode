@@ -1770,11 +1770,13 @@ def sluu99(n):
 
 def Caneco():
     return "I'm a, mother father gentleman!"
-
-
+    
 def nands():
     """ Dennis Ritchie was the first person to create a Hello World program """
     print "Hello World"
+    
+def arvindravi():
+    print "Hello! Hi! Namaste! _/\_"
 
 def papachan():
     """ Is there a duck? """
@@ -1814,6 +1816,9 @@ def nikitachernov():
 
 def AtheistCat():
     print "Meow meow meow!"
+    
+def elebumm():
+    print "I am new to this."
 
 # Please consider creating your function
 # some random place between two other
@@ -1974,6 +1979,7 @@ if __name__ == "__main__":
     papachan()
     akkatracker()
     nikitachernov()
+    arvindravi()
     AtheistCat()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
@@ -1983,6 +1989,3 @@ if __name__ == "__main__":
     # ---------------------------------------------
     # as per instructed, please leave this as the final function
     lafin()
-
-def elebumm():
-    print "I am new to this."
