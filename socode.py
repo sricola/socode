@@ -1990,6 +1990,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     caffeinewriter()
+    yukarigen = yukaritan(); print ", ".join(next(yukarigen) for i in range(20))
     _return()
     spectralshadow514()
     bheesham()
