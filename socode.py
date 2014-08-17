@@ -749,6 +749,21 @@ def vellamike(n=10):
     return vellamike(n - 1) + vellamike(n - 2)
 
 
+def yukaritan():
+    """Yay fizzbuzz!"""
+    n = 1
+    while True:
+        if not n % 15:
+            yield "FizzBuzz"
+        elif not n % 3:
+            yield "Fizz"
+        elif not n % 5:
+            yield "Buzz"
+        else:
+            yield str(n)
+        n += 1
+
+
 def chrisgw():
     print "meh"
 
