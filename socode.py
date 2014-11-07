@@ -1247,6 +1247,12 @@ def shazeline(name):
     print name + " is a pretty cool guy"
 
 
+def rheber():
+    """Compliment one of the contributors at random."""
+    shazeline(random.choice([name for (name, value) in globals().items()
+                             if type(value) is type(rheber)]))
+
+
 def samlabs821():
     print "vesselam"
 
@@ -1894,6 +1900,7 @@ if __name__ == "__main__":
     bencooling()
     perimosocordiae()
     sricola()
+    rheber()
     kisom()
     rixx()
     RBRBRBR()
