@@ -760,6 +760,21 @@ def vellamike(n=10):
     return vellamike(n - 1) + vellamike(n - 2)
 
 
+def yukaritan():
+    """Yay fizzbuzz!"""
+    n = 1
+    while True:
+        if not n % 15:
+            yield "FizzBuzz"
+        elif not n % 3:
+            yield "Fizz"
+        elif not n % 5:
+            yield "Buzz"
+        else:
+            yield str(n)
+        n += 1
+
+
 def chrisgw():
     print "meh"
 
@@ -1987,6 +2002,7 @@ if __name__ == "__main__":
     zonetti()
     pocon()
     caffeinewriter()
+    yukarigen = yukaritan(); print ", ".join(next(yukarigen) for i in range(20))
     _return()
     spectralshadow514()
     bheesham()
