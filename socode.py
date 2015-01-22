@@ -720,6 +720,38 @@ def theabrad():
     print "Super Bowl Champions!!!"
 
 
+def lukedmor():
+    """ generate and attempt auth """
+    saltmap = {}
+    hashmap = {}
+    _range = range if sys.version_info.major > 2 else xrange
+
+    def generate(username, password):
+        salt = "".join(random.choice(string.printable) for _ in _range(16))
+        m = hashlib.md5()
+        m.update(salt)
+        m.update(password)
+        userhash = m.hexdigest()
+        saltmap[username] = salt
+        hashmap[username] = userhash
+
+    def verify(username, password):
+        salt = saltmap[username]
+        m = hashlib.md5()
+        m.update(salt)
+        m.update(password)
+        userhash = m.hexdigest()
+        return userhash == hashmap[username]
+
+    username = "sricola"
+    password = "Ys})>KseE O*wlzD"
+    generate(username, password)
+    if verify(username, password):
+        print("%s successfully logged in with password %s" % (username, password))
+    else:
+        print("%s failed to log in with password %s" % (username, password))
+
+
 def ZackMullaly():
     f = open("temporary.txt", "w")
     stdout = sys.stdout
@@ -1891,6 +1923,7 @@ if __name__ == "__main__":
     abhirajbutala()
     newsocialifecom();
     dethos()
+    lukedmor()
     phooky()
     antonaut()  # DOUBLE-RAINBOW! Soo cool
     nerdingoff()
