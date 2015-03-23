@@ -1699,7 +1699,7 @@ def mapleray():
 def romibuzi():
     print "From Paris with love !"
     
-def trommel():
+def probablyjosh():
     print "ogres are like onions"
     
 def avalanchy():
@@ -1936,7 +1936,7 @@ if __name__ == "__main__":
     papachan()
     akkatracker()
     nikitachernov()
-    trommel()
+    probablyjosh()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
