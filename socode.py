@@ -1867,6 +1867,11 @@ def nikitachernov():
         'http://numbersapi.com/%(number)d' % {"number": random.randint(0, 9999) }
     ).content
 
+def siva(x, y):
+    """ Made me fall in love with Python """
+    print x, y
+    x, y = y, x
+    print x, y
 
 def AtheistCat():
     print "Meow meow meow!"
@@ -2039,6 +2044,7 @@ if __name__ == "__main__":
     nikitachernov()
     arvindravi()
     AtheistCat()
+    siva(5, 10)
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
