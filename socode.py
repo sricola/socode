@@ -1873,6 +1873,11 @@ def siva(x, y):
     x, y = y, x
     print x, y
 
+def alexako():
+    phrase = "How to meet ladies"
+    code = [word[0].upper() for word in phrase.split()]
+    print ''.join(code)
+
 def AtheistCat():
     print "Meow meow meow!"
     
@@ -2045,6 +2050,7 @@ if __name__ == "__main__":
     arvindravi()
     AtheistCat()
     siva(5, 10)
+    alexako()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
