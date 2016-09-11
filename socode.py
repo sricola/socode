@@ -158,7 +158,7 @@ def harshavardhana(data):
     print decode
 
 def sorliem():
-	 print "This is my first contribution to a github project!!"
+     print "This is my first contribution to a github project!!"
 
 def thisjustin(command=None, username=None):
     """
@@ -1695,7 +1695,18 @@ def awesoham(n):
     for x in range(n):
         return (x + 1) ** (x + 1) / x ** x - x ** x / (x - 1) ** (x - 1)
 
+def havanagrawal():
+    """Print out a Doctor Who catchphrase"""
+    print "Any Doctor Who fans out there?"
+    print " ______   _______  __    _  __   _______    _______  ___      ___   __    _  ___   _ "
+    print "|      | |       ||  |  | ||  | |       |  |  _    ||   |    |   | |  |  | ||   | | |"
+    print "|  _    ||   _   ||   |_| ||__| |_     _|  | |_|   ||   |    |   | |   |_| ||   |_| |"
+    print "| | |   ||  | |  ||       |       |   |    |       ||   |    |   | |       ||      _|"
+    print "| |_|   ||  |_|  ||  _    |       |   |    |  _   | |   |___ |   | |  _    ||     |_ "
+    print "|       ||       || | |   |       |   |    | |_|   ||       ||   | | | |   ||    _  |"
+    print "|______| |_______||_|  |__|       |___|    |_______||_______||___| |_|  |__||___| |_|"
 
+        
 def ncerminara(n):
     phi = (1 + 5 ** 0.5) / 2
     return int(round((phi ** n - (1 - phi) ** n) / 5 ** 0.5))
@@ -1910,6 +1921,7 @@ if __name__ == "__main__":
     rjwebb(5)
     erictherobot()
     sikado()
+    havanagrawal()
     dlad()
     starefossen()
     lbalceda(42)
