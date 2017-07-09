@@ -135,6 +135,21 @@ def mattgathu():
         sys.stdout.flush()
         time.sleep(0.25)
 
+def glmdev():
+    name_string = """
+       _               _            
+  __ _| |_ __ ___   __| | _____   __
+ / _` | | '_ ` _ \ / _` |/ _ \ \ / /
+| (_| | | | | | | | (_| |  __/\ V / 
+ \__, |_|_| |_| |_|\__,_|\___| \_/  
+ |___/                              
+    """
+    
+    print name_string
+    print "If you put a hundred monkeys in a room for a hundred years, one of them will eventually write a Python program."
+    print "...the rest will just write Perl programs..."
+    print ""
+    print "http://glmdev.tech/"
 
 def harshavardhana(data):
     n = b = 0
@@ -1957,6 +1972,7 @@ if __name__ == "__main__":
     myusuf3()
     mergesort()
     ferhatelmas()
+    glmdev()
     julio()
     gardaud(prezjordan)
     GeneralZero()
