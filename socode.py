@@ -115,6 +115,9 @@ def rixx():
     print "Oh, you guys!"
     eternalmatt()
 
+def vedantlfc():
+	print"Hello everyone how're you doing?"
+
 
 def thekarangoel():
     print "I don't get it"
@@ -2063,6 +2066,7 @@ if __name__ == "__main__":
     AtheistCat()
     siva(5, 10)
     alexako()
+    vedantlfc()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
