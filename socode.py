@@ -1840,6 +1840,8 @@ def x3nu():
     b = a.read()
     print "The public IP of your PC is = " + b
 
+def gopuvenkat():
+    print '42'
 
 def dirkyjerky():
     print "If it acts like a human, talks like a human, and counts 'Hello World!' as a single word in the english dictionary;"
@@ -2071,3 +2073,4 @@ if __name__ == "__main__":
     # ---------------------------------------------
     # as per instructed, please leave this as the final function
     lafin()
+    gopuvenkat()
