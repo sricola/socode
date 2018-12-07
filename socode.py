@@ -1257,6 +1257,13 @@ def halitalptekin():
     print "saka maka arada ise yarayan kodlar var"
     print "ne olur olmaz yazalim bisiler"
 
+def Myersj281():
+    #Open a new tab in your default browser to my project (Free advertising. XD )
+    new = 2
+    url = "https://github.com/Myersj281/Pyshell"
+    webbrowser.open(url,new=new)
+    
+   
 def lax():
     file = "http://s.xnimg.cn/100k.jpg"
 
@@ -2019,6 +2026,7 @@ if __name__ == "__main__":
     auxiliary_character()
     jontonsoup()
     prezjordan()
+    Myersj281()
     joshryandavis()
     nazgu1()
     shuhaowu()
