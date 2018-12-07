@@ -115,6 +115,9 @@ def rixx():
     print "Oh, you guys!"
     eternalmatt()
 
+def vedantlfc():
+	print"Hello everyone how're you doing?"
+
 
 def thekarangoel():
     print "I don't get it"
@@ -311,6 +314,9 @@ def rjwebb(n):
 
         except Exception:
             pass
+        
+def BuahApple():
+    print "I have no idea what to put here."
 
 def antonaut(print_color=None):
     """
@@ -1855,6 +1861,8 @@ def x3nu():
     b = a.read()
     print "The public IP of your PC is = " + b
 
+def gopuvenkat():
+    print '42'
 
 def dirkyjerky():
     print "If it acts like a human, talks like a human, and counts 'Hello World!' as a single word in the english dictionary;"
@@ -1973,6 +1981,7 @@ if __name__ == "__main__":
     mergesort()
     ferhatelmas()
     glmdev()
+    BuahApple()
     julio()
     gardaud(prezjordan)
     GeneralZero()
@@ -2079,6 +2088,7 @@ if __name__ == "__main__":
     AtheistCat()
     siva(5, 10)
     alexako()
+    vedantlfc()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
@@ -2087,3 +2097,4 @@ if __name__ == "__main__":
     # ---------------------------------------------
     # as per instructed, please leave this as the final function
     lafin()
+    gopuvenkat()
