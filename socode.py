@@ -1511,6 +1511,9 @@ def brandybuck():
           "Dragon"
 
 
+def mepcotterell():
+    print "ಠ_ಠ"
+
 def dpayne():
     try:
         # sets the desktop wallpaper to the top
@@ -2059,6 +2062,7 @@ if __name__ == "__main__":
     aturcino()
     windspy()
     samlabs821()
+    mepcotterell()
     vellamike(10)
     alisnic(random.randint(1, 1024))
     zonetti()
