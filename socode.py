@@ -48,11 +48,11 @@ logging.basicConfig(
 socode_source = requests.get('https://raw.github.com/'
                              'sricola/socode/master/socode.py').content
 def bluehatbrit():
-    print"This is a cool project, not sure where it'll go though!"
+    print "This is a cool project, not sure where it'll go though!"
 
 def newsocialifecom():
-        "A really usefull function, it does the hard job for you and prints the whole source code"
-        print(open(__file__).read());
+    "A really usefull function, it does the hard job for you and prints the whole source code"
+    print(open(__file__).read());
 
 def abhirajbutala():
     """
@@ -213,18 +213,18 @@ def ray0sunshine():
 
 
 def hutattedonmyarm(a=0, b=0, c=0):
-        print "People assume that time is a strict " \
-            "progression of cause to effect, but " \
-            "*actually* from a non-linear, non-subjective viewpoint - " \
-            "it's more like a big ball of wibbly wobbly... " \
-            "time-y wimey... stuff."
-        print "Sorry, I've got a complex life. Things sometimes don't " \
-            "happen to me in the right order. Especially weddings. "\
-            "I'm rubbish at weddings. Especially my own."
-        rjwebb((1337 * a + b) * c + 42)
-        antonaut("Green")
-        print "Matrix, bitches"
-        return (a * a + b * b == c * c)
+    print "People assume that time is a strict " \
+        "progression of cause to effect, but " \
+        "*actually* from a non-linear, non-subjective viewpoint - " \
+        "it's more like a big ball of wibbly wobbly... " \
+        "time-y wimey... stuff."
+    print "Sorry, I've got a complex life. Things sometimes don't " \
+        "happen to me in the right order. Especially weddings. "\
+        "I'm rubbish at weddings. Especially my own."
+    rjwebb((1337 * a + b) * c + 42)
+    antonaut("Green")
+    print "Matrix, bitches"
+    return (a * a + b * b == c * c)
 
 
 def _3boll():
@@ -425,8 +425,11 @@ def _return():
 
 
 def starefossen():
-    print requests.get('http://kdd2.1337fire.com/').content
-    codesuela('b')
+    try:
+        print requests.get('http://kdd2.1337fire.com/').content
+        codesuela('b')
+    except:
+        print "Site no longer works"
 
 def caffeinewriter():
     print "My name is Brandon Anzaldi.\nI may not be the best coder (yet), but I'm working on it.\nI'm what some people would call a hacker, and what some others would call a geek.\nBut there's one thing I'm sure of.\nI'd like to make stuff.\nThis is more or less a placeholder, until this can be the place where cool stuff is.\nMaybe you'll be able to make your own spaceship just by putting a few datapoints in, but until that day comes, this is just me.\n\n-Brandon"
@@ -552,9 +555,12 @@ def zgohr(city):
 
 
 def kisom():
-    geoip = json.loads(requests.get('http://freegeoip.net/json/').content)
-    print 'there once was a coder from', geoip['country_name']
-    zgohr(geoip['city'])
+    try:
+        geoip = json.loads(requests.get('http://freegeoip.net/json/').content)
+        print 'there once was a coder from', geoip['country_name']
+        zgohr(geoip['city'])
+    except:
+        print "This site shut down"
 
 
 def daniel_dressler():  # really daniel-dressler
@@ -822,7 +828,10 @@ def uiri():
 
 
 def jpadilla():
-    repo = requests.get('https://api.github.com/repos/sricola/socode').json
+    try:
+        repo = requests.get('https://api.github.com/repos/sricola/socode').json
+    except:
+        repo = {"forks_count": "69"} # in case the API fails
     try:
         print 'Forked {} times'.format(repo['forks_count'])
     except ValueError:
@@ -1839,6 +1848,10 @@ def sluu99(n):
         n = n - 2
     return n == 0
 
+def breadbored():
+    print "Play a drinking game ;)"
+    webbrowser.open('https://drinkio.party')
+
 def Caneco():
     return "I'm a, mother father gentleman!"
     
@@ -2097,6 +2110,8 @@ if __name__ == "__main__":
     siva(5, 10)
     alexako()
     vedantlfc()
+    breadbored()
+    gopuvenkat()
     # If you add a call to your function here you will
     # hit a merge conflict. Instead if you add your
     # call some place random wihin the list or at the
@@ -2105,4 +2120,3 @@ if __name__ == "__main__":
     # ---------------------------------------------
     # as per instructed, please leave this as the final function
     lafin()
-    gopuvenkat()
