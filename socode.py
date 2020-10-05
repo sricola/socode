@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+#This program written in python2
 # Welcome to soCode, the social coding experiment.
 # Here are the rules!
 #       - Add a function with your github name as its name.
