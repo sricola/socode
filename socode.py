@@ -61,6 +61,10 @@ def abhirajbutala():
     logging.info("I just added logging support for this important project!")
     return
 
+def deno832():
+    print("What is this project loll")
+    print("Nice work!")
+
 def nerdingoff():
     """
     Prints an ASCII version of the personal logo of nerdingoff
@@ -2070,6 +2074,7 @@ if __name__ == "__main__":
     bheesham()
     halitalptekin()
     icio()
+    deno832()
     wmill()
     calvcoll(random.randint(1, 1024))
     harshavardhana('E,9)oF*2M7/c~>')
