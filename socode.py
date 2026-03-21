@@ -567,7 +567,7 @@ def evinugur():
 
 
 def ncammarata():
-    tweets = requests.get("https://search.twitter.com/search.json?q=a").json
+    tweets = requests.get("https://search.twitter.com/search.json?q=a").json()
     tweet = tweets['results'][0]['text']
     print "Random Tweet:", tweet.encode('utf-8')
 
@@ -822,7 +822,7 @@ def uiri():
 
 
 def jpadilla():
-    repo = requests.get('https://api.github.com/repos/sricola/socode').json
+    repo = requests.get('https://api.github.com/repos/sricola/socode').json()
     try:
         print 'Forked {} times'.format(repo['forks_count'])
     except ValueError:
