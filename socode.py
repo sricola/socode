@@ -1799,6 +1799,9 @@ def rickyc():
   return "1LZNMnc2hHS9LJfJPRb7FmBhhKyKQCpWFx"
 
 
+def codeXsidd():
+    print "Let's keep the social coding spirit alive! Happy hacking!"
+
 def typd():
     print 'bazinga'
     nands()
@@ -1938,6 +1941,7 @@ def elebumm():
 if __name__ == "__main__":
     bluehatbrit()
     cjwelborn()
+    codeXsidd()
     prashantc29()
     abhirajbutala()
     newsocialifecom();
